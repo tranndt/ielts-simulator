@@ -1,0 +1,25 @@
+{
+    "_id": "passage_1",
+    "title": "The psychology of innovation",
+    "text": "Why are so few companies truly innovative? Innovation is key to business survival, and companies put substantial resources into inspiring employees...",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "The example of the ‘million-dollar quartet’ underlines the writer’s point about...",
+        "options": ["A. recognising talent.", "B. working as a team.", "C. having a shared objective.", "D. being an effective leader."],
+        "answer": "C"
+      },
+      {
+        "type": "sentence_completion",
+        "question": "Employees whose values match those of their employers are more likely to...",
+        "options": ["A. take chances.", "B. share their ideas.", "C. become competitive.", "D. get promotion.", "E. avoid risk.", "F. ignore their duties.", "G. remain in their jobs."],
+        "answer": "G"
+      },
+      {
+        "type": "true_false_not_given",
+        "statement": "The physical surroundings in which a person works play a key role in determining their creativity.",
+        "answer": "YES"
+      }
+    ]
+  }
+  
