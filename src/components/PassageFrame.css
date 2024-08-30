@@ -1,0 +1,22 @@
+h2, h3, h4, h5, h6, p, a, span, text {
+    text-align: justify;
+    white-space: pre-wrap;
+    line-height: 1.25em;
+}
+
+.task-subtitle {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.passage-title, .passage-subtitle {
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.passage-text {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}

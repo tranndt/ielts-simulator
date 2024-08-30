@@ -8,9 +8,10 @@ const Header = () => (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <ul>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/passage-mcq">Passage</Link></li>
-        <li><Link to="/passage-table">Passage</Link></li>
+        {/* <li><Link to="/about">About</Link></li> */}
+        <li><Link to="/passage-mcq">Multiple Choice</Link></li>
+        <li><Link to="/passage-table">Table Completion</Link></li>
+        <li><Link to="/passage-matching">Matching Headings</Link></li>
       </ul>
     </nav>
   </header>

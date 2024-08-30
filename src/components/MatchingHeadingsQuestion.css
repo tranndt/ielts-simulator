@@ -1,0 +1,15 @@
+.matching-headings-question {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space items evenly */
+}
+
+.question-text {
+  flex: 1; /* Allow the text to take up available space */
+}
+
+select {
+  flex: 0; /* Prevent the select element from growing */
+  margin-left: 1em; /* Add some space between the text and the select element */
+}

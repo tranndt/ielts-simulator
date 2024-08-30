@@ -1,5 +1,7 @@
 import React from "react";
 import MultipleChoiceQuestion from "./MultipleChoiceQuestion";
+import QuestionTaskDescription from "./QuestionTaskDescription";
+import './QuestionStyles.css';
 
 
 function MultipleChoiceQuestionTask({ questionTask }) {
@@ -7,7 +9,7 @@ function MultipleChoiceQuestionTask({ questionTask }) {
 
     return (
         <div className="multiple-choice-question-task">
-            <div className="question-text">{questionTask.taskDescription}</div>
+            <QuestionTaskDescription taskDescription={questionTask.taskDescription}/>
             {questionTask.questions.map((question, index) => (
                 <MultipleChoiceQuestion key={index} id={index} {...question}/>
             ))}

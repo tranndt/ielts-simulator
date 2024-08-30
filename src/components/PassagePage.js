@@ -1,13 +1,22 @@
 import React from 'react';
-import TextPassage from './TextPassage';
-import QuestionsList from './QuestionsList';
+import PassageFrame from './PassageFrame';
+import QuestionsFrame from './QuestionsFrame';
 import './PassagePage.css';
 
 const PassagePage = ({ passage }) => (
   <div className="passage-page">
-    <TextPassage taskTitle = {passage.taskTitle} taskSubtitle={passage.taskSubtitle} passageTitle={passage.passageTitle} 
-    passageSubtitle = {passage.passageSubtitle} passageText={passage.passageText} />
-    <QuestionsList questionsList={passage.questionsList} />
+    <div className="text-passage-container">
+      <PassageFrame 
+        taskTitle={passage.taskTitle} 
+        taskSubtitle={passage.taskSubtitle} 
+        passageTitle={passage.passageTitle} 
+        passageSubtitle={passage.passageSubtitle} 
+        passageText={passage.passageText} 
+      />
+    </div>
+    <div className="questions-list-container">
+      <QuestionsFrame questionsList={passage.questionsList} />
+    </div>
   </div>
 );
 
