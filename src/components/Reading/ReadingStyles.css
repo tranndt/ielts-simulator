@@ -1,0 +1,63 @@
+/* Disable scrolling on the body */
+body {
+  overflow: hidden;
+}
+
+.passage-page {
+  display: grid;
+  grid-template-rows: auto 1fr; /* Two rows: auto height for the navbar, remaining space for content */
+  grid-template-columns: 1fr 1fr; /* Two columns: equal width for passage and questions */
+  height: 95vh;
+  overflow: hidden;
+}
+
+.section-info-frame {
+  grid-row: 1;
+  grid-column: 1 / span 2; 
+  background-color: rgb(245, 245, 245); /* Background color for the navbar */
+  /* z-index: 1000; Ensure it stays on top */
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: small;
+  max-height: 10vh;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Optional: Add a shadow for better visibility */
+
+}
+
+.text-passage-container {
+  grid-row: 2; /* Place in the second row */
+  grid-column: 1; /* Place in the first column */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 2em;
+  /* padding-bottom: 5em; */
+}
+
+.questions-list-container {
+  grid-row: 2; /* Place in the second row */
+  grid-column: 2; /* Place in the second column */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 2em;
+}
+
+h2, h3, h4, h5, h6, p, a, span, text {
+  text-align: justify;
+  white-space: pre-wrap;
+  line-height: 1.25em;
+}
+
+.task-subtitle, .passage-context {
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.passage-title, .passage-subtitle {
+  font-weight: bold;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.passage-text {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

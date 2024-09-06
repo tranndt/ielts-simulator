@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
-import Header from './components/Header';
-import PassagePage from './components/PassagePage';
-import passageMcq from './components/mcq.json';
-import passageTable from './components/table.json';
-import passageMatching from './components/matching_headings.json';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Header from './components/Header/Header';
+import ReadingSectionFrame from './components/Reading/ReadingSectionFrame';
+import passageMcq from './components/assets/json/mcq.json';
+import passageTable from './components/assets/json/table.json';
+import passageMatching from './components/assets/json/matching_headings.json';
 import './App.css';
 
 function App() {
@@ -17,9 +17,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/passage-mcq" element={<PassagePage passage={passageMcq}/>} />
-        <Route path="/passage-table" element={<PassagePage passage={passageTable}/>} />
-        <Route path="/passage-matching" element={<PassagePage passage={passageMatching}/>} />
+        <Route path="/passage-mcq" element={<ReadingSectionFrame passage={passageMcq}/>} />
+        <Route path="/passage-table" element={<ReadingSectionFrame passage={passageTable}/>} />
+        <Route path="/passage-matching" element={<ReadingSectionFrame passage={passageMatching}/>} />
       </Routes>
     </div>
   );
