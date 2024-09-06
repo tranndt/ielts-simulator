@@ -3,6 +3,7 @@ import PassageFrame from './PassageFrame';
 import QuestionFrame from '../Reading/QuestionFrame';
 import SectionInfoFrame from './SectionInfoFrame';
 import './ReadingStyles.css';
+import GradingComponent from '../Grading/GradingComponent';
 
 const ReadingSectionFrame = ({ passage }) => (
   <div className="passage-page">

@@ -1,4 +1,4 @@
-import TableCompletionQuestion from "./TableCompletionQuestionItem";
+import TableCompletionQuestionItem from "./TableCompletionQuestionItem";
 import DataTable from "../Table/DataTable";
 import QuestionTaskDescription from "./QuestionTaskDescription";
 import './QuestionStyles.css';
@@ -13,7 +13,7 @@ function TableCompletionQuestionTask({ questionTask }) {
             <DataTable data={questionTask.questionContent}/>
             <b>Your Answers:</b>
             {questionTask.questions.map((question, index) => (
-                <TableCompletionQuestion key={index} id={index} {...question}/>
+                <TableCompletionQuestionItem key={index} id={index} {...question}/>
             ))}
         </div>
     );

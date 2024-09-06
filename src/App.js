@@ -8,9 +8,9 @@ import passageMcq from './components/assets/json/mcq.json';
 import passageTable from './components/assets/json/table.json';
 import passageMatching from './components/assets/json/matching_headings.json';
 import './App.css';
+import GradingComponent from './components/Grading/GradingComponent';
 
 function App() {
-  console.log(passageMcq);
   return (
     <div>
       <Header/>
@@ -20,6 +20,7 @@ function App() {
         <Route path="/passage-mcq" element={<ReadingSectionFrame passage={passageMcq}/>} />
         <Route path="/passage-table" element={<ReadingSectionFrame passage={passageTable}/>} />
         <Route path="/passage-matching" element={<ReadingSectionFrame passage={passageMatching}/>} />
+        <Route path="/grading" element={<GradingComponent/>} />
       </Routes>
     </div>
   );
