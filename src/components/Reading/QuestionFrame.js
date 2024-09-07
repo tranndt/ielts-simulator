@@ -4,17 +4,20 @@ import TableCompletionQuestionTask from "../Question/TableCompletionQuestionTask
 import MatchingHeadingsQuestionTask from "../Question/MatchingHeadingsQuestionTask";
 import '../Question/QuestionStyles.css';
 
-
 function QuestionFrame({ questionsList }) {
   const [totalCorrect, setTotalCorrect] = useState(0);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleTaskGrading = (correctCount) => {
     setTotalCorrect(prevCorrect => prevCorrect + correctCount);
   };
 
-  const handleSubmit = () => {
-    console.log(`Total correct answers: ${totalCorrect}`);
-    alert(`You answered ${totalCorrect} correctly.`);
+  const toggleShowAnswers = () => {
+    if (submitted) {
+      // Reset correct answer count when hiding answers
+      setTotalCorrect(0);
+    }
+    setSubmitted(prevSubmitted => !prevSubmitted); // Toggle show/hide answers
   };
 
   return (
@@ -26,35 +29,24 @@ function QuestionFrame({ questionsList }) {
               <MultipleChoiceQuestionTask 
                 key={index} 
                 id={index} 
-                questionTask={questionTask}
+                questionTask={questionTask} 
                 onTaskGrading={handleTaskGrading}
+                submitted={submitted}
               />
             );
-          case "table_completion":
-            return (
-              <TableCompletionQuestionTask 
-                key={index} 
-                id={index} 
-                questionTask={questionTask}
-                onTaskGrading={handleTaskGrading}
-              />
-            );
-          case "matching_headings":
-            return (
-              <MatchingHeadingsQuestionTask 
-                key={index} 
-                id={index} 
-                questionTask={questionTask}
-                onTaskGrading={handleTaskGrading}
-              />
-            );
+          // Add other question types here as needed
           default:
             return null;
         }
       })}
-      <button onClick={handleSubmit}>Submit</button>
+      <button id="show-answers-btn" onClick={toggleShowAnswers}>
+        {submitted ? 'Hide Answers' : 'Show Answers'}
+      </button>
+      {submitted && <div id="correct-answers-count">Correct answers: {totalCorrect}</div>}
     </div>
   );
 }
 
 export default QuestionFrame;
+
+

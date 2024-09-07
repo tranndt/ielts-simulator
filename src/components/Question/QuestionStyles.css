@@ -38,3 +38,31 @@
     flex: 0; /* Prevent the select element from growing */
     margin-left: 1em; /* Add some space between the text and the select element */
   }
+
+
+  .correct-answer {
+    background-color: #d4edda; /* Light green */
+    color: #155724;
+  }
+  
+  .incorrect-answer {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24;
+  }
+
+  #show-answers-btn {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    padding: .5em;
+  }
+
+  /* Align text right */
+  #correct-answers-count {
+    display: flex;
+    margin-top: 1em;
+    justify-content: center;
+
+
+  }
