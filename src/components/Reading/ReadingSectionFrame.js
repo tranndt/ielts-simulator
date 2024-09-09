@@ -2,8 +2,8 @@ import React from 'react';
 import PassageFrame from './PassageFrame';
 import QuestionFrame from '../Reading/QuestionFrame';
 import SectionInfoFrame from './SectionInfoFrame';
+import TimerFrame from './TimerFrame';
 import './ReadingStyles.css';
-import GradingComponent from '../Grading/GradingComponent';
 
 const ReadingSectionFrame = ({ passage }) => (
   <div className="passage-page">
@@ -15,6 +15,7 @@ const ReadingSectionFrame = ({ passage }) => (
       passageText={passage.passageText} 
     />
     <QuestionFrame questionsList={passage.questionsList} />
+    <TimerFrame taskTime = {passage.taskTime}/>
   </div>
 );
 

@@ -77,7 +77,7 @@ function QuestionFrame({ questionsList }) {
 
       {showAnswers && (
         <div id="correct-answers-count">
-          Total Score: {totalCorrect} / {totalQuestions}
+          You Scored: {totalCorrect} / {totalQuestions}
         </div>
       )}
     </div>
