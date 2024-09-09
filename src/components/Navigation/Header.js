@@ -9,9 +9,8 @@ const Header = () => (
       <ul>
         <li><Link to="/">Home</Link></li>
         {/* <li><Link to="/about">About</Link></li> */}
-        <li><Link to="/passage-mcq">Multiple Choice</Link></li>
-        <li><Link to="/passage-table">Table Completion</Link></li>
-        <li><Link to="/passage-matching">Matching Headings</Link></li>
+        <li><Link to="/reading-practices">Reading Practices</Link></li>
+        <li><Link to="/reading-tests">Reading Tests</Link></li>
       </ul>
     </nav>
   </header>

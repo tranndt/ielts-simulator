@@ -1,0 +1,28 @@
+.reading-practices-page {
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.jumbotron {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.jumbotron p {
+  font-size: 1.3em;
+}
+
+.practices-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.practices-table th, .practices-table td {
+  border: 1px solid #ccc;
+  padding: 1em;
+  text-align: left;
+}
+
+.practices-table th {
+  background-color: #f8f8f8;
+}

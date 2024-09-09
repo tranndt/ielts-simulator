@@ -131,7 +131,7 @@
     margin: 0em 1em 0em 1em;
     background-color: #d4eddb;
     color: #148a0e;
-    border-radius: 4px;
+    border-radius: 1px;
   }
 
   .table-completion-question-item .correct-answer-non-matching,
@@ -140,7 +140,7 @@
     margin: 0em 1em 0em 1em;
     background-color: #edd4d4;
     color: #ce0b1f;
-    border-radius: 4px;
+    border-radius: 1px;
   }
 
   .fixed-width {
