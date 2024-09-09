@@ -1,51 +1,57 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import './QuestionStyles.css';
 
 
-function MatchingHeadingsQuestionItem({ id, questionItem, onAnswerChange, submitted }) {
+function MatchingHeadingsQuestionItem({ id, questionItem, onItemGrading, showAnswers }) {
+  const [userAnswer, setUserAnswer] = useState(null);
+
   const handleChange = (event) => {
-    onAnswerChange(questionItem.questionNumber, event.target.value);
+    setUserAnswer(event.target.value);
   };
 
+  useEffect(() => {
+    if (showAnswers && userAnswer !== null) {
+      const isCorrect = userAnswer === questionItem.correctAnswer;
+      onItemGrading(isCorrect);
+    }
+  }, [showAnswers, userAnswer]);
+
   return (
-    <div className="matching-headings-question question-item" style={{ display: 'flex', alignItems: 'center' }}>
-      {/* Question Text */}
-      <div className="question-text" style={{ flex: 1 }}>
-        <span>{questionItem.questionNumber}. {questionItem.questionText}</span>
-      </div>
-
-      {/* Dropdown for Answer Selection */}
-      <div style={{ flex: 1 }}>
-        <select
-          name={`heading-${questionItem.questionNumber}`}
-          id={`heading-${questionItem.questionNumber}`}
-          onChange={handleChange}
-          disabled={submitted}
-        >
-          {questionItem.questionOptions.map((heading, index) => (
-            <option key={index} value={heading[0]}>
-              {heading[0]}
-            </option>
-          ))}
-        </select>
-      </div>
-
-      {/* Correct Answer Div (hidden until submitted) */}
-      {submitted && (
-        <div
-          className="correct-answer"
-          style={{
-            marginLeft: '10px',
-            padding: '5px',
-            backgroundColor: '#d4edda',
-            borderRadius: '4px',
-            display: submitted ? 'block' : 'none'
-          }}
-        >
-          {questionItem.correctAnswer[0]} {/* Correct Answer */}
-        </div>
-      )}
-    </div>
+    <div className="matching-headings-question-item question-item">
+    <table>
+      <tbody >
+        <tr >
+          <td style={{width:'5em', textAlign:'center'}}>
+            {questionItem.questionNumber}
+          </td>
+          <td style={{width:'5em', textAlign:'center'}}>
+            {questionItem.questionText}
+          </td>
+          <td style={{width:'5em', textAlign:'center'}}>
+            <select
+              name={`heading-${questionItem.questionNumber}`}
+              id={`heading-${questionItem.questionNumber}`}
+              onChange={handleChange}
+              disabled={showAnswers}
+            >
+              <option value=""></option>
+              {questionItem.questionOptions.map((heading, index) => (
+                <option key={index} value={heading[0]}>
+                  {heading[0]}
+                </option>
+              ))}
+            </select>
+          </td>
+          {showAnswers && (
+            <td
+              className={(userAnswer === questionItem.correctAnswer[0]) ? "correct-answer" : "correct-answer-non-matching"}>
+              {questionItem.correctAnswer[0]}
+            </td>
+          )}
+        </tr>
+      </tbody>
+    </table>
+  </div>
   );
 }
 

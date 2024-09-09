@@ -43,7 +43,7 @@
      "A proposal to take control away from the driver"
     ]
    ],
-   "exampleAnswer": "Example Section B i\n",
+   "exampleAnswer": ["Section B","i"],
    "questions": [
     {
      "questionNumber": 1,

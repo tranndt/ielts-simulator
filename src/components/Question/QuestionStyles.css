@@ -44,16 +44,29 @@
     background-color: #d4edda; /* Light green */
     color: #155724;
   }
-  
+
   .incorrect-answer {
-    background-color: #f8d7da; /* Light red */
+    background-color: #d6d6d6; 
+    color: #474747;
+  }
+
+  .correct-unselected-answer {
+    background-color: #f8d7da; 
+    color: #721c24;
+  }
+  
+  /* .incorrect-answer {
+    background-color: #f8d7da; 
     color: #721c24;
   }
 
   .correct-unselected-answer {
-    background-color: #fff9a0; /* Light yellow */
+    background-color: #fff9a0; 
     color: #856404;
-  }
+  } */
+
+  
+
 
   #show-answers-btn {
     display: flex;
@@ -71,7 +84,12 @@
     justify-content: center;
     font-size: larger;
     font-weight: bold;
-    color: green;
+    color: rgb(0, 55, 128);
+    margin: 1em 0em 1em 0em;
+    border: 1px solid #ccc;
+    background-color: #fff9a0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+
   }
 
   .task-score {
@@ -80,5 +98,53 @@
     padding-top: 1em;
     padding-bottom: 1em;
     font-weight: bold;
-    color: red;
+    /* color: red; */
   }
+
+
+  /* TABLE COMPLETION */
+
+.table-completion-question-task .your-answers-text{
+    font-weight: bold;
+    margin: 2em 0em 1em 0em;
+}
+
+  .table-completion-question-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .5em;
+    /* border: 1px solid #ccc; */
+  }
+
+  .table-completion-question-item input{
+    padding: .35em;
+    width: 15em;
+    margin: 0em 1em 0em 0em;
+    text-align: center;
+    border-radius: .25em;
+    border: 1px solid #ccc;
+  }
+
+  .table-completion-question-item .correct-answer,
+  .matching-headings-question-item .correct-answer {
+    padding: .20em;
+    margin: 0em 1em 0em 1em;
+    background-color: #d4eddb;
+    color: #148a0e;
+    border-radius: 4px;
+  }
+
+  .table-completion-question-item .correct-answer-non-matching,
+  .matching-headings-question-item .correct-answer-non-matching {
+    padding: .20em;
+    margin: 0em 1em 0em 1em;
+    background-color: #edd4d4;
+    color: #ce0b1f;
+    border-radius: 4px;
+  }
+
+  .fixed-width {
+    display: inline-block;
+    width: 1.5em; /* Adjust the width as needed */
+  }
+

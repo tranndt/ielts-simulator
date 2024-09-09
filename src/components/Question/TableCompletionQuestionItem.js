@@ -1,40 +1,47 @@
+import React, {useState, useEffect} from "react";
 import './QuestionStyles.css';
 
-import React from 'react';
+function TableCompletionQuestionItem({ questionItem, onItemGrading, showAnswers }) {
+  const [userAnswer, setUserAnswer] = useState(null);
 
-function TableCompletionQuestionItem({ questionItem, onAnswerChange, submitted }) {
   const handleChange = (event) => {
-    onAnswerChange(questionItem.questionNumber, event.target.value);
+    setUserAnswer(event.target.value);
   };
 
-  return (
-    <div className="table-completion-question question-item" style={{ display: 'flex', alignItems: 'center' }}>
-      {/* Input Box */}
-      <div style={{ flex: 1 }}>
-        <input
-          type="text"
-          id={`option-${questionItem.questionNumber}`}
-          name={`table-${questionItem.questionNumber}`}
-          onChange={handleChange}
-          disabled={submitted}
-        />
-      </div>
+  useEffect(() => {
+    if (showAnswers && userAnswer !== null) {
+      const isCorrect = userAnswer === questionItem.correctAnswer;
+      onItemGrading(isCorrect);
+    }
+  }, [showAnswers, userAnswer]);
 
-      {/* Correct Answer Div (hidden until submitted)n  */}
-      {submitted && (
-        <div
-          className="correct-answer"
-          style={{
-            marginLeft: '10px',
-            padding: '5px',
-            backgroundColor: '#d4edda',
-            borderRadius: '4px',
-            display: submitted ? 'block' : 'none'
-          }}
-        >
-          {questionItem.correctAnswer}
-        </div>
-      )}
+  return (
+    <div className="table-completion-question-item question-item">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <span className="fixed-width">{questionItem.questionNumber}.</span>
+            </td>
+            <td>
+              <input
+                type="text"
+                id={`option-${questionItem.questionNumber}`}
+                name={`table-${questionItem.questionNumber}`}
+                onChange={handleChange}
+                disabled={showAnswers} // Disable input when answers are shown
+                autoComplete="off" // Disable auto-fill
+              />
+            </td>
+            {showAnswers && (
+              <td
+                className={(userAnswer === questionItem.correctAnswer) ? "correct-answer" : "correct-answer-non-matching"}>
+                {questionItem.correctAnswer}
+              </td>
+            )}
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }

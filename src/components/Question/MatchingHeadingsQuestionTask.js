@@ -5,51 +5,54 @@ import QuestionTaskDescription from "./QuestionTaskDescription";
 import './QuestionStyles.css';
 
 
-function MatchingHeadingsQuestionTask({ questionTask, onTaskGrading, submitted }) {
-  const [userAnswers, setUserAnswers] = useState({});
-  const [correctCount, setCorrectCount] = useState(0);
+function MatchingHeadingsQuestionTask({ questionTask, onTaskGrading, showAnswers }) {
+  const [correctAnswers, setCorrectAnswers] = useState(0);
+
+  const handleItemGrading = (isCorrect) => {
+    // Increment or decrement based on whether the answer is correct or incorrect
+    setCorrectAnswers((prevCorrect) => prevCorrect + (isCorrect ? 1 : 0));
+    onTaskGrading(isCorrect);  // Notify parent of each individual grading event
+  };
 
   useEffect(() => {
-    if (submitted) {
-      gradeTask();
+    if (!showAnswers) {
+      setCorrectAnswers(0);  // Reset correct answers when hiding answers
     }
-  }, [submitted]);
-
-  const handleAnswerChange = (questionNumber, answer) => {
-    setUserAnswers({
-      ...userAnswers,
-      [questionNumber]: answer,
-    });
-  };
-
-  const gradeTask = () => {
-    let correctAnswers = 0;
-
-    questionTask.questions.forEach((question, index) => {
-      const userAnswer = userAnswers[question.questionNumber];
-      if (userAnswer && userAnswer === question.correctAnswer) {
-        correctAnswers++;
-      }
-    });
-
-    setCorrectCount(correctAnswers);
-    onTaskGrading(correctAnswers, questionTask.questions.length); // Send correct and total questions
-  };
+  }, [showAnswers]);
 
   return (
     <div className="matching-headings-question-task">
       <QuestionTaskDescription taskDescription={questionTask.taskDescription} />
       <ListOfHeadingsTable data={questionTask.headingsList} />
-      <div>{questionTask.exampleAnswer}</div>
+      <table>
+      <thead>
+        <th style={{padding:'.25em'}}>
+          <td style={{width:'5em'}}>
+            Example
+          </td>
+          <td style={{width:'5em'}}>
+            {questionTask.exampleAnswer[0]}
+          </td>
+          <td style={{width:'5em'}}>
+            {questionTask.exampleAnswer[1]}
+          </td>
+        </th>
+      </thead>
+      </table>        
       {questionTask.questions.map((questionItem, index) => (
         <MatchingHeadingsQuestionItem
           key={index}
           id={index}
           questionItem = {questionItem}
-          onAnswerChange={handleAnswerChange}
-          submitted={submitted}
+          onItemGrading={handleItemGrading}
+          showAnswers={showAnswers}
         />
       ))}
+      {showAnswers && (
+        <div className="task-score">
+          Task Score: {correctAnswers} / {questionTask.questions.length}
+        </div>
+      )}
     </div>
   );
 }

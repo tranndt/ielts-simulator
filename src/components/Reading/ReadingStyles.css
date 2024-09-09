@@ -16,15 +16,15 @@ body {
   grid-column: 1 / span 2; 
   background-color: rgb(245, 245, 245); /* Background color for the navbar */
   /* z-index: 1000; Ensure it stays on top */
-  padding-left: 1em;
-  padding-right: 1em;
+  margin: 0em 1em 1em 1em;
+  padding: 0em 2em 0em 2em;
   font-size: small;
   max-height: 10vh;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Optional: Add a shadow for better visibility */
-
+  /* border: 1px solid #ccc; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-.text-passage-container {
+.passage-frame {
   grid-row: 2; /* Place in the second row */
   grid-column: 1; /* Place in the first column */
   overflow-y: auto; /* Enable vertical scrolling */
@@ -32,7 +32,7 @@ body {
   /* padding-bottom: 5em; */
 }
 
-.questions-list-container {
+.question-frame {
   grid-row: 2; /* Place in the second row */
   grid-column: 2; /* Place in the second column */
   overflow-y: auto; /* Enable vertical scrolling */

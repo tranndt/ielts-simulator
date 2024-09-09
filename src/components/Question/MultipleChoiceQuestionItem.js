@@ -6,7 +6,7 @@ function MultipleChoiceQuestionItem({ id, questionItem, onItemGrading, showAnswe
 
   const handleChange = (event) => {
     setUserAnswer(event.target.value);
-    const isCorrect = userAnswer === questionItem.correctAnswer[0];
+    // const isCorrect = userAnswer === questionItem.correctAnswer[0];
     // onItemGrading(isCorrect);
   };
 

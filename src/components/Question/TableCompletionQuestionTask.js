@@ -1,55 +1,43 @@
+import React, { useState, useEffect } from "react";
 import TableCompletionQuestionItem from "./TableCompletionQuestionItem";
 import DataTable from "../Table/DataTable";
 import QuestionTaskDescription from "./QuestionTaskDescription";
 import './QuestionStyles.css';
-import React, { useState, useEffect } from 'react';
 
+function TableCompletionQuestionTask({ id, questionTask, onTaskGrading, showAnswers }) {
+  const [correctAnswers, setCorrectAnswers] = useState(0);
 
-function TableCompletionQuestionTask({ questionTask, onTaskGrading, submitted }) {
-  const [userAnswers, setUserAnswers] = useState({});
-  const [correctCount, setCorrectCount] = useState(0);
+  const handleItemGrading = (isCorrect) => {
+    // Increment or decrement based on whether the answer is correct or incorrect
+    setCorrectAnswers((prevCorrect) => prevCorrect + (isCorrect ? 1 : 0));
+    onTaskGrading(isCorrect);  // Notify parent of each individual grading event
+  };
 
   useEffect(() => {
-    if (submitted) {
-      gradeTask();
+    if (!showAnswers) {
+      setCorrectAnswers(0);  // Reset correct answers when hiding answers
     }
-  }, [submitted]);
-
-  const handleAnswerChange = (questionNumber, answer) => {
-    setUserAnswers({
-      ...userAnswers,
-      [questionNumber]: answer,
-    });
-  };
-
-  const gradeTask = () => {
-    let correctAnswers = 0;
-
-    questionTask.questions.forEach((question, index) => {
-      const userAnswer = userAnswers[question.questionNumber];
-      if (userAnswer && userAnswer.toLowerCase() === question.correctAnswer.toLowerCase()) {
-        correctAnswers++;
-      }
-    });
-
-    setCorrectCount(correctAnswers);
-    onTaskGrading(correctAnswers, questionTask.questions.length); // Send correct and total questions
-  };
+  }, [showAnswers]);
 
   return (
     <div className="table-completion-question-task">
       <QuestionTaskDescription taskDescription={questionTask.taskDescription} />
       <DataTable data={questionTask.questionContent} />
-      <b>Your Answers:</b>
+      <div class='your-answers-text'>Your Answers:</div>
       {questionTask.questions.map((questionItem, index) => (
         <TableCompletionQuestionItem
           key={index}
           id={index}
-          questionItem = {questionItem}
-          onAnswerChange={handleAnswerChange}
-          submitted={submitted}
+          questionItem={questionItem}
+          onItemGrading={handleItemGrading}
+          showAnswers={showAnswers}
         />
       ))}
+      {showAnswers && (
+        <div className="task-score">
+          Task Score: {correctAnswers} / {questionTask.questions.length}
+        </div>
+      )}
     </div>
   );
 }

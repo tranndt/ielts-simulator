@@ -12,7 +12,6 @@ const Header = () => (
         <li><Link to="/passage-mcq">Multiple Choice</Link></li>
         <li><Link to="/passage-table">Table Completion</Link></li>
         <li><Link to="/passage-matching">Matching Headings</Link></li>
-        <li><Link to="/grading">Grading</Link></li>
       </ul>
     </nav>
   </header>

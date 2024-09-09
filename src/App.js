@@ -20,7 +20,6 @@ function App() {
         <Route path="/passage-mcq" element={<ReadingSectionFrame passage={passageMcq}/>} />
         <Route path="/passage-table" element={<ReadingSectionFrame passage={passageTable}/>} />
         <Route path="/passage-matching" element={<ReadingSectionFrame passage={passageMatching}/>} />
-        <Route path="/grading" element={<GradingComponent/>} />
       </Routes>
     </div>
   );

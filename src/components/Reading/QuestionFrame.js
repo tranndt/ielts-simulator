@@ -33,7 +33,7 @@ function QuestionFrame({ questionsList }) {
   };
 
   return (
-    <div className="questions-list">
+    <div className="question-frame">
       {questionsList.map((questionTask, index) => {
         switch (questionTask.questionType) {
           case "multiple_choice":
