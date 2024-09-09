@@ -42,7 +42,7 @@ raw_passage_text: |
     
 
 questions_list:
-    -   question_type: multiple_choice
+    -   question_type: multiple_choice_select_one
         raw_question_instructions: |
             Questions 1 – 4
             Choose the correct letter, A, B, C or D.

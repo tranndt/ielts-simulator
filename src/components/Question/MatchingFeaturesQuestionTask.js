@@ -1,11 +1,11 @@
 import React, { useState,useEffect} from 'react';
-import MatchingHeadingsQuestionItem from "./MatchingHeadingsQuestionItem";
+import MatchingFeaturesQuestionItem from "./MatchingFeaturesQuestionItem";
 import ListOfHeadingsTable from "../Table/ListOfHeadingsTable";
 import QuestionTaskDescription from "./QuestionTaskDescription";
 import './QuestionStyles.css';
 
 
-function MatchingHeadingsQuestionTask({ questionTask, onTaskGrading, showAnswers }) {
+function MatchingFeaturesQuestionTask({ questionTask, onTaskGrading, showAnswers }) {
   const [correctAnswers, setCorrectAnswers] = useState(0);
 
   const handleItemGrading = (isCorrect) => {
@@ -21,7 +21,7 @@ function MatchingHeadingsQuestionTask({ questionTask, onTaskGrading, showAnswers
   }, [showAnswers]);
 
   return (
-    <div className="matching-headings-question-task">
+    <div className="matching-features-question-task">
       <QuestionTaskDescription taskDescription={questionTask.taskDescription} />
       <ListOfHeadingsTable tableTitle = {questionTask.tableTitle} tableData={questionTask.tableData} />
       {questionTask.exampleAnswer &&
@@ -32,17 +32,17 @@ function MatchingHeadingsQuestionTask({ questionTask, onTaskGrading, showAnswers
             Example
           </th>
           <th style={{width:'5em'}}>
-            {questionTask.exampleAnswer[0]}
-          </th>
-          <th style={{width:'5em'}}>
             {questionTask.exampleAnswer[1]}
+          </th>
+          <th>
+            {questionTask.exampleAnswer[0]}
           </th>
         </tr>
       </thead>
       </table>
-      }        
+      }      
       {questionTask.questions.map((questionItem, index) => (
-        <MatchingHeadingsQuestionItem
+        <MatchingFeaturesQuestionItem
           key={index}
           id={index}
           questionItem = {questionItem}
@@ -59,5 +59,5 @@ function MatchingHeadingsQuestionTask({ questionTask, onTaskGrading, showAnswers
   );
 }
 
-export default MatchingHeadingsQuestionTask;
+export default MatchingFeaturesQuestionTask;
 

@@ -33,6 +33,16 @@ const ReadingPracticesPage = () => (
           <td>Match headings to the correct paragraphs in the passage.</td>
           <td>10 minutes</td>
         </tr>
+        <tr>
+          <td><Link to="/ielts-simulator/reading-practices/matching-features">Matching Features</Link></td>
+          <td>Match features to the correct subjects in the passage.</td>
+          <td>10 minutes</td>
+        </tr>
+        <tr>
+          <td><Link to="/ielts-simulator/reading-practices/matching-sentence-endings">Matching Sentence Endings</Link></td>
+          <td>Match the correct ending to sentences based on information in the passage.</td>
+          <td>10 minutes</td>
+        </tr>
       </tbody>
     </table>
   </div>

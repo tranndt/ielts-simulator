@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import MultipleChoiceQuestionTask from "../Question/MultipleChoiceQuestionTask";
 import TableCompletionQuestionTask from "../Question/TableCompletionQuestionTask";
 import MatchingHeadingsQuestionTask from "../Question/MatchingHeadingsQuestionTask";
+import MatchingFeaturesQuestionTask from "../Question/MatchingFeaturesQuestionTask";
+import MatchingSentenceEndingsQuestionTask from "../Question/MatchingSentenceEndingsQuestionTask";
 import '../Question/QuestionStyles.css';
 
 function QuestionFrame({ questionsList }) {
@@ -36,7 +38,7 @@ function QuestionFrame({ questionsList }) {
     <div className="question-frame">
       {questionsList.map((questionTask, index) => {
         switch (questionTask.questionType) {
-          case "multiple_choice":
+          case "multiple_choice_select_one":
             return (
               <MultipleChoiceQuestionTask
                 key={index}
@@ -49,6 +51,26 @@ function QuestionFrame({ questionsList }) {
           case "matching_headings":
             return (
               <MatchingHeadingsQuestionTask
+                key={index}
+                id={index}
+                questionTask={questionTask}
+                onTaskGrading={handleTaskGrading}
+                showAnswers={showAnswers}
+              />
+            );
+          case "matching_features":
+            return (
+              <MatchingFeaturesQuestionTask
+                key={index}
+                id={index}
+                questionTask={questionTask}
+                onTaskGrading={handleTaskGrading}
+                showAnswers={showAnswers}
+              />
+            );
+            case "matching_sentence_endings":
+            return (
+              <MatchingSentenceEndingsQuestionTask
                 key={index}
                 id={index}
                 questionTask={questionTask}
