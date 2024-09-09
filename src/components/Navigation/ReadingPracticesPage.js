@@ -19,17 +19,17 @@ const ReadingPracticesPage = () => (
       </thead>
       <tbody>
         <tr>
-          <td><Link to="/reading-practices/multiple-choice-select-one">Multiple Choice</Link></td>
+          <td><Link to="/ielts-simulator/reading-practices/multiple-choice-select-one">Multiple Choice</Link></td>
           <td>Select the correct answer from a list of options.</td>
           <td>10 minutes</td>
         </tr>
         <tr>
-          <td><Link to="/reading-practices/table-completion">Table Completion</Link></td>
+          <td><Link to="/ielts-simulator/reading-practices/table-completion">Table Completion</Link></td>
           <td>Fill in the blanks in a table based on the passage.</td>
           <td>10 minutes</td>
         </tr>
         <tr>
-          <td><Link to="/reading-practices/matching-headings">Matching Headings</Link></td>
+          <td><Link to="/ielts-simulator/reading-practices/matching-headings">Matching Headings</Link></td>
           <td>Match headings to the correct paragraphs in the passage.</td>
           <td>10 minutes</td>
         </tr>

@@ -17,13 +17,13 @@ function App() {
     <div>
       <Header/>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/ielts-simulator" element={<HomePage />} />
         {/* <Route path="/about" element={<About />} /> */}
-        <Route path="/reading-practices" element={<ReadingPracticesPage />} />
-        <Route path="/reading-tests" element={<ReadingTestsPage />} />
-        <Route path="/reading-practices/multiple-choice-select-one" element={<ReadingSectionFrame passage={passageMcq}/>} />
-        <Route path="/reading-practices/table-completion" element={<ReadingSectionFrame passage={passageTable}/>} />
-        <Route path="/reading-practices/matching-headings" element={<ReadingSectionFrame passage={passageMatching}/>} />
+        <Route path="/ielts-simulator/reading-practices" element={<ReadingPracticesPage />} />
+        <Route path="/ielts-simulator/reading-tests" element={<ReadingTestsPage />} />
+        <Route path="/ielts-simulator/reading-practices/multiple-choice-select-one" element={<ReadingSectionFrame passage={passageMcq}/>} />
+        <Route path="/ielts-simulator/reading-practices/table-completion" element={<ReadingSectionFrame passage={passageTable}/>} />
+        <Route path="/ielts-simulator/reading-practices/matching-headings" element={<ReadingSectionFrame passage={passageMatching}/>} />
       </Routes>
     </div>
   );

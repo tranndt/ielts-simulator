@@ -2,7 +2,7 @@
   "name": "ielts-simulator",
   "version": "1.0.0",
   "description": "Your app description",
-  "homepage": "https://tranndt.github.io/ielts-simulator",
+  "homepage": "/ielts-simulator",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",

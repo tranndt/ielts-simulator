@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ielts-simulator/static/css/main.33a1ae73.chunk.css",
-    "main.js": "/ielts-simulator/static/js/main.42a418ab.chunk.js",
-    "main.js.map": "/ielts-simulator/static/js/main.42a418ab.chunk.js.map",
+    "main.js": "/ielts-simulator/static/js/main.e8943626.chunk.js",
+    "main.js.map": "/ielts-simulator/static/js/main.e8943626.chunk.js.map",
     "runtime-main.js": "/ielts-simulator/static/js/runtime-main.a9e98209.js",
     "runtime-main.js.map": "/ielts-simulator/static/js/runtime-main.a9e98209.js.map",
     "static/js/2.8139ddac.chunk.js": "/ielts-simulator/static/js/2.8139ddac.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.a9e98209.js",
     "static/js/2.8139ddac.chunk.js",
     "static/css/main.33a1ae73.chunk.css",
-    "static/js/main.42a418ab.chunk.js"
+    "static/js/main.e8943626.chunk.js"
   ]
 }
