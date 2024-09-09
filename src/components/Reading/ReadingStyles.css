@@ -90,7 +90,7 @@ h2, h3, h4, h5, h6, p, a, span, text {
 }
 
 .task-subtitle, .passage-context {
-  font-weight: bold;
+  /* font-weight: bold; */
   font-style: italic;
   margin-bottom: 1em;
 }

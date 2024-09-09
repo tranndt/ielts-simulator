@@ -104,19 +104,28 @@
 
   /* TABLE COMPLETION */
 
-.table-completion-question-task .your-answers-text{
+.table-completion-question-task .your-answers-text,
+.note-completion-question-task .your-answers-text,
+.sentence-completion-question-task .your-answers-text,
+.summary-completion-question-task .your-answers-text {
     font-weight: bold;
     margin: 2em 0em 1em 0em;
 }
 
-  .table-completion-question-item {
+  .table-completion-question-item,
+  .note-completion-question-item,
+  .sentence-completion-question-item,
+  .summary-completion-question-item {
     display: flex;
     flex-direction: row;
     margin-bottom: .5em;
     /* border: 1px solid #ccc; */
   }
 
-  .table-completion-question-item input{
+  .table-completion-question-item input,
+  .note-completion-question-item input,
+  .sentence-completion-question-item input,
+  .summary-completion-question-item input {
     padding: .35em;
     width: 15em;
     margin: 0em 1em 0em 0em;
@@ -126,6 +135,9 @@
   }
 
   .table-completion-question-item .correct-answer,
+  .note-completion-question-item .correct-answer,
+  .sentence-completion-question-item .correct-answer,
+  .summary-completion-question-item .correct-answer,
   .matching-headings-question-item .correct-answer,
   .matching-sentence-endings-question-item .correct-answer {
     padding: .20em;
@@ -136,6 +148,9 @@
   }
 
   .table-completion-question-item .correct-answer-non-matching,
+  .note-completion-question-item .correct-answer-non-matching,
+  .sentence-completion-question-item .correct-answer-non-matching,
+  .summary-completion-question-item .correct-answer-non-matching,
   .matching-headings-question-item .correct-answer-non-matching,
   .matching-sentence-endings-question-item .correct-answer-non-matching {
     padding: .20em;

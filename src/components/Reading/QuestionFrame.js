@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import MultipleChoiceQuestionTask from "../Question/MultipleChoiceQuestionTask";
 import TableCompletionQuestionTask from "../Question/TableCompletionQuestionTask";
+import NoteCompletionQuestionTask from "../Question/NoteCompletionQuestionTask";
+import SentenceCompletionQuestionTask from "../Question/SentenceCompletionQuestionTask";
+import SummaryCompletionQuestionTask from "../Question/SummaryCompletionQuestionTask";
 import MatchingHeadingsQuestionTask from "../Question/MatchingHeadingsQuestionTask";
 import MatchingFeaturesQuestionTask from "../Question/MatchingFeaturesQuestionTask";
 import MatchingSentenceEndingsQuestionTask from "../Question/MatchingSentenceEndingsQuestionTask";
@@ -88,6 +91,37 @@ function QuestionFrame({ questionsList }) {
                 showAnswers={showAnswers}
               />
             );
+          case "note_completion":
+            return (
+              <NoteCompletionQuestionTask
+                key={index}
+                id={index}
+                questionTask={questionTask}
+                onTaskGrading={handleTaskGrading}
+                showAnswers={showAnswers}
+              />
+            );
+          case "sentence_completion":
+            return (
+              <SentenceCompletionQuestionTask
+                key={index}
+                id={index}
+                questionTask={questionTask}
+                onTaskGrading={handleTaskGrading}
+                showAnswers={showAnswers}
+              />
+            );
+          case "summary_completion":
+            return (
+              <SummaryCompletionQuestionTask
+                key={index}
+                id={index}
+                questionTask={questionTask}
+                onTaskGrading={handleTaskGrading}
+                showAnswers={showAnswers}
+              />
+            );
+          
           default:
             return null;
         }
