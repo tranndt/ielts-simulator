@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/ielts-simulator/static/css/main.a81f63a5.chunk.css",
-    "main.js": "/ielts-simulator/static/js/main.41891864.chunk.js",
-    "main.js.map": "/ielts-simulator/static/js/main.41891864.chunk.js.map",
+    "main.css": "/ielts-simulator/static/css/main.ed1f6de7.chunk.css",
+    "main.js": "/ielts-simulator/static/js/main.54a6a164.chunk.js",
+    "main.js.map": "/ielts-simulator/static/js/main.54a6a164.chunk.js.map",
     "runtime-main.js": "/ielts-simulator/static/js/runtime-main.a9e98209.js",
     "runtime-main.js.map": "/ielts-simulator/static/js/runtime-main.a9e98209.js.map",
-    "static/js/2.acbc05a7.chunk.js": "/ielts-simulator/static/js/2.acbc05a7.chunk.js",
-    "static/js/2.acbc05a7.chunk.js.map": "/ielts-simulator/static/js/2.acbc05a7.chunk.js.map",
+    "static/js/2.ea1019b7.chunk.js": "/ielts-simulator/static/js/2.ea1019b7.chunk.js",
+    "static/js/2.ea1019b7.chunk.js.map": "/ielts-simulator/static/js/2.ea1019b7.chunk.js.map",
     "index.html": "/ielts-simulator/index.html",
-    "static/css/main.a81f63a5.chunk.css.map": "/ielts-simulator/static/css/main.a81f63a5.chunk.css.map",
-    "static/js/2.acbc05a7.chunk.js.LICENSE.txt": "/ielts-simulator/static/js/2.acbc05a7.chunk.js.LICENSE.txt",
+    "static/css/main.ed1f6de7.chunk.css.map": "/ielts-simulator/static/css/main.ed1f6de7.chunk.css.map",
+    "static/js/2.ea1019b7.chunk.js.LICENSE.txt": "/ielts-simulator/static/js/2.ea1019b7.chunk.js.LICENSE.txt",
     "static/media/logo.d8d9d6c3.jpg": "/ielts-simulator/static/media/logo.d8d9d6c3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.a9e98209.js",
-    "static/js/2.acbc05a7.chunk.js",
-    "static/css/main.a81f63a5.chunk.css",
-    "static/js/main.41891864.chunk.js"
+    "static/js/2.ea1019b7.chunk.js",
+    "static/css/main.ed1f6de7.chunk.css",
+    "static/js/main.54a6a164.chunk.js"
   ]
 }
