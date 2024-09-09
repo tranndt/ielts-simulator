@@ -50,6 +50,11 @@
     color: #721c24;
   }
 
+  .correct-unselected-answer {
+    background-color: #fff9a0; /* Light yellow */
+    color: #856404;
+  }
+
   #show-answers-btn {
     display: flex;
     margin-left: auto;
@@ -61,8 +66,19 @@
   /* Align text right */
   #correct-answers-count {
     display: flex;
-    margin-top: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     justify-content: center;
+    font-size: larger;
+    font-weight: bold;
+    color: green;
+  }
 
-
+  .task-score {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: bold;
+    color: red;
   }

@@ -1,40 +1,39 @@
 import React, { useState, useEffect } from 'react';
 import './QuestionStyles.css';
 
-function MultipleChoiceQuestionItem({ id, questionItem, onItemGrading, submitted, clearAnswers }) {
-    const [selectedAnswer, setSelectedAnswer] = useState(null);
-
-    useEffect(() => {
-        if (clearAnswers) {
-          setSelectedAnswer(null); // Reset the selected answer when "Clear Answers" is clicked
-        }
-      }, [clearAnswers]);
+function MultipleChoiceQuestionItem({ id, questionItem, onItemGrading, showAnswers }) {
+  const [userAnswer, setUserAnswer] = useState(null);
 
   const handleChange = (event) => {
-    const userAnswer = event.target.value;
-    setSelectedAnswer(userAnswer);
+    setUserAnswer(event.target.value);
+    const isCorrect = userAnswer === questionItem.correctAnswer[0];
+    // onItemGrading(isCorrect);
+  };
 
-    // Grade the answer (compare user's answer with the correct answer)
-    const isCorrect = userAnswer[0] === questionItem.correctAnswer[0];
-    console.log(`Question ${questionItem.questionNumber}: Selected answer is ${isCorrect ? 'correct' : 'incorrect'}`);
-    
-    // Pass the result to the parent
-    onItemGrading(isCorrect);
-    };
+  useEffect(() => {
+    if (showAnswers && userAnswer !== null) {
+      const isCorrect = userAnswer === questionItem.correctAnswer[0];
+      onItemGrading(isCorrect);
+    }
+  }, [showAnswers, userAnswer]);
+
   return (
     <div className="multiple-choice-question question-item">
       <div className="question-text">{questionItem.questionNumber}. {questionItem.questionText}</div>
       {questionItem.questionOptions.map((option, index) => {
         const isCorrectAnswer = option[0] === questionItem.correctAnswer[0];
-        const isSelected = option[0] === selectedAnswer;
-        const isIncorrectAnswer = isSelected && option[0] !== questionItem.correctAnswer[0];
+        const isSelected = option[0] === userAnswer;
+        const isIncorrectAnswer = isSelected && !isCorrectAnswer;
+        const isCorrectButUnselected = !isSelected && isCorrectAnswer;
 
         let optionClass = "";
-        if (submitted) {
-          if (isCorrectAnswer) {
-            optionClass = "correct-answer"; // Will apply green styling
-          } else if (isIncorrectAnswer) {
-            optionClass = "incorrect-answer"; // Will apply red styling
+        if (showAnswers) {
+          if (isIncorrectAnswer) {
+            optionClass = "incorrect-answer"; // red
+          } else if (isSelected && isCorrectAnswer) {
+            optionClass = "correct-answer"; // green
+          } else if (isCorrectButUnselected) {
+            optionClass = "correct-unselected-answer"; // yellow
           }
         }
 
@@ -46,7 +45,7 @@ function MultipleChoiceQuestionItem({ id, questionItem, onItemGrading, submitted
               name={`mcq-${questionItem.questionNumber}`} 
               value={option[0]} 
               onChange={handleChange} 
-              disabled={submitted} 
+              disabled={showAnswers} 
             />
             <label htmlFor={`option-${questionItem.questionNumber}-${index}`}>
               {option[0]}. {option[1]}

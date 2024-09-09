@@ -1,23 +1,35 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import MultipleChoiceQuestionTask from "../Question/MultipleChoiceQuestionTask";
 import TableCompletionQuestionTask from "../Question/TableCompletionQuestionTask";
 import MatchingHeadingsQuestionTask from "../Question/MatchingHeadingsQuestionTask";
 import '../Question/QuestionStyles.css';
 
 function QuestionFrame({ questionsList }) {
+  const [totalQuestions, setTotalQuestions] = useState(0); // Collect total number of questions at the start
   const [totalCorrect, setTotalCorrect] = useState(0);
-  const [submitted, setSubmitted] = useState(false);
+  const [showAnswers, setShowAnswers] = useState(false);
 
-  const handleTaskGrading = (correctCount) => {
-    setTotalCorrect(prevCorrect => prevCorrect + correctCount);
+  useEffect(() => {
+    // Calculate the total number of questions across all tasks when the component mounts
+    const total = questionsList.reduce((acc, questionTask) => {
+      return acc + questionTask.questions.length;
+    }, 0);
+    setTotalQuestions(total);
+    // Reset grading and answers visibility
+    setTotalCorrect(0);
+    setShowAnswers(false);
+  }, [questionsList]); // Only run when questionsList changes
+
+  const handleTaskGrading = (isCorrect) => {
+    // Update the total correct answers when a question task returns a correct answer
+    setTotalCorrect((prevCorrect) => prevCorrect + (isCorrect ? 1 : 0));
   };
 
   const toggleShowAnswers = () => {
-    if (submitted) {
-      // Reset correct answer count when hiding answers
-      setTotalCorrect(0);
+    setShowAnswers((prevShowAnswers) => !prevShowAnswers);
+    if (!showAnswers) {
+      setTotalCorrect(0);  // Reset correct answers when hiding answers
     }
-    setSubmitted(prevSubmitted => !prevSubmitted); // Toggle show/hide answers
   };
 
   return (
@@ -26,27 +38,50 @@ function QuestionFrame({ questionsList }) {
         switch (questionTask.questionType) {
           case "multiple_choice":
             return (
-              <MultipleChoiceQuestionTask 
-                key={index} 
-                id={index} 
-                questionTask={questionTask} 
+              <MultipleChoiceQuestionTask
+                key={index}
+                id={index}
+                questionTask={questionTask}
                 onTaskGrading={handleTaskGrading}
-                submitted={submitted}
+                showAnswers={showAnswers}
               />
             );
-          // Add other question types here as needed
+          case "matching_headings":
+            return (
+              <MatchingHeadingsQuestionTask
+                key={index}
+                id={index}
+                questionTask={questionTask}
+                onTaskGrading={handleTaskGrading}
+                showAnswers={showAnswers}
+              />
+            );
+          case "table_completion":
+            return (
+              <TableCompletionQuestionTask
+                key={index}
+                id={index}
+                questionTask={questionTask}
+                onTaskGrading={handleTaskGrading}
+                showAnswers={showAnswers}
+              />
+            );
           default:
             return null;
         }
       })}
+
       <button id="show-answers-btn" onClick={toggleShowAnswers}>
-        {submitted ? 'Hide Answers' : 'Show Answers'}
+        {showAnswers ? "Hide Answers" : "Show Answers"}
       </button>
-      {submitted && <div id="correct-answers-count">Correct answers: {totalCorrect}</div>}
+
+      {showAnswers && (
+        <div id="correct-answers-count">
+          Total Score: {totalCorrect} / {totalQuestions}
+        </div>
+      )}
     </div>
   );
 }
 
 export default QuestionFrame;
-
-

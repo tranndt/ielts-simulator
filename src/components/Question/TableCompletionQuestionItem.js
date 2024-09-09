@@ -1,16 +1,42 @@
 import './QuestionStyles.css';
 
-function TableCompletionQuestionItem({ questionNumber, correctAnswer }) {
-    console.log(questionNumber, correctAnswer);
+import React from 'react';
 
-    return (
-        <div className="table-completion-question question-item">
-            <div>
-                <span>{questionNumber}.</span>
-                <input type="text" id={`option-${questionNumber}`} name={`mcq-${questionNumber}`} />
-            </div>
+function TableCompletionQuestionItem({ questionItem, onAnswerChange, submitted }) {
+  const handleChange = (event) => {
+    onAnswerChange(questionItem.questionNumber, event.target.value);
+  };
+
+  return (
+    <div className="table-completion-question question-item" style={{ display: 'flex', alignItems: 'center' }}>
+      {/* Input Box */}
+      <div style={{ flex: 1 }}>
+        <input
+          type="text"
+          id={`option-${questionItem.questionNumber}`}
+          name={`table-${questionItem.questionNumber}`}
+          onChange={handleChange}
+          disabled={submitted}
+        />
+      </div>
+
+      {/* Correct Answer Div (hidden until submitted)n  */}
+      {submitted && (
+        <div
+          className="correct-answer"
+          style={{
+            marginLeft: '10px',
+            padding: '5px',
+            backgroundColor: '#d4edda',
+            borderRadius: '4px',
+            display: submitted ? 'block' : 'none'
+          }}
+        >
+          {questionItem.correctAnswer}
         </div>
-    );
+      )}
+    </div>
+  );
 }
 
 export default TableCompletionQuestionItem;

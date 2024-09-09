@@ -115,6 +115,116 @@
           ]
         }
       ]
+    },
+    {
+      "questionType": "multiple_choice",
+      "taskDescription": "Questions 1 \u2013 4\nChoose the correct letter, A, B, C or D.\nWrite the correct letter in boxes 1-4 on your answer sheet.\n",
+      "questions": [
+        {
+          "questionNumber": 5,
+          "questionText": "In paragraph one, the writer suggests that companies could consider",
+          "questionOptions": [
+            [
+              "A",
+              "abolishing pay schemes that are based on age."
+            ],
+            [
+              "B",
+              "avoiding pay that is based on piece-rates."
+            ],
+            [
+              "C",
+              "increasing pay for older workers."
+            ],
+            [
+              "D",
+              "equipping older workers with new skills."
+            ]
+          ],
+          "correctAnswer": [
+            "A",
+            "abolishing pay schemes that are based on age"
+          ]
+        },
+        {
+          "questionNumber": 6,
+          "questionText": "Skill Team is an example of a company which",
+          "questionOptions": [
+            [
+              "A",
+              "offers older workers increases in salary."
+            ],
+            [
+              "B",
+              "allows people to continue working for as long as they want."
+            ],
+            [
+              "C",
+              "allows the expertise of older workers to be put to use."
+            ],
+            [
+              "D",
+              "treats older and younger workers equally."
+            ]
+          ],
+          "correctAnswer": [
+            "C",
+            "allows the expertise of older workers to be put to use"
+          ]
+        },
+        {
+          "questionNumber": 7,
+          "questionText": "According to the writer, \u2018bridge\u2019 jobs",
+          "questionOptions": [
+            [
+              "A",
+              "tend to attract people in middle-salary ranges."
+            ],
+            [
+              "B",
+              "are better paid than some full-time jobs."
+            ],
+            [
+              "C",
+              "originated in the United States."
+            ],
+            [
+              "D",
+              "appeal to distinct groups of older workers."
+            ]
+          ],
+          "correctAnswer": [
+            "D",
+            "appeal to distinct groups of older workers"
+          ]
+        },
+        {
+          "questionNumber": 8,
+          "questionText": "David Storey\u2019s study found that",
+          "questionOptions": [
+            [
+              "A",
+              "people demand more from their work as they get older."
+            ],
+            [
+              "B",
+              "older people are good at running their own businesses."
+            ],
+            [
+              "C",
+              "an increasing number of old people are self-employed."
+            ],
+            [
+              "D",
+              "few young people have their own businesses."
+            ]
+          ],
+          "correctAnswer": [
+            "B",
+            "older people are good at running their own businesses"
+          ]
+        }
+      ]
     }
   ]
 }
