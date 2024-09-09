@@ -32,6 +32,7 @@ body {
   font-size: 1.25em;
   background-color: #fff9a0;
   padding: .5em;
+  border: 1px solid #ccc;
 }
 
 .section-info-frame {
@@ -55,6 +56,26 @@ body {
   /* padding-bottom: 5em; */
 }
 
+.context-menu {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.context-menu button {
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  background: none;
+  text-align: left;
+}
+
+.context-menu button:hover {
+  background: #f0f0f0;
+}
 .question-frame {
   grid-row: 2; /* Place in the second row */
   grid-column: 2; /* Place in the second column */
