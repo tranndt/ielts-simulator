@@ -1,6 +1,12 @@
+/* Make content scrollable */
+
+
 .reading-practices-page {
-  margin-left: 10em;
-  margin-right: 10em;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-bottom: 10em;
+  overflow-y: auto;
+  height: 120vh;
 }
 
 .jumbotron {

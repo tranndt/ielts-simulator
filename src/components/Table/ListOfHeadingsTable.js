@@ -7,7 +7,7 @@ const ListOfHeadingsTable = ({ tableTitle, tableData }) => {
       <thead>
         <tr>
           <th colSpan={tableData[0].length} style={{ textAlign: 'center' }}>
-            {tableTitle ? tableTitle : "List of Headings"}
+            {tableTitle}
           </th>
         </tr>
       </thead>

@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import SummaryCompletionQuestionItem from "./SummaryCompletionQuestionItem";
+import SummaryCompletionWordListQuestionItem from "./SummaryCompletionWordListQuestionItem";
 import DataTable from "../Table/DataTable";
 import QuestionTaskDescription from "./QuestionTaskDescription";
+import ListOfHeadingsTable from "../Table/ListOfHeadingsTable";
 import './QuestionStyles.css';
 
-function SummaryCompletionQuestionTask({ id, questionTask, onTaskGrading, showAnswers }) {
+function SummaryCompletionWordListQuestionTask({ id, questionTask, onTaskGrading, showAnswers }) {
   const [correctAnswers, setCorrectAnswers] = useState(0);
 
   const handleItemGrading = (isCorrect) => {
@@ -20,15 +21,16 @@ function SummaryCompletionQuestionTask({ id, questionTask, onTaskGrading, showAn
   }, [showAnswers]);
 
   return (
-    <div className="summary-completion-question-task">
+    <div className="summmary-completion-word-list-question-task">
       <QuestionTaskDescription taskDescription={questionTask.taskDescription} />
       <h3 style={{textAlign:'center'}}>{questionTask.questionTitle}</h3>
       {questionTask.questionContent.map((content, index) => (
         <p>{content}</p>
       ))}
+      <ListOfHeadingsTable tableTitle = {questionTask.tableTitle} tableData={questionTask.tableData} />
       <div class='your-answers-text'>Your Answers:</div>
       {questionTask.questions.map((questionItem, index) => (
-        <SummaryCompletionQuestionItem
+        <SummaryCompletionWordListQuestionItem
           key={index}
           id={index}
           questionItem={questionItem}
@@ -45,4 +47,4 @@ function SummaryCompletionQuestionTask({ id, questionTask, onTaskGrading, showAn
   );
 }
 
-export default SummaryCompletionQuestionTask;
+export default SummaryCompletionWordListQuestionTask;

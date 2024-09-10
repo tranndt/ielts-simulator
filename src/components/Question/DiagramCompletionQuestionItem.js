@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import './QuestionStyles.css';
 
-function SummaryCompletionQuestionItem({ questionItem, onItemGrading, showAnswers }) {
+function DiagramCompletionQuestionItem({ questionItem, onItemGrading, showAnswers }) {
   const [userAnswer, setUserAnswer] = useState(null);
 
   const handleChange = (event) => {
@@ -16,7 +16,7 @@ function SummaryCompletionQuestionItem({ questionItem, onItemGrading, showAnswer
   }, [showAnswers, userAnswer]);
 
   return (
-    <div className="summary-completion-question-item question-item">
+    <div className="diagram-completion-question-item question-item">
       <table>
         <tbody>
           <tr>
@@ -46,4 +46,4 @@ function SummaryCompletionQuestionItem({ questionItem, onItemGrading, showAnswer
   );
 }
 
-export default SummaryCompletionQuestionItem;
+export default DiagramCompletionQuestionItem;

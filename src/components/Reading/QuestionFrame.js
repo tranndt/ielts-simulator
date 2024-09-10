@@ -4,6 +4,9 @@ import TableCompletionQuestionTask from "../Question/TableCompletionQuestionTask
 import NoteCompletionQuestionTask from "../Question/NoteCompletionQuestionTask";
 import SentenceCompletionQuestionTask from "../Question/SentenceCompletionQuestionTask";
 import SummaryCompletionQuestionTask from "../Question/SummaryCompletionQuestionTask";
+import SummaryCompletionWordListQuestionTask from "../Question/SummaryCompletionWordListQuestionTask";
+import DiagramCompletionQuestionTask from "../Question/DiagramCompletionQuestionTask";
+import FlowChartCompletionQuestionTask from "../Question/FlowChartCompletionQuestionTask";
 import MatchingHeadingsQuestionTask from "../Question/MatchingHeadingsQuestionTask";
 import MatchingFeaturesQuestionTask from "../Question/MatchingFeaturesQuestionTask";
 import MatchingSentenceEndingsQuestionTask from "../Question/MatchingSentenceEndingsQuestionTask";
@@ -114,6 +117,36 @@ function QuestionFrame({ questionsList }) {
           case "summary_completion":
             return (
               <SummaryCompletionQuestionTask
+                key={index}
+                id={index}
+                questionTask={questionTask}
+                onTaskGrading={handleTaskGrading}
+                showAnswers={showAnswers}
+              />
+            );
+            case "summary_completion_word_list":
+            return (
+              <SummaryCompletionWordListQuestionTask
+                key={index}
+                id={index}
+                questionTask={questionTask}
+                onTaskGrading={handleTaskGrading}
+                showAnswers={showAnswers}
+              />
+            );
+            case "diagram_completion":
+            return (
+              <DiagramCompletionQuestionTask
+                key={index}
+                id={index}
+                questionTask={questionTask}
+                onTaskGrading={handleTaskGrading}
+                showAnswers={showAnswers}
+              />
+            );
+            case "flow_chart_completion":
+            return (
+              <FlowChartCompletionQuestionTask
                 key={index}
                 id={index}
                 questionTask={questionTask}

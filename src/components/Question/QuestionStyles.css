@@ -107,7 +107,10 @@
 .table-completion-question-task .your-answers-text,
 .note-completion-question-task .your-answers-text,
 .sentence-completion-question-task .your-answers-text,
-.summary-completion-question-task .your-answers-text {
+.summary-completion-question-task .your-answers-text,
+.summary-completion-word-list-question-task .your-answers-text,
+.flow-chart-completion-question-task .your-answers-text,
+.diagram-completion-question-task .your-answers-text {
     font-weight: bold;
     margin: 2em 0em 1em 0em;
 }
@@ -115,7 +118,10 @@
   .table-completion-question-item,
   .note-completion-question-item,
   .sentence-completion-question-item,
-  .summary-completion-question-item {
+  .summary-completion-question-item,
+  .summary-completion-word-list-question-item,
+  .flow-chart-completion-question-item,
+  .diagram-completion-question-item {
     display: flex;
     flex-direction: row;
     margin-bottom: .5em;
@@ -125,7 +131,10 @@
   .table-completion-question-item input,
   .note-completion-question-item input,
   .sentence-completion-question-item input,
-  .summary-completion-question-item input {
+  .summary-completion-question-item input,
+  .summary-completion-word-list-question-item input,
+  .flow-chart-completion-question-item input,
+  .diagram-completion-question-item input {
     padding: .35em;
     width: 15em;
     margin: 0em 1em 0em 0em;
@@ -138,6 +147,9 @@
   .note-completion-question-item .correct-answer,
   .sentence-completion-question-item .correct-answer,
   .summary-completion-question-item .correct-answer,
+  .summary-completion-word-list-question-item .correct-answer,
+  .flow-chart-completion-question-item .correct-answer,
+  .diagram-completion-question-item .correct-answer,
   .matching-headings-question-item .correct-answer,
   .matching-sentence-endings-question-item .correct-answer {
     padding: .20em;
@@ -151,6 +163,9 @@
   .note-completion-question-item .correct-answer-non-matching,
   .sentence-completion-question-item .correct-answer-non-matching,
   .summary-completion-question-item .correct-answer-non-matching,
+  .summary-completion-word-list-question-item .correct-answer-non-matching,
+  .flow-chart-completion-question-item .correct-answer-non-matching,
+  .diagram-completion-question-item .correct-answer-non-matching,
   .matching-headings-question-item .correct-answer-non-matching,
   .matching-sentence-endings-question-item .correct-answer-non-matching {
     padding: .20em;
@@ -163,5 +178,12 @@
   .fixed-width {
     display: inline-block;
     width: 1.5em; /* Adjust the width as needed */
+  }
+
+  .flow-chart-completion-question-task .question-img,
+  .diagram-completion-question-task .question-img{
+    display: flex;
+    margin: 0 auto 0 auto;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
   }
 

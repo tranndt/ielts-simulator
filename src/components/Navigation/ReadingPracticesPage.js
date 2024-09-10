@@ -44,6 +44,21 @@ const ReadingPracticesPage = () => (
           <td>10 minutes</td>
         </tr>
         <tr>
+          <td><Link to="/ielts-simulator/reading-practices/summary-completion-word-list">Summary Completion (Word List)</Link></td>
+          <td>Fill in the blanks in a summary based on a list of words.</td>
+          <td>10 minutes</td>
+        </tr>
+        <tr>
+          <td><Link to="/ielts-simulator/reading-practices/diagram-completion">Diagram Completion</Link></td>
+          <td>Fill in the blanks in a diagram based on the passage.</td>
+          <td>10 minutes</td>
+        </tr>
+        <tr>
+          <td><Link to="/ielts-simulator/reading-practices/flow-chart-completion">Flow Chart Completion</Link></td>
+          <td>Fill in the blanks in a flow chart based on the passage.</td>
+          <td>10 minutes</td>
+        </tr>
+        <tr>
           <td><Link to="/ielts-simulator/reading-practices/matching-headings">Matching Headings</Link></td>
           <td>Match headings to the correct paragraphs in the passage.</td>
           <td>10 minutes</td>

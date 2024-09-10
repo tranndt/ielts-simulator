@@ -9,9 +9,12 @@ import passageTableCompletion from './components/assets/json/table_completion.js
 import passageNoteCompletion from './components/assets/json/note_completion.json';
 import passageSentenceCompletion from './components/assets/json/sentence_completion.json';
 import passageSummaryCompletion from './components/assets/json/summary_completion.json';
+import passageSummaryCompletionWordList from './components/assets/json/summary_completion_word_list.json';
 import passageMatchingHeadings from './components/assets/json/matching_headings.json';
 import passageMatchingFeatures from './components/assets/json/matching_features.json';
 import passageMatchingSentenceEndings from './components/assets/json/matching_sentence_endings.json';
+import passageDiagramCompletion from './components/assets/json/diagram_completion.json';
+import passageFlowChartCompletion from './components/assets/json/flow_chart_completion.json';
 
 import ReadingPracticesPage from './components/Navigation/ReadingPracticesPage';
 import ReadingTestsPage from './components/Navigation/ReadingTestsPage';
@@ -32,6 +35,9 @@ function App() {
         <Route path="/ielts-simulator/reading-practices/note-completion" element={<ReadingSectionFrame passage={passageNoteCompletion}/>} /> 
         <Route path="/ielts-simulator/reading-practices/sentence-completion" element={<ReadingSectionFrame passage={passageSentenceCompletion}/>} />
         <Route path="/ielts-simulator/reading-practices/summary-completion" element={<ReadingSectionFrame passage={passageSummaryCompletion}/>} />
+        <Route path="/ielts-simulator/reading-practices/summary-completion-word-list" element={<ReadingSectionFrame passage={passageSummaryCompletionWordList}/>} />
+        <Route path="/ielts-simulator/reading-practices/diagram-completion" element={<ReadingSectionFrame passage={passageDiagramCompletion}/>} />
+        <Route path="/ielts-simulator/reading-practices/flow-chart-completion" element={<ReadingSectionFrame passage={passageFlowChartCompletion}/>} />
         <Route path="/ielts-simulator/reading-practices/matching-headings" element={<ReadingSectionFrame passage={passageMatchingHeadings}/>} />
         <Route path="/ielts-simulator/reading-practices/matching-features" element={<ReadingSectionFrame passage={passageMatchingFeatures}/>} />
         <Route path="/ielts-simulator/reading-practices/matching-sentence-endings" element={<ReadingSectionFrame passage={passageMatchingSentenceEndings}/>} />
