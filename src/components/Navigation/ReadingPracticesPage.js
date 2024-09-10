@@ -73,6 +73,21 @@ const ReadingPracticesPage = () => (
           <td>Match the correct ending to sentences based on information in the passage.</td>
           <td>10 minutes</td>
         </tr>
+        <tr>
+          <td><Link to="/ielts-simulator/reading-practices/true-false-not-given">True/False/Not Given</Link></td>
+          <td>Determine if statements are true, false, or not given based on the passage.</td>
+          <td>10 minutes</td>
+        </tr>
+        <tr>
+          <td><Link to="/ielts-simulator/reading-practices/yes-no-not-given">Yes/No/Not Given</Link></td>
+          <td>Determine if statements are yes, no, or not given based on the passage.</td>
+          <td>10 minutes</td>
+        </tr>
+        <tr>
+          <td><Link to="/ielts-simulator/reading-practices/multiple-choice-select-many">Multiple Choice (Select Many)</Link></td>
+          <td>Select all correct answers from a list of options.</td>
+          <td>10 minutes</td>
+        </tr>
       </tbody>
     </table>
   </div>

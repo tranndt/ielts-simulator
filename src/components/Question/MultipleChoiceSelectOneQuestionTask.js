@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import MultipleChoiceQuestionItem from "./MultipleChoiceQuestionItem";
+import MultipleChoiceSelectOneQuestionItem from "./MultipleChoiceSelectOneQuestionItem";
 import QuestionTaskDescription from "./QuestionTaskDescription";
 import './QuestionStyles.css';
 
-function MultipleChoiceQuestionTask({ id, questionTask, onTaskGrading, showAnswers }) {
+function MultipleChoiceSelectOneQuestionTask({ id, questionTask, onTaskGrading, showAnswers }) {
   const [correctAnswers, setCorrectAnswers] = useState(0);
 
   const handleItemGrading = (isCorrect) => {
@@ -22,7 +22,7 @@ function MultipleChoiceQuestionTask({ id, questionTask, onTaskGrading, showAnswe
     <div className="multiple-choice-question-task">
       <QuestionTaskDescription taskDescription={questionTask.taskDescription} />
       {questionTask.questions.map((questionItem, index) => (
-        <MultipleChoiceQuestionItem
+        <MultipleChoiceSelectOneQuestionItem
           key={index}
           id={index}
           questionItem={questionItem}
@@ -39,4 +39,4 @@ function MultipleChoiceQuestionTask({ id, questionTask, onTaskGrading, showAnswe
   );
 }
 
-export default MultipleChoiceQuestionTask;
+export default MultipleChoiceSelectOneQuestionTask;

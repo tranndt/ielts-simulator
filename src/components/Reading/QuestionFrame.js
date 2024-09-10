@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import MultipleChoiceQuestionTask from "../Question/MultipleChoiceQuestionTask";
+import MultipleChoiceSelectOneQuestionTask from "../Question/MultipleChoiceSelectOneQuestionTask";
+import MultipleChoiceSelectManyQuestionTask from "../Question/MultipleChoiceSelectManyQuestionTask";
 import TableCompletionQuestionTask from "../Question/TableCompletionQuestionTask";
 import NoteCompletionQuestionTask from "../Question/NoteCompletionQuestionTask";
 import SentenceCompletionQuestionTask from "../Question/SentenceCompletionQuestionTask";
@@ -10,6 +11,8 @@ import FlowChartCompletionQuestionTask from "../Question/FlowChartCompletionQues
 import MatchingHeadingsQuestionTask from "../Question/MatchingHeadingsQuestionTask";
 import MatchingFeaturesQuestionTask from "../Question/MatchingFeaturesQuestionTask";
 import MatchingSentenceEndingsQuestionTask from "../Question/MatchingSentenceEndingsQuestionTask";
+import TrueFalseNotGivenQuestionTask from "../Question/TrueFalseNotGivenQuestionTask";
+import YesNoNotGivenQuestionTask from "../Question/YesNoNotGivenQuestionTask";
 import '../Question/QuestionStyles.css';
 
 function QuestionFrame({ questionsList }) {
@@ -20,6 +23,10 @@ function QuestionFrame({ questionsList }) {
   useEffect(() => {
     // Calculate the total number of questions across all tasks when the component mounts
     const total = questionsList.reduce((acc, questionTask) => {
+      // Add the number of questions in each task to the accumulator
+      if (questionTask.questionType === "multiple_choice_select_many") {
+        return acc + questionTask.correctAnswers.length;
+      }
       return acc + questionTask.questions.length;
     }, 0);
     setTotalQuestions(total);
@@ -40,13 +47,28 @@ function QuestionFrame({ questionsList }) {
     }
   };
 
+  // const questionTaskComponents = {
+  //   'multiple_choice_select_one': MultipleChoiceQuestionTask,
+  //   'table_completion': TableCompletionQuestionTask,
+  //   'note_completion': NoteCompletionQuestionTask,
+  //   'sentence_completion': SentenceCompletionQuestionTask,
+  //   'summary_completion': SummaryCompletionQuestionTask,
+  //   'summary_completion_word_list': SummaryCompletionWordListQuestionTask,
+  //   'diagram_completion': DiagramCompletionQuestionTask,
+  //   'flow_chart_completion': FlowChartCompletionQuestionTask,
+  //   'matching_headings': MatchingHeadingsQuestionTask,
+  //   'matching_features': MatchingFeaturesQuestionTask,
+  //   'matching_sentence_endings': MatchingSentenceEndingsQuestionTask,
+  // };
+  
+
   return (
     <div className="question-frame">
       {questionsList.map((questionTask, index) => {
         switch (questionTask.questionType) {
           case "multiple_choice_select_one":
             return (
-              <MultipleChoiceQuestionTask
+              <MultipleChoiceSelectOneQuestionTask
                 key={index}
                 id={index}
                 questionTask={questionTask}
@@ -147,6 +169,36 @@ function QuestionFrame({ questionsList }) {
             case "flow_chart_completion":
             return (
               <FlowChartCompletionQuestionTask
+                key={index}
+                id={index}
+                questionTask={questionTask}
+                onTaskGrading={handleTaskGrading}
+                showAnswers={showAnswers}
+              />
+            );
+            case "true_false_notgiven":
+            return (
+              <TrueFalseNotGivenQuestionTask
+                key={index}
+                id={index}
+                questionTask={questionTask}
+                onTaskGrading={handleTaskGrading}
+                showAnswers={showAnswers}
+              />
+            );
+            case "yes_no_notgiven":
+            return (
+              <YesNoNotGivenQuestionTask
+                key={index}
+                id={index}
+                questionTask={questionTask}
+                onTaskGrading={handleTaskGrading}
+                showAnswers={showAnswers}
+              />
+            );
+            case "multiple_choice_select_many":
+            return (
+              <MultipleChoiceSelectManyQuestionTask
                 key={index}
                 id={index}
                 questionTask={questionTask}

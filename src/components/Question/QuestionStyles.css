@@ -151,7 +151,9 @@
   .flow-chart-completion-question-item .correct-answer,
   .diagram-completion-question-item .correct-answer,
   .matching-headings-question-item .correct-answer,
-  .matching-sentence-endings-question-item .correct-answer {
+  .matching-sentence-endings-question-item .correct-answer,
+  .true-false-notgiven-question-item td.correct-answer,
+  .yes-no-notgiven-question-item td.correct-answer{
     padding: .20em;
     margin: 0em 1em 0em 1em;
     background-color: #d4eddb;
@@ -167,7 +169,9 @@
   .flow-chart-completion-question-item .correct-answer-non-matching,
   .diagram-completion-question-item .correct-answer-non-matching,
   .matching-headings-question-item .correct-answer-non-matching,
-  .matching-sentence-endings-question-item .correct-answer-non-matching {
+  .matching-sentence-endings-question-item .correct-answer-non-matching,
+  .true-false-notgiven-question-item td.incorrect-answer,
+  .yes-no-notgiven-question-item td.incorrect-answer{
     padding: .20em;
     margin: 0em 1em 0em 1em;
     background-color: #edd4d4;

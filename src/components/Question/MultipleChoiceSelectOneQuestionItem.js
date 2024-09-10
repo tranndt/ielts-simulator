@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './QuestionStyles.css';
 
-function MultipleChoiceQuestionItem({ id, questionItem, onItemGrading, showAnswers }) {
+function MultipleChoiceSelectOneQuestionItem({ id, questionItem, onItemGrading, showAnswers }) {
   const [userAnswer, setUserAnswer] = useState(null);
 
   const handleChange = (event) => {
@@ -57,4 +57,4 @@ function MultipleChoiceQuestionItem({ id, questionItem, onItemGrading, showAnswe
   );
 }
 
-export default MultipleChoiceQuestionItem;
+export default MultipleChoiceSelectOneQuestionItem;

@@ -5,6 +5,7 @@ import About from './components/About/About';
 import Header from './components/Navigation/Header';
 import ReadingSectionFrame from './components/Reading/ReadingSectionFrame';
 import passageMultipleChoiceSelectOne from './components/assets/json/multiple_choice_select_one.json';
+import passageMultipleChoiceSelectMany from './components/assets/json/multiple_choice_select_many.json';
 import passageTableCompletion from './components/assets/json/table_completion.json';
 import passageNoteCompletion from './components/assets/json/note_completion.json';
 import passageSentenceCompletion from './components/assets/json/sentence_completion.json';
@@ -15,6 +16,8 @@ import passageMatchingFeatures from './components/assets/json/matching_features.
 import passageMatchingSentenceEndings from './components/assets/json/matching_sentence_endings.json';
 import passageDiagramCompletion from './components/assets/json/diagram_completion.json';
 import passageFlowChartCompletion from './components/assets/json/flow_chart_completion.json';
+import passageTrueFalseNotGiven from './components/assets/json/true_false_notgiven.json';
+// import passageYesNoNotGiven from './components/assets/json/yes_no_not_given.json';
 
 import ReadingPracticesPage from './components/Navigation/ReadingPracticesPage';
 import ReadingTestsPage from './components/Navigation/ReadingTestsPage';
@@ -41,6 +44,10 @@ function App() {
         <Route path="/ielts-simulator/reading-practices/matching-headings" element={<ReadingSectionFrame passage={passageMatchingHeadings}/>} />
         <Route path="/ielts-simulator/reading-practices/matching-features" element={<ReadingSectionFrame passage={passageMatchingFeatures}/>} />
         <Route path="/ielts-simulator/reading-practices/matching-sentence-endings" element={<ReadingSectionFrame passage={passageMatchingSentenceEndings}/>} />
+        <Route path="/ielts-simulator/reading-practices/true-false-not-given" element={<ReadingSectionFrame passage={passageTrueFalseNotGiven}/>} />
+        {/* <Route path="/ielts-simulator/reading-practices/yes-no-not-given" element={<ReadingSectionFrame passage={passageYesNoNotGiven}/>} /> */}
+        <Route path="/ielts-simulator/reading-practices/multiple-choice-select-many" element={<ReadingSectionFrame passage={passageMultipleChoiceSelectMany}/>} />
+        
       </Routes>
     </div>
   );
