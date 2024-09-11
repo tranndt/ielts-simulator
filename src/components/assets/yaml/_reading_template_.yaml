@@ -1,0 +1,47 @@
+reading:
+  reading_title: |
+  
+
+  reading_subtitle: |
+
+
+passage:
+  passage_context: |
+
+
+  passage_title: |
+
+
+  passage_subtitle: |
+
+
+  passage_main_text: |
+
+
+question:
+  # 
+  - task_type: |
+
+
+    task_description: |
+
+
+    question_main_title: |
+
+
+    question_main_text: | 
+
+
+    question_img_path: |    # flowcharts, diagrams
+
+
+    question_list_title: |    # matching tasks
+
+
+    question_list_of_options: |     # matching tasks, multiple choice select many
+
+
+    example_answer: |     # matching headings
+
+
+    correct_answer: |
