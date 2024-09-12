@@ -41,8 +41,10 @@ question:
   - task_type: |
       multiple_choice_select_one
 
-    task_description: |
+    task_question_number: |
       Questions 27-30
+
+    task_description: |
       Choose the correct letter, A, B, C or D.
 
       Write the correct letter in boxes 27-30 on your answer sheet
@@ -122,8 +124,10 @@ question:
   - task_type: |
       summary_completion_word_list
 
-    task_description: |
+    task_question_number: |
       Questions 31-33
+
+    task_description: |
       Complete the summary using the list of words, A-H, below.
 
       Write the correct letters, A-H, in boxes 31-33 on your answer sheet.
@@ -172,8 +176,10 @@ question:
   - task_type: |
       yes_no_notgiven
 
-    task_description: |
+    task_question_number: |
       Questions 34-39
+
+    task_description: |
       Do the following statements agree with the views of the writer in Reading Passage 3?
 
       In boxes 34-39 on your answer sheet, write
@@ -228,8 +234,10 @@ question:
   - task_type: |
       multiple_choice_select_one
 
-    task_description: |
+    task_question_number: |
       Question 40
+
+    task_description: |
       Choose the correct letter, A, B, C or D.
 
       Write the correct letter in box 40 on your answer sheet.

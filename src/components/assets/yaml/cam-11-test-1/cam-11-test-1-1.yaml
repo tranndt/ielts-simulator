@@ -40,8 +40,11 @@ question:
   - task_type: |
       sentence_completion
 
-    task_description: |
+    task_question_number: |
       Questions 1-7
+
+
+    task_description: |
       Complete the sentences below.
 
       Choose NO MORE THAN TWO WORDS from the passage for each answer.
@@ -97,8 +100,11 @@ question:
   - task_type: |
       true_false_notgiven
 
-    task_description: |
+    task_question_number: |
       Questions 8-13
+
+
+    task_description: |
       Do the following statements agree with the information given in Reading Passage?
 
       In boxes 8-13 on your answer sheet, write

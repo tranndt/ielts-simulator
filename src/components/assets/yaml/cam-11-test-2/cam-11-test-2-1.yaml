@@ -29,12 +29,15 @@ passage:
     An important factor in trying to salvage the Mary Rose was that the remaining hull was an open shell. This led to an important decision being taken: namely to carry out the lifting operation in three very distinct stages. The hull was attached to a lifting frame via a network of bolts and lifting wires. The problem of the hull being sucked back downwards into the mud was overcome by using 12 hydraulic jacks. These raised it a few centimetres over a period of several days, as the lifting frame rose slowly up its four legs. It was only when the hull was hanging freely from the lifting frame, clear of the seabed and the suction effect of the surrounding mud, that the salvage operation progressed to the second stage. In this stage, the lifting frame was fixed to a hook attached to a crane, and the hull was lifted completely clear of the seabed and transferred underwater into the lifting cradle. This required precise positioning to locate the legs into the stabbing guides’ of the lifting cradle. The lifting cradle was designed to fit the hull using archaeological survey drawings, and was fitted with air bags to provide additional cushioning for the hull’s delicate timber framework. The third and final stage was to lift the entire structure into the air, by which time the hull was also supported from below. Finally, on 11 October 1982, millions of people around the world held their breath as the timber skeleton of the Mary Rose was lifted clear of the water, ready to be returned home to Portsmouth.
 
 question:
-  # 
+  # Start of new task
   - task_type: |
       true_false_notgiven
 
-    task_description: |
+    task_question_number: |
       Questions 1-4
+
+
+    task_description: |
       Do the following statements agree with the information given in Reading Passage 1?
 
       In boxes 1-4 on your answer sheet, write
@@ -70,3 +73,113 @@ question:
 
 
     correct_answer: |
+      1. TRUE
+
+      2. NOT GIVEN
+
+      3. TRUE
+
+      4. FALSE
+
+
+  # Start of new task
+  - task_type: |
+      matching_features
+
+    task_question_number: |
+      Questions 5-8
+
+    task_description: |
+      Look at the following statements (Questions 5-8) and the list of dates below.
+
+      Match each statement with the correct date, A-G.
+
+      Write the correct letter, A-G, in boxes 5-8 on your answer sheet.
+
+    question_main_title: |
+
+
+    question_main_text: | 
+      5   A search for the Mary Rose was launched.
+
+      6   One person’s exploration of the Mary Rose site stopped.
+
+      7   It was agreed that the hull of the Mary Rose should be raised.
+
+      8   The site of the Mary Rose was found by chance.
+
+    question_img_path: |    # flowcharts, diagrams
+
+
+    question_list_title: |    # matching tasks
+
+
+    question_list_of_options: |     # matching tasks, multiple choice select many
+      A     1836 
+
+      B     1840         
+
+      C     1965         
+
+      D     1967
+
+      E     1971
+
+      F     1979
+
+      G     1982
+
+    example_answer: |     # matching headings
+
+
+    correct_answer: |
+      5. C
+
+      6. B
+
+      7. G
+
+      8. A
+
+  # Start of new task
+  - task_type: |
+      diagram_completion
+
+    task_question_number: |
+      Questions 9-13
+
+    task_description: |
+      Label the diagram below.
+
+      Choose NO MORE THAN TWO WORDS from the passage for each answer.
+
+      Write your answers in boxes 9-13 on your answer sheet.
+
+    question_main_title: |
+      Raising the hull of the Mary Rose: Stages one and two
+
+    question_main_text: | 
+
+
+    question_img_path: |    # flowcharts, diagrams
+      https://ieltstrainingonline.com/wp-content/uploads/2020/07/11-2-1-IELTS-Reading-q1-13-956x1024.jpg
+
+    question_list_title: |    # matching tasks
+
+
+    question_list_of_options: |     # matching tasks, multiple choice select many
+
+
+    example_answer: |     # matching headings
+
+
+    correct_answer: |
+      9. (lifting) frame
+
+      10. hydraulic jacks
+
+      11. stabbing guides
+
+      12. (lifting) cradle
+
+      13. air bags

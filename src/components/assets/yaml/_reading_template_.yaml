@@ -1,6 +1,6 @@
 reading:
   reading_title: |
-  
+
 
   reading_subtitle: |
 
@@ -19,8 +19,10 @@ passage:
 
 
 question:
-  # 
+  # Start of new task
   - task_type: |
+
+    task_question_number: |
 
 
     task_description: |

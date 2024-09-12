@@ -37,8 +37,12 @@ question:
   - task_type: |
       true_false_notgiven
 
-    task_description: |
+
+    task_question_number: |
       Questions 14-19
+
+
+    task_description: |
       Do the following statements agree with the information given in Reading Passage 2?
 
       In boxes 14-19 on your answer sheet, write
@@ -94,8 +98,10 @@ question:
   - task_type: |
       diagram_completion
 
-    task_description: |
+    task_question_number: |
       Questions 20-26
+
+    task_description: |
       Label the diagram below.
 
       Choose ONE WORD from the passage for each answer.
