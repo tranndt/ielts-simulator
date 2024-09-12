@@ -42,7 +42,7 @@ raw_passage_text: |
     
 
 questions_list:
-    -   question_type: flow_chart_completion
+    -   question_type: flow-chart-completion
         raw_question_instructions: |
             Questions 1 – 3
             Complete the flow-chart below.
@@ -54,7 +54,7 @@ questions_list:
         raw_questions_text: |
 
         raw_questions_img_path: |
-            ../assets/images/reading/flow_chart_completion_1.jpg
+            ../assets/images/reading/flow-chart-completion_1.jpg
         
         raw_answers_text: |
             1 glucose

@@ -4,50 +4,35 @@ import HomePage from './components/Navigation/HomePage';
 import About from './components/About/About';
 import Header from './components/Navigation/Header';
 import ReadingSectionFrame from './components/Reading/ReadingSectionFrame';
-import passageMultipleChoiceSelectOne from './components/assets/json/multiple_choice_select_one.json';
-import passageMultipleChoiceSelectMany from './components/assets/json/multiple_choice_select_many.json';
-import passageTableCompletion from './components/assets/json/table_completion.json';
-import passageNoteCompletion from './components/assets/json/note_completion.json';
-import passageSentenceCompletion from './components/assets/json/sentence_completion.json';
-import passageSummaryCompletion from './components/assets/json/summary_completion.json';
-import passageSummaryCompletionWordList from './components/assets/json/summary_completion_word_list.json';
-import passageMatchingHeadings from './components/assets/json/matching_headings.json';
-import passageMatchingFeatures from './components/assets/json/matching_features.json';
-import passageMatchingSentenceEndings from './components/assets/json/matching_sentence_endings.json';
-import passageDiagramCompletion from './components/assets/json/diagram_completion.json';
-import passageFlowChartCompletion from './components/assets/json/flow_chart_completion.json';
-import passageTrueFalseNotGiven from './components/assets/json/true_false_notgiven.json';
-// import passageYesNoNotGiven from './components/assets/json/yes_no_not_given.json';
-
 import ReadingPracticesPage from './components/Navigation/ReadingPracticesPage';
 import ReadingTestsPage from './components/Navigation/ReadingTestsPage';
 import './App.css';
-// import GradingComponent from './components/Grading/GradingComponent';
+
+const jsonResources = require.context('./data/', true, /\.json$/);
 
 function App() {
+  // Take in a path, load the json resources in that path and create routes from them
+  const createRoutes = () =>  jsonResources.keys().map((key) => {
+      const path = key.replace('./', '').replace('.json', '');
+      const passage = jsonResources(key);
+      return (
+        <Route
+          key={path}
+          path={`/ielts-simulator/${path}`}
+          element={<ReadingSectionFrame passage={passage} />}
+        />
+      );
+  });
+  
+    
   return (
     <div>
-      <Header/>
+      <Header />
       <Routes>
         <Route path="/ielts-simulator" element={<HomePage />} />
-        {/* <Route path="/about" element={<About />} /> */}
         <Route path="/ielts-simulator/reading-practices" element={<ReadingPracticesPage />} />
         <Route path="/ielts-simulator/reading-tests" element={<ReadingTestsPage />} />
-        <Route path="/ielts-simulator/reading-practices/multiple-choice-select-one" element={<ReadingSectionFrame passage={passageMultipleChoiceSelectOne}/>} />
-        <Route path="/ielts-simulator/reading-practices/table-completion" element={<ReadingSectionFrame passage={passageTableCompletion}/>} />
-        <Route path="/ielts-simulator/reading-practices/note-completion" element={<ReadingSectionFrame passage={passageNoteCompletion}/>} /> 
-        <Route path="/ielts-simulator/reading-practices/sentence-completion" element={<ReadingSectionFrame passage={passageSentenceCompletion}/>} />
-        <Route path="/ielts-simulator/reading-practices/summary-completion" element={<ReadingSectionFrame passage={passageSummaryCompletion}/>} />
-        <Route path="/ielts-simulator/reading-practices/summary-completion-word-list" element={<ReadingSectionFrame passage={passageSummaryCompletionWordList}/>} />
-        <Route path="/ielts-simulator/reading-practices/diagram-completion" element={<ReadingSectionFrame passage={passageDiagramCompletion}/>} />
-        <Route path="/ielts-simulator/reading-practices/flow-chart-completion" element={<ReadingSectionFrame passage={passageFlowChartCompletion}/>} />
-        <Route path="/ielts-simulator/reading-practices/matching-headings" element={<ReadingSectionFrame passage={passageMatchingHeadings}/>} />
-        <Route path="/ielts-simulator/reading-practices/matching-features" element={<ReadingSectionFrame passage={passageMatchingFeatures}/>} />
-        <Route path="/ielts-simulator/reading-practices/matching-sentence-endings" element={<ReadingSectionFrame passage={passageMatchingSentenceEndings}/>} />
-        <Route path="/ielts-simulator/reading-practices/true-false-not-given" element={<ReadingSectionFrame passage={passageTrueFalseNotGiven}/>} />
-        {/* <Route path="/ielts-simulator/reading-practices/yes-no-not-given" element={<ReadingSectionFrame passage={passageYesNoNotGiven}/>} /> */}
-        <Route path="/ielts-simulator/reading-practices/multiple-choice-select-many" element={<ReadingSectionFrame passage={passageMultipleChoiceSelectMany}/>} />
-        
+        {createRoutes()}
       </Routes>
     </div>
   );

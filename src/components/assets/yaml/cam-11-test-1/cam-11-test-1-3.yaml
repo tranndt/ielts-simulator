@@ -55,7 +55,7 @@ passage_content:
 question_content:
   # Start of new task
   - task_type: |
-      matching_paragraphs
+      matching-paragraphs
 
     task_question_number: |
       Questions 27-29
@@ -100,7 +100,7 @@ question_content:
 
   # Start of new task
   - task_type: |
-      table_completion
+      table-completion
 
     task_question_number: |
       Questions 30-36
@@ -161,7 +161,7 @@ question_content:
       
   # Start of new task
   - task_type: |
-      matching_features
+      matching-features
 
     task_question_number: |
       Questions 37-40

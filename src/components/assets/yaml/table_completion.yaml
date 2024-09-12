@@ -47,7 +47,7 @@ raw_passage_text: |
     
 
 questions_list:
-    -   question_type: table_completion
+    -   question_type: table-completion
         raw_question_instructions: |
             Question 9 – 13
             Complete the table below.

@@ -88,7 +88,7 @@ raw_passage_text: |
 
 
 questions_list:
-    -   question_type: matching_sentence_endings
+    -   question_type: matching-sentence-endings
         raw_question_instructions: |
             Questions 1 – 3
             Complete each sentence with the correct ending, A-F, below. Write the correct letter, A-F, in boxes 

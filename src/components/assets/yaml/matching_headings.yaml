@@ -71,7 +71,7 @@ raw_passage_text: |
     
 
 questions_list:
-    -   question_type: matching_headings
+    -   question_type: matching-headings
         raw_question_instructions: |
             Questions 1 – 4
             Reading Passage 1 has five sections, A-E.

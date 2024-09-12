@@ -38,7 +38,7 @@ passage_content:
 question_content:
   # Start of new task
   - task_type: |
-      multiple_choice_select_one
+      multiple-choice-select-one
 
     task_question_number: |
       Questions 27-31
@@ -136,7 +136,7 @@ question_content:
 
   # Start of new task
   - task_type: |
-      matching_features
+      matching-features
 
     task_question_number: |
       Questions 32-37
@@ -196,7 +196,7 @@ question_content:
 
   # Start of new task
   - task_type: |
-      matching_sentence_endings
+      matching-sentence-endings
 
     task_question_number: |
       Questions 38-40

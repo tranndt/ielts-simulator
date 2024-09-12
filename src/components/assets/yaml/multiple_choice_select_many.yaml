@@ -30,7 +30,7 @@ raw_passage_text: |
     
 
 questions_list:
-    -   question_type: multiple_choice_select_many
+    -   question_type: multiple-choice-select-many
         raw_question_instructions: |
             Questions 1 and 2
             Choose TWO letters, A-G.
@@ -53,7 +53,7 @@ questions_list:
             B ■ They can predict areas that may cause trouble in the future.
             G ■ They are more skilled in personal relationships.
 
-    -   question_type: multiple_choice_select_many
+    -   question_type: multiple-choice-select-many
         raw_question_instructions: |
             Questions 3 and 4
             Choose TWO letters, A-F.

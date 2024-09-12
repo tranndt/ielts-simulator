@@ -50,7 +50,7 @@ raw_passage_text: |
     
 
 questions_list:
-    -   question_type: diagram_completion
+    -   question_type: diagram-completion
         raw_question_instructions: |
             Questions 1 – 5
             Label the diagram below.
@@ -62,7 +62,7 @@ questions_list:
         raw_questions_text: |
 
         raw_questions_img_path: |
-            ../assets/images/reading/diagram_completion_1.jpg
+            ../assets/images/reading/diagram-completion_1.jpg
         
         raw_answers_text: |
             1 hot dry air ■ dry hot air

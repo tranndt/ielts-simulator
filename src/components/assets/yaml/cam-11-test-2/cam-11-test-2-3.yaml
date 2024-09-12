@@ -41,7 +41,7 @@ passage_content:
 question_content:
   # Start of new task
   - task_type: |
-      multiple_choice_select_one
+      multiple-choice-select-one
 
     task_question_number: |
       Questions 27-30
@@ -124,7 +124,7 @@ question_content:
 
   # Start of new task
   - task_type: |
-      summary_completion_word_list
+      summary-completion-word-list
 
     task_question_number: |
       Questions 31-33
@@ -176,7 +176,7 @@ question_content:
 
   # Start of new task
   - task_type: |
-      yes_no_notgiven
+      yes-no-notgiven
 
     task_question_number: |
       Questions 34-39
@@ -234,7 +234,7 @@ question_content:
 
   # Start of new task
   - task_type: |
-      multiple_choice_select_one
+      multiple-choice-select-one
 
     task_question_number: |
       Question 40

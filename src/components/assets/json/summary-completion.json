@@ -1,0 +1,43 @@
+{
+ "taskTitle": "Academic Reading Sample Task \u2013 Summary Completion: selecting words from the text",
+ "taskSubtitle": "",
+ "passageContext": "[Note: This is an extract from a Part 3 text about the \u2018Plain English\u2019 movement, which promotes the use of clear English.]\u2018The Cambridge Encyclopaedia of Language\u2019, David Crystal, 3rd Edition, \u00a9 Cambridge University Press, 2010.\n",
+ "passageTitle": "",
+ "passageSubtitle": "",
+ "passageText": "The instructions accompanying do-it-yourself products are regularly cited as a source of unnecessary expense or frustration. Few companies seem to test their instructions by having them followed by a first-time user. Often, essential information is omitted, steps in the construction process are taken for granted, and some degree of special knowledge is assumed. This is especially worrying in any fields where failure to follow correct procedures can be dangerous.\nObjections to material in plain English have come mainly from the legal profession. Lawyers point to the risk of ambiguity inherent in the use of everyday language for legal or official documents, and draw attention to the need for confidence in legal formulations, which can come only from using language that has been tested in courts over the course of centuries. The campaigners point out that there has been no sudden increase in litigation as a consequence of the increase in plain English materials.\nSimilarly, professionals in several different fields have defended their use of technical and complex language as being the most precise means of expressing technical or complex ideas. This is undoubtedly true: scientists, doctors, bankers and others need their jargon in order to communicate with each other succinctly and unambiguously. But when it comes to addressing the non-specialist consumer, the campaigners argue, different criteria must apply",
+ "questionsList": [
+  {
+   "questionType": "summary-completion",
+   "taskDescription": "Questions 1 \u2013 5\nComplete the summary below.\nChoose NO MORE THAN TWO WORDS from the passage for each answer.\nWrite your answers in boxes 1-5 on your answer sheet.\n",
+   "questionTitle": "",
+   "questionContent": [
+    "Consumers often complain that they experience a feeling of 1................ when trying to puttogether do-it-yourself products which have not been tested by companies on a 2 \u2026\u2026\u2026\u2026 .",
+    "In situations where not keeping to the correct procedures could affect safety issues, it is especially important that 3................information is not left out and no assumptions are madeabout a stage being self-evident or the consumer having a certain amount of 4 \u2026\u2026\u2026\u2026 .",
+    "Lawyers, however, have raised objections to the use of plain English. They feel that it would result in ambiguity in documents and cause people to lose faith in 5............... , as it wouldmean departing from language that has been used in the courts for a very long time."
+   ],
+   "questions": [
+    {
+     "questionNumber": 1,
+     "correctAnswer": "frustration"
+    },
+    {
+     "questionNumber": 2,
+     "correctAnswer": "first-time user"
+    },
+    {
+     "questionNumber": 3,
+     "correctAnswer": "essential"
+    },
+    {
+     "questionNumber": 4,
+     "correctAnswer": "special knowledge"
+    },
+    {
+     "questionNumber": 5,
+     "correctAnswer": "legal formulations"
+    }
+   ]
+  }
+ ],
+ "taskTime": 600
+}

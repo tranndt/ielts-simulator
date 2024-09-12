@@ -40,7 +40,7 @@ passage_content:
 question_content:
   # Start of new task
   - task_type: |
-      sentence_completion
+      sentence-completion
 
     task_question_number: |
       Questions 1-7
@@ -100,7 +100,7 @@ question_content:
 
   # Start of new task
   - task_type: |
-      true_false_notgiven
+      true-false-notgiven
 
     task_question_number: |
       Questions 8-13

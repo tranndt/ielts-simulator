@@ -148,21 +148,21 @@ def parse_question_content(question_data):
 def parse_question_task(questionTask):
     task_type = questionTask["task_type"].strip()
     parser_functions = {
-        "multiple_choice_select_one": parse_multiple_choice_select_one,
-        "multiple_choice_select_many": parse_multiple_choice_select_many,
-        "diagram_completion": parse_diagram_completion,
-        "flow_chart_completion": parse_flow_chart_completion,
-        "summary_completion": parse_summary_completion,
-        "summary_completion_word_list": parse_summary_completion_word_list,
-        "sentence_completion": parse_sentence_completion,
-        "table_completion": parse_table_completion,
-        "note_completion": parse_note_completion,
-        "matching_features": parse_matching_features,
-        "matching_headings": parse_matching_headings,
-        "matching_sentence_endings": parse_matching_sentence_endings,
-        "matching_paragraphs": parse_matching_paragraphs,
-        "true_false_notgiven": parse_true_false_notgiven,
-        "yes_no_notgiven": parse_yes_no_notgiven
+        "multiple-choice-select-one": parse_multiple_choice_select_one,
+        "multiple-choice-select-many": parse_multiple_choice_select_many,
+        "diagram-completion": parse_diagram_completion,
+        "flow-chart-completion": parse_flow_chart_completion,
+        "summary-completion": parse_summary_completion,
+        "summary-completion-word-list": parse_summary_completion_word_list,
+        "sentence-completion": parse_sentence_completion,
+        "table-completion": parse_table_completion,
+        "note-completion": parse_note_completion,
+        "matching-features": parse_matching_features,
+        "matching-headings": parse_matching_headings,
+        "matching-sentence-endings": parse_matching_sentence_endings,
+        "matching-paragraphs": parse_matching_paragraphs,
+        "true-false-notgiven": parse_true_false_notgiven,
+        "yes-no-notgiven": parse_yes_no_notgiven
     }
     if task_type not in parser_functions.keys():
         raise Exception(f"{task_type} is an invalid question type")

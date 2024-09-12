@@ -47,7 +47,7 @@ passage_content:
 question_content:
   # Start of new task
   - task_type: |
-      matching_paragraphs
+      matching-paragraphs
 
     task_question_number: |
       Questions 14-17
@@ -97,7 +97,7 @@ question_content:
 
   # Start of new task
   - task_type: |
-      matching_features
+      matching-features
 
     task_question_number: |
       Questions 18-20
@@ -145,7 +145,7 @@ question_content:
 
   # Start of new task
   - task_type: |
-      summary_completion
+      summary-completion
 
     task_question_number: |
       Questions 21-26

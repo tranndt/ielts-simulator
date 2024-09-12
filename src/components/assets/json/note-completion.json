@@ -1,0 +1,50 @@
+{
+ "taskTitle": "Academic Reading Sample Task \u2013 Note Completion",
+ "taskSubtitle": "",
+ "passageContext": "[Note: This is an extract from a Part 1 text about the scientist Marie Curie.]Adapted with permission from Encyclopaedia Britannica, \u00a9 2007 by Encyclopaedia Britannica, Inc.\n",
+ "passageTitle": "The life and work of Marie Curie",
+ "passageSubtitle": "",
+ "passageText": "The marriage of Pierre and Marie Curie in 1895 marked the start of a partnership that was soon to achieve results of world significance. Following Henri Becquerel\u2019s discovery in 1896 of a new phenomenon, which Marie later called \u2018radioactivity\u2019, Marie Curie decided to find out if the radioactivity discovered in uranium was to be found in other elements. She discovered that this was true for thorium.\nTurning her attention to minerals, she found her interest drawn to pitchblende, a mineral whose radioactivity, superior to that of pure uranium, could be explained only by the presence in the ore of small quantities of an unknown substance of very high activity. Pierre Curie joined her in the work that she had undertaken to resolve this problem, and that led to the discovery of the new elements, polonium and radium. While Pierre Curie devoted himself chiefly to the physical study of the new radiations, Marie Curie struggled to obtain pure radium in the metallic state. This was achieved with the help of the chemist Andr\u00e9-Louis Debierne, one of Pierre Curie\u2019s pupils. Based on the results of this research, Marie Curie received her Doctorate of Science, and in 1903 Marie and Pierre shared with Becquerel the Nobel Prize for Physics for the discovery of radioactivity.\nThe births of Marie\u2019s two daughters, Ir\u00e8ne and Eve, in 1897 and 1904 failed to interrupt her scientific work. She was appointed lecturer in physics at the \u00c9cole Normale Sup\u00e9rieure for girls in S\u00e8vres, France (1900), and introduced a method of teaching based on experimental demonstrations. In December 1904 she was appointed chief assistant in the laboratory directed by Pierre Curie.\nThe sudden death of her husband in 1906 was a bitter blow to Marie Curie, but was also a turning point in her career: henceforth she was to devote all her energy to completing alone the scientific work that they had undertaken. On May 13, 1906, she was appointed to the professorship that had been left vacant on her husband\u2019s death, becoming the first woman to teach at the Sorbonne. In 1911 she was awarded the Nobel Prize for Chemistry for the isolation of a pure form of radium.\nDuring World War I, Marie Curie, with the help of her daughter Ir\u00e8ne, devoted herself to the development of the use of X-radiography, including the mobile units which came to be known as \u2018Little Curies\u2019, used for the treatment of wounded soldiers. In 1918 the Radium Institute, whose staff Ir\u00e8ne had joined, began to operate in earnest, and became a centre for nuclear physics and chemistry. Marie Curie, now at the highest point of her fame and, from 1922, a member of the Academy of Medicine, researched the chemistry of radioactive substances and their medical applications.\nIn 1921, accompanied by her two daughters, Marie Curie made a triumphant journey to the United States to raise funds for research on radium. Women there presented her with a gram of radium for her campaign. Marie also gave lectures in Belgium, Brazil, Spain and Czechoslovakia and, in addition, had the satisfaction of seeing the development of the Curie Foundation in Paris, and the inauguration in 1932 in Warsaw of the Radium Institute, where her sister Bronia became director.\nOne of Marie Curie\u2019s outstanding achievements was to have understood the need to accumulate intense radioactive sources, not only to treat illness but also to maintain an abundant supply for research. The existence in Paris at the Radium Institute of a stock of 1.5 grams of radium made a decisive contribution to the success of the experiments undertaken in the years around 1930. This work prepared the way for the discovery of the neutron by Sir James Chadwick and, above all, for the discovery in 1934 by Ir\u00e8ne and Fr\u00e9d\u00e9ric Joliot-Curie of artificial radioactivity. A few months after this discovery, Marie Curie died as a result of leukaemia caused by exposure to radiation. She had often carried test tubes containing radioactive isotopes in her pocket, remarking on the pretty blue-green light they gave off.\nHer contribution to physics had been immense, not only in her own work, the importance of which had been demonstrated by her two Nobel Prizes, but because of her influence on subsequent generations of nuclear physicists and chemists.\n",
+ "questionsList": [
+  {
+   "questionType": "note-completion",
+   "taskDescription": "Questions 1 \u2013 6\nComplete the notes below.\nChoose ONE WORD ONLY from the passage for each answer. Write your answers in boxes 1-6 on your answer sheet\n",
+   "questionTitle": "Marie Curie\u2019s research on radioactivity\n",
+   "questionContent": [
+    "\u2022 When uranium was discovered to be radioactive, Marie Curie found that the element called 1 \u2026\u2026\u2026\u2026 had the same property.            ",
+    "\u2022 Marie and Pierre Curie\u2019s research into the radioactivity of the mineral known as 2 \u2026\u2026\u2026\u2026 led to the discovery of two new elements.",
+    "\u2022 In 1911, Marie Curie received recognition for her work on the element 3 \u2026\u2026\u2026\u2026 .",
+    "\u2022 Marie and Ir\u00e8ne Curie developed X-radiography which was used as a medical technique for 4 \u2026\u2026\u2026\u2026 .",
+    "\u2022 Marie Curie saw the importance of collecting radioactive material both for research and for cases of 5 \u2026\u2026\u2026\u2026 .",
+    "\u2022 The radioactive material stocked in Paris contributed to the discoveries in the 1930s of the 6 \u2026\u2026\u2026\u2026 and of what was known as artificial radioactivity."
+   ],
+   "questions": [
+    {
+     "questionNumber": 1,
+     "correctAnswer": "thorium"
+    },
+    {
+     "questionNumber": 2,
+     "correctAnswer": "pitchblende"
+    },
+    {
+     "questionNumber": 3,
+     "correctAnswer": "radium"
+    },
+    {
+     "questionNumber": 4,
+     "correctAnswer": "soldiers"
+    },
+    {
+     "questionNumber": 5,
+     "correctAnswer": "illness"
+    },
+    {
+     "questionNumber": 6,
+     "correctAnswer": "neutron"
+    }
+   ]
+  }
+ ],
+ "taskTime": 600
+}

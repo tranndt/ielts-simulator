@@ -37,7 +37,7 @@ passage_content:
 question_content:
   # Start of new task
   - task_type: |
-      true_false_notgiven
+      true-false-notgiven
 
 
     task_question_number: |
@@ -98,7 +98,7 @@ question_content:
 
   # Start of new task
   - task_type: |
-      diagram_completion
+      diagram-completion
 
     task_question_number: |
       Questions 20-26

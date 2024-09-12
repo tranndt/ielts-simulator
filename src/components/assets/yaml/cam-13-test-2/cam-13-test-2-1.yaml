@@ -36,7 +36,7 @@ passage_content:
 question_content:
   # Start of new task
   - task_type: |
-      note_completion
+      note-completion
 
     task_question_number: |
       Questions 1-9
@@ -110,7 +110,7 @@ question_content:
 
   # Start of new task
   - task_type: |
-      true_false_notgiven
+      true-false-notgiven
 
     task_question_number: |
       Questions 10-13

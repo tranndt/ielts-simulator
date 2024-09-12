@@ -37,7 +37,7 @@ raw_passage_text: |
     
 
 questions_list:
-    -   question_type: summary_completion
+    -   question_type: summary-completion
         raw_question_instructions: |
             Questions 1 – 5
             Complete the summary below.

@@ -24,7 +24,7 @@ function QuestionFrame({ questionsList }) {
     // Calculate the total number of questions across all tasks when the component mounts
     const total = questionsList.reduce((acc, questionTask) => {
       // Add the number of questions in each task to the accumulator
-      if (questionTask.questionType === "multiple_choice_select_many") {
+      if (questionTask.questionType === "multiple-choice-select-many") {
         return acc + questionTask.correctAnswers.length;
       }
       return acc + questionTask.questions.length;
@@ -47,26 +47,12 @@ function QuestionFrame({ questionsList }) {
     }
   };
 
-  // const questionTaskComponents = {
-  //   'multiple_choice_select_one': MultipleChoiceQuestionTask,
-  //   'table_completion': TableCompletionQuestionTask,
-  //   'note_completion': NoteCompletionQuestionTask,
-  //   'sentence_completion': SentenceCompletionQuestionTask,
-  //   'summary_completion': SummaryCompletionQuestionTask,
-  //   'summary_completion_word_list': SummaryCompletionWordListQuestionTask,
-  //   'diagram_completion': DiagramCompletionQuestionTask,
-  //   'flow_chart_completion': FlowChartCompletionQuestionTask,
-  //   'matching_headings': MatchingHeadingsQuestionTask,
-  //   'matching_features': MatchingFeaturesQuestionTask,
-  //   'matching_sentence_endings': MatchingSentenceEndingsQuestionTask,
-  // };
-  
 
   return (
     <div className="question-frame">
       {questionsList.map((questionTask, index) => {
         switch (questionTask.questionType) {
-          case "multiple_choice_select_one":
+          case "multiple-choice-select-one":
             return (
               <MultipleChoiceSelectOneQuestionTask
                 key={index}
@@ -76,7 +62,7 @@ function QuestionFrame({ questionsList }) {
                 showAnswers={showAnswers}
               />
             );
-          case "matching_headings":
+          case "matching-headings":
             return (
               <MatchingHeadingsQuestionTask
                 key={index}
@@ -86,7 +72,7 @@ function QuestionFrame({ questionsList }) {
                 showAnswers={showAnswers}
               />
             );
-          case "matching_features":
+          case "matching-features":
             return (
               <MatchingFeaturesQuestionTask
                 key={index}
@@ -96,7 +82,7 @@ function QuestionFrame({ questionsList }) {
                 showAnswers={showAnswers}
               />
             );
-            case "matching_sentence_endings":
+            case "matching-sentence-endings":
             return (
               <MatchingSentenceEndingsQuestionTask
                 key={index}
@@ -106,7 +92,7 @@ function QuestionFrame({ questionsList }) {
                 showAnswers={showAnswers}
               />
             );
-          case "table_completion":
+          case "table-completion":
             return (
               <TableCompletionQuestionTask
                 key={index}
@@ -116,7 +102,7 @@ function QuestionFrame({ questionsList }) {
                 showAnswers={showAnswers}
               />
             );
-          case "note_completion":
+          case "note-completion":
             return (
               <NoteCompletionQuestionTask
                 key={index}
@@ -126,7 +112,7 @@ function QuestionFrame({ questionsList }) {
                 showAnswers={showAnswers}
               />
             );
-          case "sentence_completion":
+          case "sentence-completion":
             return (
               <SentenceCompletionQuestionTask
                 key={index}
@@ -136,7 +122,7 @@ function QuestionFrame({ questionsList }) {
                 showAnswers={showAnswers}
               />
             );
-          case "summary_completion":
+          case "summary-completion":
             return (
               <SummaryCompletionQuestionTask
                 key={index}
@@ -146,7 +132,7 @@ function QuestionFrame({ questionsList }) {
                 showAnswers={showAnswers}
               />
             );
-            case "summary_completion_word_list":
+            case "summary-completion-word-list":
             return (
               <SummaryCompletionWordListQuestionTask
                 key={index}
@@ -156,7 +142,7 @@ function QuestionFrame({ questionsList }) {
                 showAnswers={showAnswers}
               />
             );
-            case "diagram_completion":
+            case "diagram-completion":
             return (
               <DiagramCompletionQuestionTask
                 key={index}
@@ -166,7 +152,7 @@ function QuestionFrame({ questionsList }) {
                 showAnswers={showAnswers}
               />
             );
-            case "flow_chart_completion":
+            case "flow-chart-completion":
             return (
               <FlowChartCompletionQuestionTask
                 key={index}
@@ -176,7 +162,7 @@ function QuestionFrame({ questionsList }) {
                 showAnswers={showAnswers}
               />
             );
-            case "true_false_notgiven":
+            case "true-false-notgiven":
             return (
               <TrueFalseNotGivenQuestionTask
                 key={index}
@@ -186,7 +172,7 @@ function QuestionFrame({ questionsList }) {
                 showAnswers={showAnswers}
               />
             );
-            case "yes_no_notgiven":
+            case "yes-no-notgiven":
             return (
               <YesNoNotGivenQuestionTask
                 key={index}
@@ -196,7 +182,7 @@ function QuestionFrame({ questionsList }) {
                 showAnswers={showAnswers}
               />
             );
-            case "multiple_choice_select_many":
+            case "multiple-choice-select-many":
             return (
               <MultipleChoiceSelectManyQuestionTask
                 key={index}

@@ -56,7 +56,7 @@ raw_passage_text: |
     
 
 questions_list:
-    -   question_type: matching_features
+    -   question_type: matching-features
         raw_question_instructions: |
             Questions 7 – 10
             Look at the following items (Questions 7-10) and the list of groups below. 

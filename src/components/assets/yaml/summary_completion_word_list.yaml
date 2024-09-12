@@ -35,7 +35,7 @@ raw_passage_text: |
     
 
 questions_list:
-    -   question_type: summary_completion_word_list
+    -   question_type: summary-completion-word-list
         raw_question_instructions: |
             Questions 1 – 4
             Complete the summary using the list of words, A-G, below.
