@@ -1,4 +1,4 @@
-reading:
+reading_info:
   reading_title: |
     READING PASSAGE 3
 
@@ -6,7 +6,9 @@ reading:
     You should spend about 20 minutes on Questions 27-40 which are based on Reading Passage 3 below.
 
 
-passage:
+passage_content:
+  paragraph_markers: true # true
+
   passage_context: |
 
 
@@ -50,7 +52,7 @@ passage:
     The main reason why geo-engineering is supported by many in the scientific community is that most researchers have little faith in the ability of politicians to agree – and then bring in — the necessary carbon cuts. Even leading conservation organisations see the value of investigating the potential of geo-engineering. According to Dr Martin Sommerkorn, climate change advisor for the World Wildlife Fund’s International Arctic Programme, ‘Human-induced climate change has brought humanity to a position where we shouldn’t exclude thinking thoroughly about this topic and its possibilities.’
 
 
-question:
+question_content:
   # Start of new task
   - task_type: |
       matching_paragraphs

@@ -1,4 +1,4 @@
-reading:
+reading_info:
   reading_title: |
     READING PASSAGE 1
 
@@ -6,7 +6,9 @@ reading:
     You should spend about 20 minutes on Questions 1-13 which are based on Reading Passage 1 below.
 
 
-passage:
+passage_content:
+  paragraph_markers: false # true false
+
   passage_context: |
 
 
@@ -31,7 +33,7 @@ passage:
 
     Then, in 1996, the English arrived on Ceylon, thereby displacing the Dutch from their control of the cinnamon monopoly. By the middle of the 19th century, production of cinnamon reached 1,000 tons a year, after a lower grade quality of the spice became acceptable to European tastes. By that time, cinnamon was being grown in other parts of the Indian Ocean region and in the West Indies, Brazil, and Guyana. Not only was a monopoly of cinnamon becoming impossible, but the spice trade overall was diminishing in economic potential, and was eventually superseded by the rise of trade in coffee, tea, chocolate, and sugar.
 
-question:
+question_content:
   # Start of new task
   - task_type: |
       note_completion

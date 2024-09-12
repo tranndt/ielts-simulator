@@ -1,4 +1,4 @@
-reading:
+reading_info:
   reading_title: |
 
 
@@ -6,6 +6,8 @@ reading:
 
 
 passage:
+  paragraph_markers: false # true false
+
   passage_context: |
 
 

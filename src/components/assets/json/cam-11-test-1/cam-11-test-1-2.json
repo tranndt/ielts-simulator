@@ -1,0 +1,138 @@
+{
+  "readingInfo": {
+    "raedingTitle": "READING PASSAGE 2",
+    "readingSubtitle": "You should spend about 20 minutes on Questions 14-26 which are based on Reading Passage 2 below."
+  },
+  "passageContent": {
+    "hasParagraphMarkers": false,
+    "passageContext": "",
+    "passageTitle": "The Falkirk Wheel",
+    "passageSubtitle": "A unique engineering achievement",
+    "passageMainText": "The Falkirk Wheel in Scotland is the world\u2019s first and only rotating boat lift. Opened in 2002, it is central to the ambitious \u00a384.5m Millennium Link project to restore navigability across Scotland by reconnecting the historic waterways of the Forth & Clyde and Union Canals.\nThe major challenge of the project lays in the fact that the Forth & Clyde Canal is situated 35 metres below the level of the Union Canal. Historically, the two canals had been joined near the town of Falkirk by a sequence of 11 locks \u2013 enclosed sections of canal in which the water level could be raised or lowered \u2013 that stepped down across a distance of 1.5 km. This had been dismantled in 1933, thereby breaking the link. When the project was launched in 1994, the British Waterways authority were keen to create a dramatic twenty-first-century landmark which would not only be a fitting commemoration of the Millennium, but also a lasting symbol of the economic regeneration of the region.\nNumerous ideas were submitted for the project, including concepts ranging from rolling eggs to tilting tanks, from giant seesaws to overhead monorails. The eventual winner was a plan for the huge rotating steel boat lift which was to become The Falkirk Wheel. The unique shape of the structure is claimed to have been inspired by various sources, both manmade and natural, most notably a Celtic double headed axe, but also the vast turning propeller of a ship, the ribcage of a whale or the spine of a fish.\nThe various parts of The Falkirk Wheel were all constructed and assembled, like one giant toy building set, at Butterley Engineering\u2019s Steelworks in Derbyshire, some 400 km from Falkirk. A team there carefully assembled the 1,200 tonnes of steel, painstakingly fitting the pieces together to an accuracy of just 10 mm to ensure a perfect final fit. In the summer of 2001, the structure was then dismantled and transported on 35 lorries to Falkirk, before all being bolted back together again on the ground, and finally lifted into position in five large sections by crane. The Wheel would need to withstand immense and constantly changing stresses as it rotated, so to make the structure more robust, the steel sections were bolted rather than welded together. Over 45,000 bolt holes were matched with their bolts, and each bolt was hand-tightened.\nThe Wheel consists of two sets of opposing axe-shaped arms, attached about 25 metres apart to a fixed central spine. Two diametrically opposed water-filled \u2018gondolas\u2019, each with a capacity of 360,000 litres, are fitted between the ends of the arms. These gondolas always weigh the same, whether or not they are carrying boats. This is because, according to Archimedes\u2019 principle of displacement, floating objects displace their own weight in water. So when a boat enters a gondola, the amount of water leaving the gondola weighs exactly the same as the boat. This keeps the Wheel balanced and so, despite its enormous mass, it rotates through 180\u00b0 in five and a half minutes while using very little power. It takes just 1.5 kilowatt-hours (5.4 MJ) of energy to rotate the Wheel -roughly the same as boiling eight small domestic kettles of water.\nBoats needing to be lifted up enter the canal basin at the level of the Forth & Clyde Canal and then enter the lower gondola of the Wheel. Two hydraulic steel gates are raised, so as to seal the gondola off from the water in the canal basin. The water between the gates is then pumped out. A hydraulic clamp, which prevents the arms of the Wheel moving while the gondola is docked, is removed, allowing the Wheel to turn. In the central machine room an array of ten hydraulic motors then begins to rotate the central axle. The axle connects to the outer arms of the Wheel, which begin to rotate at a speed of 1/8 of a revolution per minute. As the wheel rotates, the gondolas are kept in the upright position by a simple gearing system. Two eight-metre-wide cogs orbit a fixed inner cog of the same width, connected by two smaller cogs travelling in the opposite direction to the outer cogs \u2013 so ensuring that the gondolas always remain level. When the gondola reaches the top, the boat passes straight onto the aqueduct situated 24 metres above the canal basin.\nThe remaining 11 metres of lift needed to reach the Union Canal is achieved by means of a pair of locks. The Wheel could not be constructed to elevate boats over the full 35-metre difference between the two canals, owing to the presence of the historically important Antonine Wall, which was built by the Romans in the second century AD. Boats travel under this wall via a tunnel, then through the locks, and finally on to the Union Canal.\n",
+    "passageParagraphs": [
+      "The Falkirk Wheel in Scotland is the world\u2019s first and only rotating boat lift. Opened in 2002, it is central to the ambitious \u00a384.5m Millennium Link project to restore navigability across Scotland by reconnecting the historic waterways of the Forth & Clyde and Union Canals.",
+      "The major challenge of the project lays in the fact that the Forth & Clyde Canal is situated 35 metres below the level of the Union Canal. Historically, the two canals had been joined near the town of Falkirk by a sequence of 11 locks \u2013 enclosed sections of canal in which the water level could be raised or lowered \u2013 that stepped down across a distance of 1.5 km. This had been dismantled in 1933, thereby breaking the link. When the project was launched in 1994, the British Waterways authority were keen to create a dramatic twenty-first-century landmark which would not only be a fitting commemoration of the Millennium, but also a lasting symbol of the economic regeneration of the region.",
+      "Numerous ideas were submitted for the project, including concepts ranging from rolling eggs to tilting tanks, from giant seesaws to overhead monorails. The eventual winner was a plan for the huge rotating steel boat lift which was to become The Falkirk Wheel. The unique shape of the structure is claimed to have been inspired by various sources, both manmade and natural, most notably a Celtic double headed axe, but also the vast turning propeller of a ship, the ribcage of a whale or the spine of a fish.",
+      "The various parts of The Falkirk Wheel were all constructed and assembled, like one giant toy building set, at Butterley Engineering\u2019s Steelworks in Derbyshire, some 400 km from Falkirk. A team there carefully assembled the 1,200 tonnes of steel, painstakingly fitting the pieces together to an accuracy of just 10 mm to ensure a perfect final fit. In the summer of 2001, the structure was then dismantled and transported on 35 lorries to Falkirk, before all being bolted back together again on the ground, and finally lifted into position in five large sections by crane. The Wheel would need to withstand immense and constantly changing stresses as it rotated, so to make the structure more robust, the steel sections were bolted rather than welded together. Over 45,000 bolt holes were matched with their bolts, and each bolt was hand-tightened.",
+      "The Wheel consists of two sets of opposing axe-shaped arms, attached about 25 metres apart to a fixed central spine. Two diametrically opposed water-filled \u2018gondolas\u2019, each with a capacity of 360,000 litres, are fitted between the ends of the arms. These gondolas always weigh the same, whether or not they are carrying boats. This is because, according to Archimedes\u2019 principle of displacement, floating objects displace their own weight in water. So when a boat enters a gondola, the amount of water leaving the gondola weighs exactly the same as the boat. This keeps the Wheel balanced and so, despite its enormous mass, it rotates through 180\u00b0 in five and a half minutes while using very little power. It takes just 1.5 kilowatt-hours (5.4 MJ) of energy to rotate the Wheel -roughly the same as boiling eight small domestic kettles of water.",
+      "Boats needing to be lifted up enter the canal basin at the level of the Forth & Clyde Canal and then enter the lower gondola of the Wheel. Two hydraulic steel gates are raised, so as to seal the gondola off from the water in the canal basin. The water between the gates is then pumped out. A hydraulic clamp, which prevents the arms of the Wheel moving while the gondola is docked, is removed, allowing the Wheel to turn. In the central machine room an array of ten hydraulic motors then begins to rotate the central axle. The axle connects to the outer arms of the Wheel, which begin to rotate at a speed of 1/8 of a revolution per minute. As the wheel rotates, the gondolas are kept in the upright position by a simple gearing system. Two eight-metre-wide cogs orbit a fixed inner cog of the same width, connected by two smaller cogs travelling in the opposite direction to the outer cogs \u2013 so ensuring that the gondolas always remain level. When the gondola reaches the top, the boat passes straight onto the aqueduct situated 24 metres above the canal basin.",
+      "The remaining 11 metres of lift needed to reach the Union Canal is achieved by means of a pair of locks. The Wheel could not be constructed to elevate boats over the full 35-metre difference between the two canals, owing to the presence of the historically important Antonine Wall, which was built by the Romans in the second century AD. Boats travel under this wall via a tunnel, then through the locks, and finally on to the Union Canal.\n"
+    ]
+  },
+  "questionContent": [
+    {
+      "taskType": "true_false_notgiven",
+      "taskQuestionNumberList": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "taskQuestionNumberText": "Questions 14-19",
+      "taskDescription": "Do the following statements agree with the information given in Reading Passage 2?\nIn boxes 14-19 on your answer sheet, write\nTRUE                if the statement agrees with the information\nFALSE               if the statement contradicts the information\nNOT GIVEN     if there is no information on this",
+      "questionMainTitle": "",
+      "questionMainText": "14   The Falkirk Wheel has linked the Forth & Clyde Canal with the Union Canal for the first time in their history.\n15   There was some opposition to the design of the Falkirk Wheel at first.\n16   The Falkirk Wheel was initially put together at the location where its components were manufactured.\n17   The Falkirk Wheel is the only boat lift in the world which has steel sections bolted together by hand.\n18   The weight of the gondolas varies according to the size of boat being carried.\n19   The construction of the Falkirk Wheel site took into account the presence of a nearby ancient monument.",
+      "questionItems": [
+        {
+          "questionNumber": 14,
+          "questionText": "The Falkirk Wheel has linked the Forth & Clyde Canal with the Union Canal for the first time in their history.",
+          "questionOptions": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "correctAnswer": "FALSE"
+        },
+        {
+          "questionNumber": 15,
+          "questionText": "There was some opposition to the design of the Falkirk Wheel at first.",
+          "questionOptions": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "questionNumber": 16,
+          "questionText": "The Falkirk Wheel was initially put together at the location where its components were manufactured.",
+          "questionOptions": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "correctAnswer": "TRUE"
+        },
+        {
+          "questionNumber": 17,
+          "questionText": "The Falkirk Wheel is the only boat lift in the world which has steel sections bolted together by hand.",
+          "questionOptions": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "questionNumber": 18,
+          "questionText": "The weight of the gondolas varies according to the size of boat being carried.",
+          "questionOptions": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "correctAnswer": "FALSE"
+        },
+        {
+          "questionNumber": 19,
+          "questionText": "The construction of the Falkirk Wheel site took into account the presence of a nearby ancient monument.",
+          "questionOptions": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "correctAnswer": "TRUE"
+        }
+      ]
+    },
+    {
+      "taskType": "diagram_completion",
+      "taskDescription": "Label the diagram below.\nChoose ONE WORD from the passage for each answer.\nWrite your answers in boxes 20-26 on your answer sheet.",
+      "questionMainTitle": "How a boat is lifted on the Falkirk Wheel",
+      "questionMainText": "",
+      "questionImgPath": "https://ieltstrainingonline.com/wp-content/uploads/2020/07/11-1-2-IELTS-Reading-q14-26-980x663.jpg",
+      "questionItems": [
+        {
+          "questionNumber": 20,
+          "correctAnswer": "gates"
+        },
+        {
+          "questionNumber": 21,
+          "correctAnswer": "clamp"
+        },
+        {
+          "questionNumber": 22,
+          "correctAnswer": "axle"
+        },
+        {
+          "questionNumber": 23,
+          "correctAnswer": "cogs"
+        },
+        {
+          "questionNumber": 24,
+          "correctAnswer": "aqueduct"
+        },
+        {
+          "questionNumber": 25,
+          "correctAnswer": "wall"
+        },
+        {
+          "questionNumber": 26,
+          "correctAnswer": "locks"
+        }
+      ]
+    }
+  ]
+}

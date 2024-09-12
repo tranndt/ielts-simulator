@@ -1,11 +1,13 @@
-reading:
+reading_info:
   reading_title: |
     READING PASSAGE 2
 
   reading_subtitle: |
     You should spend about 20 minutes on Questions 14-26 which are based on Reading Passage 2 below. 
 
-passage:
+passage_content:
+  paragraph_markers: true # true false
+
   passage_context: |
 
 
@@ -42,7 +44,7 @@ passage:
     Perhaps we should not be surprised that the oxytocin story has become more perplexing. The hormone is found in everything from octopuses to sheep, and its evolutionary roots stretch back half a billion years. ‘It’s a very simple and ancient molecule that has been co-opted for many different functions,’ says Sue Carter at the University of Illinois, Chicago, USA. ‘It affects primitive parts of the brain like the amygdala, so it’s going to have many effects on just about everything.’ Bartz agrees. ‘Oxytocin probably does some very basic things, but once you add our higher-order thinking and social situations, these basic processes could manifest in different ways depending on individual differences and context.’
 
 
-question:
+question_content:
   # Start of new task
   - task_type: |
       matching_paragraphs

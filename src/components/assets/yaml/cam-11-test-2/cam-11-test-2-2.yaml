@@ -1,11 +1,13 @@
-reading:
+reading_info:
   reading_title: |
     READING PASSAGE 2
 
   reading_subtitle: |
     You should spend about 20 minutes on Questions 14-26 which are based on Reading Passage 2 below. 
 
-passage:
+passage_content:
+  paragraph_markers: true # true false
+
   passage_context: |
 
 
@@ -44,7 +46,7 @@ passage:
 
     Hunt and Lipo’s vision, therefore, is one of an island populated by peaceful and ingenious moai builders and careful stewards of the land, rather than by reckless destroyers ruining their own environment and society. ‘Rather than a case of abject failure, Rapu Nui is an unlikely story of success’, they claim. Whichever is the case, there are surely some valuable lessons which the world at large can learn from the story of Rapa Nui.
 
-question:
+question_content:
   # Start of new task
   - task_type: |
       matching_headings

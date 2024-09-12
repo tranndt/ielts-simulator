@@ -1,0 +1,148 @@
+{
+  "readingInfo": {
+    "raedingTitle": "READING PASSAGE 1",
+    "readingSubtitle": "You should spend about 20 minutes on Questions 1-13 which are based on Reading Passage 1 below."
+  },
+  "passageContent": {
+    "hasParagraphMarkers": false,
+    "passageContext": "",
+    "passageTitle": "Crop-growing skyscrapers",
+    "passageSubtitle": "",
+    "passageMainText": "By the year 2050, nearly 80% of the Earth\u2019s population will live in urban centres. Applying the most conservative estimates to current demographic trends, the human population will increase by about three billion people by then. An estimated 109 hectares of new land (about 20% larger than Brazil) will be needed to grow enough food to feed them, if traditional farming methods continue as they are practised today. At present, throughout the world, over 80% of the land that is suitable for raising crops is in use. Historically, some 15% of that has been laid waste by poor management practices. What can be done to ensure enough food for the world\u2019s population to live on?\nThe concept of indoor farming is not new, since hothouse production of tomatoes and other produce has been in vogue for some time. What is new is the urgent need to scale up this technology to accommodate another three billion people. Many believe an entirely new approach to indoor farming is required, employing cutting-edge technologies. One such proposal is for the \u2018Vertical Farm\u2019. The concept is of multi-storey buildings in which food crops are grown in environmentally controlled conditions. Situated in the heart of urban centres, they would drastically reduce the amount of transportation required to bring food to consumers. Vertical farms would need to be efficient, cheap to construct and safe to operate. If successfully implemented, proponents claim, vertical farms offer the promise of urban renewal, sustainable production of a safe and varied food supply (through year-round production of all crops), and the eventual repair of ecosystems that have been sacrificed for horizontal farming.\nIt took humans 10,000 years to learn how to grow most of the crops we now take for granted. Along the way, we despoiled most of the land we worked, often turning verdant, natural ecozones into semi-arid deserts. Within that same time frame, we evolved into an urban species, in which 60% of the human population now lives vertically in cities. This means that, for the majority, we humans have shelter from the elements, yet we subject our food-bearing plants to the rigours of the great outdoors and can do no more than hope for a good weather year. However, more often than not now, due to a rapidly changing climate, that is not what happens. Massive floods, long droughts, hurricanes and severe monsoons take their toll each year, destroying millions of tons of valuable crops.\nThe supporters of vertical farming claim many potential advantages for the system. For instance, crops would be produced all year round, as they would be kept in artificially controlled, optimum growing conditions. There would be no weather-related crop failures due to droughts, floods or pests. All the food could be grown organically, eliminating the need for herbicides, pesticides and fertilisers. The system would greatly reduce the incidence of many infectious diseases that are acquired at the agricultural interface. Although the system would consume energy, it would return energy to the grid via methane generation from composting nonedible parts of plants. It would also dramatically reduce fossil fuel use, by cutting out the need for tractors, ploughs and shipping.\nA major drawback of vertical farming, however, is that the plants would require artificial light. Without it, those plants nearest the windows would be exposed to more sunlight and grow more quickly, reducing the efficiency of the system. Single-storey greenhouses have the benefit of natural overhead light; even so, many still need artificial lighting.\nA multi-storey facility with no natural overhead light would require far more. Generating enough light could be prohibitively expensive, unless cheap, renewable energy is available, and this appears to be rather a future aspiration than a likelihood for the near future.\nOne variation on vertical farming that has been developed is to grow plants in stacked trays that move on rails. Moving the trays allows the plants to get enough sunlight. This system is already in operation, and works well within a single-storey greenhouse with light reaching it from above: it Is not certain, however, that it can be made to work without that overhead natural light.\nVertical farming is an attempt to address the undoubted problems that we face in producing enough food for a growing population. At the moment, though, more needs to be done to reduce the detrimental impact it would have on the environment, particularly as regards the use of energy. While it is possible that much of our food will be grown in skyscrapers in future, most experts currently believe it is far more likely that we will simply use the space available on urban rooftops.\n",
+    "passageParagraphs": [
+      "By the year 2050, nearly 80% of the Earth\u2019s population will live in urban centres. Applying the most conservative estimates to current demographic trends, the human population will increase by about three billion people by then. An estimated 109 hectares of new land (about 20% larger than Brazil) will be needed to grow enough food to feed them, if traditional farming methods continue as they are practised today. At present, throughout the world, over 80% of the land that is suitable for raising crops is in use. Historically, some 15% of that has been laid waste by poor management practices. What can be done to ensure enough food for the world\u2019s population to live on?",
+      "The concept of indoor farming is not new, since hothouse production of tomatoes and other produce has been in vogue for some time. What is new is the urgent need to scale up this technology to accommodate another three billion people. Many believe an entirely new approach to indoor farming is required, employing cutting-edge technologies. One such proposal is for the \u2018Vertical Farm\u2019. The concept is of multi-storey buildings in which food crops are grown in environmentally controlled conditions. Situated in the heart of urban centres, they would drastically reduce the amount of transportation required to bring food to consumers. Vertical farms would need to be efficient, cheap to construct and safe to operate. If successfully implemented, proponents claim, vertical farms offer the promise of urban renewal, sustainable production of a safe and varied food supply (through year-round production of all crops), and the eventual repair of ecosystems that have been sacrificed for horizontal farming.",
+      "It took humans 10,000 years to learn how to grow most of the crops we now take for granted. Along the way, we despoiled most of the land we worked, often turning verdant, natural ecozones into semi-arid deserts. Within that same time frame, we evolved into an urban species, in which 60% of the human population now lives vertically in cities. This means that, for the majority, we humans have shelter from the elements, yet we subject our food-bearing plants to the rigours of the great outdoors and can do no more than hope for a good weather year. However, more often than not now, due to a rapidly changing climate, that is not what happens. Massive floods, long droughts, hurricanes and severe monsoons take their toll each year, destroying millions of tons of valuable crops.",
+      "The supporters of vertical farming claim many potential advantages for the system. For instance, crops would be produced all year round, as they would be kept in artificially controlled, optimum growing conditions. There would be no weather-related crop failures due to droughts, floods or pests. All the food could be grown organically, eliminating the need for herbicides, pesticides and fertilisers. The system would greatly reduce the incidence of many infectious diseases that are acquired at the agricultural interface. Although the system would consume energy, it would return energy to the grid via methane generation from composting nonedible parts of plants. It would also dramatically reduce fossil fuel use, by cutting out the need for tractors, ploughs and shipping.",
+      "A major drawback of vertical farming, however, is that the plants would require artificial light. Without it, those plants nearest the windows would be exposed to more sunlight and grow more quickly, reducing the efficiency of the system. Single-storey greenhouses have the benefit of natural overhead light; even so, many still need artificial lighting.",
+      "A multi-storey facility with no natural overhead light would require far more. Generating enough light could be prohibitively expensive, unless cheap, renewable energy is available, and this appears to be rather a future aspiration than a likelihood for the near future.",
+      "One variation on vertical farming that has been developed is to grow plants in stacked trays that move on rails. Moving the trays allows the plants to get enough sunlight. This system is already in operation, and works well within a single-storey greenhouse with light reaching it from above: it Is not certain, however, that it can be made to work without that overhead natural light.",
+      "Vertical farming is an attempt to address the undoubted problems that we face in producing enough food for a growing population. At the moment, though, more needs to be done to reduce the detrimental impact it would have on the environment, particularly as regards the use of energy. While it is possible that much of our food will be grown in skyscrapers in future, most experts currently believe it is far more likely that we will simply use the space available on urban rooftops.\n"
+    ]
+  },
+  "questionContent": [
+    {
+      "taskType": "sentence_completion",
+      "taskQuestionNumberList": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "taskQuestionNumberText": "Questions 1-7",
+      "taskDescription": "Complete the sentences below.\nChoose NO MORE THAN TWO WORDS from the passage for each answer.\nWrite your answers in boxes 1-7 on your answer sheet.",
+      "questionMainTitle": "Indoor farming",
+      "questionMainText": "1    Some food plants, including\u2026\u2026\u2026\u2026\u2026\u2026 are already grown indoors.\n2    Vertical farms would be located in\u2026\u2026\u2026\u2026\u2026\u2026, meaning that there would be less need to take them long distances to customers.\n3    Vertical farms could use methane from plants and animals to produce\u2026\u2026\u2026\u2026\u2026\u2026..\n4    The consumption of\u2026\u2026\u2026\u2026\u2026\u2026\u2026 would be cut because agricultural vehicles would be unnecessary.\n5    The fact that vertical farms would need\u2026\u2026\u2026\u2026\u2026\u2026.. light is a disadvantage.\n6    One form of vertical farming involves planting in\u2026\u2026\u2026\u2026\u2026\u2026.. which are not fixed.\n7    The most probable development is that food will be grown on\u2026\u2026\u2026\u2026\u2026\u2026\u2026 in towns and cities.",
+      "questionItems": [
+        {
+          "questionNumber": 1,
+          "correctAnswer": "tomatoes"
+        },
+        {
+          "questionNumber": 2,
+          "correctAnswer": "urban centres/ centers"
+        },
+        {
+          "questionNumber": 3,
+          "correctAnswer": "energy"
+        },
+        {
+          "questionNumber": 4,
+          "correctAnswer": "fossil fuel"
+        },
+        {
+          "questionNumber": 5,
+          "correctAnswer": "artificial"
+        },
+        {
+          "questionNumber": 6,
+          "correctAnswer": "(stacked) trays"
+        },
+        {
+          "questionNumber": 7,
+          "correctAnswer": "(urban) rooftops"
+        }
+      ]
+    },
+    {
+      "taskType": "true_false_notgiven",
+      "taskQuestionNumberList": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "taskQuestionNumberText": "Questions 8-13",
+      "taskDescription": "Do the following statements agree with the information given in Reading Passage?\nIn boxes 8-13 on your answer sheet, write\nTRUE               if the statement agrees with the information\nFALSE              if the statement contradicts the information\nNOT GIVEN    if there is no information on this",
+      "questionMainTitle": "",
+      "questionMainText": "8   Methods for predicting the Earth\u2019s population have recently changed.\n9   Human beings are responsible for some of the destruction to food-producing land.\n10   The crops produced in vertical farms will depend on the season.\n11   Some damage to food crops is caused by climate change.\n12   Fertilisers will be needed for certain crops in vertical farms.\n13   Vertical farming will make plants less likely to be affected by infectious diseases.",
+      "questionItems": [
+        {
+          "questionNumber": 8,
+          "questionText": "Methods for predicting the Earth\u2019s population have recently changed.",
+          "questionOptions": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "questionNumber": 9,
+          "questionText": "Human beings are responsible for some of the destruction to food-producing land.",
+          "questionOptions": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "correctAnswer": "TRUE"
+        },
+        {
+          "questionNumber": 10,
+          "questionText": "The crops produced in vertical farms will depend on the season.",
+          "questionOptions": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "correctAnswer": "FALSE"
+        },
+        {
+          "questionNumber": 11,
+          "questionText": "Some damage to food crops is caused by climate change.",
+          "questionOptions": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "correctAnswer": "TRUE"
+        },
+        {
+          "questionNumber": 12,
+          "questionText": "Fertilisers will be needed for certain crops in vertical farms.",
+          "questionOptions": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "correctAnswer": "FALSE"
+        },
+        {
+          "questionNumber": 13,
+          "questionText": "Vertical farming will make plants less likely to be affected by infectious diseases.",
+          "questionOptions": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "correctAnswer": "TRUE"
+        }
+      ]
+    }
+  ]
+}

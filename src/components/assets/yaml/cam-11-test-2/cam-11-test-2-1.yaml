@@ -1,11 +1,13 @@
-reading:
+reading_info:
   reading_title: |
     READING PASSAGE 1
 
   reading_subtitle: |
     You should spend about 20 minutes on Questions 1-13 which are based on Reading Passage 1 below.
 
-passage:
+passage_content:
+  paragraph_markers: false # true false
+
   passage_context: |
 
 
@@ -28,7 +30,7 @@ passage:
 
     An important factor in trying to salvage the Mary Rose was that the remaining hull was an open shell. This led to an important decision being taken: namely to carry out the lifting operation in three very distinct stages. The hull was attached to a lifting frame via a network of bolts and lifting wires. The problem of the hull being sucked back downwards into the mud was overcome by using 12 hydraulic jacks. These raised it a few centimetres over a period of several days, as the lifting frame rose slowly up its four legs. It was only when the hull was hanging freely from the lifting frame, clear of the seabed and the suction effect of the surrounding mud, that the salvage operation progressed to the second stage. In this stage, the lifting frame was fixed to a hook attached to a crane, and the hull was lifted completely clear of the seabed and transferred underwater into the lifting cradle. This required precise positioning to locate the legs into the stabbing guides’ of the lifting cradle. The lifting cradle was designed to fit the hull using archaeological survey drawings, and was fitted with air bags to provide additional cushioning for the hull’s delicate timber framework. The third and final stage was to lift the entire structure into the air, by which time the hull was also supported from below. Finally, on 11 October 1982, millions of people around the world held their breath as the timber skeleton of the Mary Rose was lifted clear of the water, ready to be returned home to Portsmouth.
 
-question:
+question_content:
   # Start of new task
   - task_type: |
       true_false_notgiven

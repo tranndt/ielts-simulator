@@ -1,11 +1,13 @@
-reading:
+reading_info:
   reading_title: |
     READING PASSAGE 3
     
   reading_subtitle: |
     You should spend about 20 minutes on Questions 27-40 which are based on Reading Passage 3 below.
 
-passage:
+passage_content:
+  paragraph_markers: false # true false
+
   passage_context: |
 
 
@@ -36,7 +38,7 @@ passage:
 
     It’s still early days for the field of neuroaesthetics – and these studies are probably only a taste of what is to come. It would, however, be foolish to reduce art appreciation to a set of scientific laws. We shouldn’t underestimate the importance of the style of a particular artist, their place in history and the artistic environment of their time. Abstract art offers both a challenge and the freedom to play with different interpretations. In some ways, it’s not so different to science, where we are constantly looking for systems and decoding meaning so that we can view and appreciate the world in a new way.
 
-question:
+question_content:
   # Start of new task
   - task_type: |
       multiple_choice_select_one

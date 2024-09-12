@@ -1,11 +1,13 @@
-reading:
+reading_info:
   reading_title: |
     READING PASSAGE 3
 
   reading_subtitle: |
     You should spend about 20 minutes on Questions 27-40 which are based on Reading Passage 3 below.
 
-passage:
+passage_content:
+  paragraph_markers: false # true false
+
   passage_context: |
 
 
@@ -33,7 +35,7 @@ passage:
 
     Trends – technological, economic, environmental, social, or political – that affect how people perceive the world around them and shape what they expect from products and services present firms with unique opportunities for growth.
 
-question:
+question_content:
   # Start of new task
   - task_type: |
       multiple_choice_select_one

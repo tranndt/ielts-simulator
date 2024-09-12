@@ -1,4 +1,4 @@
-reading:
+reading_info:
   reading_title: |
     READING PASSAGE 2
 
@@ -6,7 +6,9 @@ reading:
     You should spend about 20 minutes on Questions 14-26 which are based on Reading Passage 2 below. 
 
 
-passage:
+passage_content:
+  paragraph_markers: false # true
+
   passage_context: |
 
 
@@ -32,7 +34,7 @@ passage:
     The remaining 11 metres of lift needed to reach the Union Canal is achieved by means of a pair of locks. The Wheel could not be constructed to elevate boats over the full 35-metre difference between the two canals, owing to the presence of the historically important Antonine Wall, which was built by the Romans in the second century AD. Boats travel under this wall via a tunnel, then through the locks, and finally on to the Union Canal.
 
 
-question:
+question_content:
   # Start of new task
   - task_type: |
       true_false_notgiven

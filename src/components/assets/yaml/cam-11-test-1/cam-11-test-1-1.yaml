@@ -1,4 +1,4 @@
-reading:
+reading_info:
   reading_title: |
     READING PASSAGE 1
 
@@ -6,7 +6,9 @@ reading:
     You should spend about 20 minutes on Questions 1-13 which are based on Reading Passage 1 below.
 
 
-passage:
+passage_content:
+  paragraph_markers: false # true
+
   passage_context: |
 
 
@@ -35,7 +37,7 @@ passage:
 
     Vertical farming is an attempt to address the undoubted problems that we face in producing enough food for a growing population. At the moment, though, more needs to be done to reduce the detrimental impact it would have on the environment, particularly as regards the use of energy. While it is possible that much of our food will be grown in skyscrapers in future, most experts currently believe it is far more likely that we will simply use the space available on urban rooftops.
 
-question:
+question_content:
   # Start of new task
   - task_type: |
       sentence_completion
