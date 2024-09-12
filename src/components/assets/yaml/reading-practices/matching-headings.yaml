@@ -1,18 +1,29 @@
-raw_task_title: |
+reading_info:
+  reading_title: |
     Academic Reading Sample Task – Matching Headings
 
-raw_task_subtitle: |
+
+  reading_subtitle: |
+
+
+passage_content:
+  paragraph_markers: true # true false
+
+  passage_context: |
     [Note: This is an extract from a Part 2 text about the physics of traffic behaviour.]
     © 2000 The Atlantic Media Co., as first published in The Atlantic Magazine. All rights reserved. Distributed by Tribune Content Agency.
 
-raw_passage_title: |
+
+  passage_title: |
     The Physics of Traffic Behavior
 
-raw_passage_subtitle: |
+
+  passage_subtitle: |
 
 
-raw_passage_text: |
-    A Some years ago, when several theoretical physicists, principally Dirk Helbing and Boris Kerner of 
+  passage_main_text: |
+    A
+    Some years ago, when several theoretical physicists, principally Dirk Helbing and Boris Kerner of 
     Stuttgart, Germany, began publishing papers on traffic flow in publications normally read by traffic 
     engineers, they were clearly working outside their usual sphere of investigation. They had noticed 
     that if they simulated the movement of vehicles on a highway, using the equations that describe 
@@ -29,7 +40,8 @@ raw_passage_text: |
     distance between vehicles is all it takes to trigger a system-wide breakdown that persists for hours. 
     In fact, the physicists’ analysis suggested such spontaneous breakdowns in traffic flow probably 
     occur quite frequently on highways.
-    B Though a decidedly unsettling discovery, this showed striking similarities to the phenomena 
+    B
+    Though a decidedly unsettling discovery, this showed striking similarities to the phenomena 
     popularized as ‘chaos theory’. This theory has arisen from the understanding that in any complex 
     interacting system which is made of many parts, each part affects the others. Consequently, tiny 
     variations in one part of a complex system can grow in huge but unpredictable ways. This type of 
@@ -42,7 +54,8 @@ raw_passage_text: |
     density can act as the ‘speck of dust’ causing a sudden change from freely moving traffic to 
     synchronized traffic, when vehicles in all lanes abruptly slow down and start moving at the same 
     speed, making passing impossible.
-    C The physicists have challenged proposals to set a maximum capacity for vehicles on highways. They 
+    C
+    The physicists have challenged proposals to set a maximum capacity for vehicles on highways. They 
     argue that it may not be enough simply to limit the rate at which vehicles are allowed to enter a 
     highway, rather, it may be necessary to time each vehicle’s entry onto a highway precisely to 
     coincide with a temporary drop in the density of vehicles along the road. The aim of doing this 
@@ -51,7 +64,8 @@ raw_passage_text: |
     flow of traffic could ultimately require implementing the radical idea that has been suggested from 
     time to time: directly regulating the speed and spacing of individual cars along a highway with 
     central computers and sensors that communicate with each car’s engine and brake controls.
-    D However, research into traffic control is generally centered in civil engineering departments and 
+    D
+    However, research into traffic control is generally centered in civil engineering departments and 
     here the theories of the physicists have been greeted with some skepticism. Civil engineers favor a 
     practical approach to problems and believe traffic congestion is the result of poor road construction 
     (two lanes becoming one lane or dangerous curves), which constricts the flow of traffic. Engineers 
@@ -60,7 +74,8 @@ raw_passage_text: |
     needed at all, since at least some of the traffic phenomena the physicists’ theories predicted 
     seemed to be similar to observations that had been appearing in traffic engineering literature under 
     other names for years; observations which had straightforward cause-and-effect explanations.
-    E James Banks, a professor of civil and environmental engineering at San Diego State University in the 
+    E
+    James Banks, a professor of civil and environmental engineering at San Diego State University in the 
     US, suggested that a sudden slowdown in traffic may have less to do with chaos theory than with 
     driver psychology. As traffic gets heavier and the passing lane gets more crowded, aggressive 
     drivers move to other lanes to try to pass, which also tends to even out the speed between lanes. 
@@ -68,37 +83,53 @@ raw_passage_text: |
     a safe distance between vehicles, the shock wave travels back much more rapidly than it would in 
     the other slower lanes, because each following driver has to react more quickly. Consequently, as a 
     road becomes congested, the faster moving traffic is the first to slow down.
-    
 
-questions_list:
-    -   question_type: matching-headings
-        raw_question_instructions: |
-            Questions 1 – 4
-            Reading Passage 1 has five sections, A-E.
-            Choose the correct heading for each section from the list of headings below.
-            Write the correct number, i-viii, in boxes 1-4 on your answer sheet.
+question_content:
+  # Start of new task
+  - task_type: |
+      matching-headings
 
-        raw_headings_text: |
-            i Dramatic effects can result from small changes in traffic just as in nature
-            ii How a maths experiment actually reduced traffic congestion
-            iii How a concept from one field of study was applied in another
-            iv A lack of investment in driver training
-            v Areas of doubt and disagreement between experts
-            vi How different countries have dealt with traffic congestion
-            vii The impact of driver behaviour on traffic speed
-            viii A proposal to take control away from the driver
+    task_question_number: |
+      Questions 1 – 4
 
-        raw_examples_text: |
-            Example Section B i
 
-        raw_questions_text: |
-            1 Section A
-            2 Section C
-            3 Section D
-            4 Section E
+    task_description: |
+      Reading Passage 1 has five sections, A-E.
+      Choose the correct heading for each section from the list of headings below.
+      Write the correct number, i-viii, in boxes 1-4 on your answer sheet.
 
-        raw_answers_text: |
-            1 iii How a concept from one field of study was applied in another
-            2 viii A proposal to take control away from the driver
-            3 v Areas of doubt and disagreement between experts
-            4 vii The impact of driver behavior on traffic speed
+
+    question_main_title: |
+
+
+    question_main_text: | 
+      1 Section A
+      2 Section C
+      3 Section D
+      4 Section E
+
+    question_img_path: |    # flowcharts, diagrams
+
+
+    question_list_title: |    # matching tasks
+
+
+    question_list_of_options: |     # matching tasks, multiple choice select many
+      i Dramatic effects can result from small changes in traffic just as in nature
+      ii How a maths experiment actually reduced traffic congestion
+      iii How a concept from one field of study was applied in another
+      iv A lack of investment in driver training
+      v Areas of doubt and disagreement between experts
+      vi How different countries have dealt with traffic congestion
+      vii The impact of driver behaviour on traffic speed
+      viii A proposal to take control away from the driver
+
+    example_answer: |     # matching headings
+      Section B i
+
+
+    correct_answer: |
+      1 iii How a concept from one field of study was applied in another
+      2 viii A proposal to take control away from the driver
+      3 v Areas of doubt and disagreement between experts
+      4 vii The impact of driver behavior on traffic speed

@@ -37,6 +37,7 @@ def load_yaml_file(filename):
     with open(filename, 'r') as f:
         return yaml.safe_load(f)
 
+
 def save_json_file(string, filename):
     mkdir_p(os.path.dirname(filename))
     with open(filename, 'w') as f:
@@ -51,23 +52,10 @@ def clean_text_multiple_line(text):
     new_text = "\n".join([line.strip() for line in new_text.split('\n')])
     return new_text
 
-def clean_text_paragraph(text):
-    return re.sub(r'\n+', '\n', text)
-
-# def clean_text_unicode_characters(text):
-#     # Replace common unicode characters with their ASCII equivalent
-#     unicode_dict = {
-#         '\u2014': '-', # em dash
-#         '\u2013': '-', # en dash
-#         '\u2018': "'", # left single quote
-#         '\u2019': "'", # right single quote
-#         '\u201C': '"', # left double quote
-#         '\u201D': '"', # right double quote
-#         '\u2026': '...', # ellipsis
-#     }
-#     for unicode_char, ascii_char in unicode_dict.items():
-#         text = text.replace(unicode_char, ascii_char)
-#     return text
+def clean_floating_linebreaks(text):
+    # Pattern to match any \n not preceded by a period OR not followed by an uppercase letter
+    pattern = re.compile(r'(?<![A-Z\.])\n|(?<=\n)(?![A-Z])')
+    return pattern.sub('', text)
 
 
 def list_AZ(start_char,end_char):
@@ -83,9 +71,12 @@ def list_numbers(start_num, end_num):
     return list(range(start_num, end_num+1))
 
 def parse_task_question_number(text):
-    range_pattern = re.compile(r'Questions (\d+)-(\d+)')    # Case 1: "Questions 1-5" (Range)
-    multiple_pattern = re.compile(r'Questions (\d+) and (\d+)')    # Case 2: "Questions 1 and 2" (Multiple)
-    single_pattern = re.compile(r'Question (\d+)')    # Case 3: "Question 1" (Single)
+    # Take into account the unicode for '-'
+    # Case 1: "Questions 1-5" or "Questions 1 - 5" (Range). Take into account multiple spaces
+    range_pattern = re.compile(r'Questions\s*(\d+)[\-\–\s]+(\d+)')
+        # range_pattern = re.compile(r'Questions (\d+)\s*-\s*(\d+)')
+    multiple_pattern = re.compile(r'Questions\s*(\d+)\s*and\s*(\d+)')    # Case 2: "Questions 1 and 2" (Multiple)
+    single_pattern = re.compile(r'Question\s*(\d+)')    # Case 3: "Question 1" (Single)
     # Return whichever case matches
     if range_pattern.match(text):
         start_num, end_num = range_pattern.match(text).groups()
@@ -96,7 +87,7 @@ def parse_task_question_number(text):
     elif single_pattern.match(text):
         return [int(single_pattern.match(text).group(1))]
     else:
-        raise Exception("Invalid question number format")
+        raise Exception(f"Invalid question number format {text}")
     
 def parse_reading_from_yaml(filename):
     raw_data = load_yaml_file(filename)
@@ -120,7 +111,7 @@ def parse_passage_content(passage_data):
     passage_context = clean_text_single_line(passage_data["passage_context"])
     passage_title = clean_text_single_line(passage_data["passage_title"])
     passage_subtitle = clean_text_single_line(passage_data["passage_subtitle"])
-    passage_main_text = clean_text_paragraph(passage_data["passage_main_text"])
+    passage_main_text = clean_floating_linebreaks(passage_data["passage_main_text"])
 
     if paragraph_markers:
         split_pattern = re.compile(r'\n+(?=[A-Z]\n+[A-Z])')
@@ -167,7 +158,6 @@ def parse_question_task(questionTask):
     if task_type not in parser_functions.keys():
         raise Exception(f"{task_type} is an invalid question type")
     return parser_functions[task_type](questionTask)
-
 
 
 #  Completion questions
@@ -300,7 +290,7 @@ def parse_summary_completion_word_list(questionTask):
     #  Clean text
     task_description = clean_text_multiple_line(task_description)
     question_main_title = clean_text_single_line(question_main_title)
-    question_main_text = clean_text_paragraph(question_main_text)
+    question_main_text = clean_floating_linebreaks(question_main_text)
     question_list_title = clean_text_single_line(question_list_title)
     question_list_of_options = clean_text_multiple_line(question_list_of_options)
     task_question_number_list = parse_task_question_number(task_question_number)
@@ -489,7 +479,7 @@ def parse_matching_headings(questionTask):
     #  Clean text
     task_description = clean_text_multiple_line(task_description)
     question_main_title = clean_text_single_line(question_main_title)
-    question_main_text = clean_text_paragraph(question_main_text)
+    question_main_text = clean_floating_linebreaks(question_main_text)
     question_list_title = clean_text_single_line(question_list_title)
     task_question_number_list = parse_task_question_number(task_question_number)
 
@@ -499,7 +489,7 @@ def parse_matching_headings(questionTask):
     # question_list_of_options_lines = re.split(r'\n+', question_list_of_options)
 
     # Matching patterns - both questions and correct answers
-    correct_answer_pattern = re.compile(r'(\d+)[^a-zA-Z\d\(\)\-\+:]+(.*)') # Ex: 8. NOT GIVEN\n\n9. TRUE\n\n
+    correct_answer_pattern = re.compile(r'(\d+)[^a-zA-Z\d\(\)\-\+:]+([ixv]+)') # Ex: 8. NOT GIVEN\n\n9. TRUE\n\n
     question_item_pattern = re.compile(r'(\d+)[^a-zA-Z\d\(\)\-\+:]+(.*)') # Ex: 8. NOT GIVEN\n\n9. TRUE\n\n
     question_option_item_pattern = re.compile(r'([ixv]+)[^a-zA-Z\d\(\)\-\+:]+(.*)') # Ex: A    Roger Angel\n\nB    Phil Rasch
 
@@ -554,7 +544,7 @@ def parse_matching_sentence_endings(questionTask):
     #  Clean text
     task_description = clean_text_multiple_line(task_description)
     question_main_title = clean_text_single_line(question_main_title)
-    question_main_text = clean_text_paragraph(question_main_text)
+    question_main_text = clean_floating_linebreaks(question_main_text)
     question_list_title = clean_text_single_line(question_list_title)
     question_list_of_options = clean_text_multiple_line(question_list_of_options)
     task_question_number_list = parse_task_question_number(task_question_number)
@@ -618,7 +608,7 @@ def parse_matching_paragraphs(questionTask):
     #  Clean text
     task_description = clean_text_multiple_line(task_description)
     question_main_title = clean_text_single_line(question_main_title)
-    question_main_text = clean_text_paragraph(question_main_text)
+    question_main_text = clean_floating_linebreaks(question_main_text)
     question_list_title = clean_text_single_line(question_list_title)
     question_list_of_options = clean_text_multiple_line(question_list_of_options)
     task_question_number_list = parse_task_question_number(task_question_number)
@@ -681,7 +671,7 @@ def parse_true_false_notgiven(questionTask):
     #  Clean text
     task_description = clean_text_multiple_line(task_description)
     question_main_title = clean_text_single_line(question_main_title)
-    question_main_text = clean_text_paragraph(question_main_text)
+    question_main_text = clean_floating_linebreaks(question_main_text)
     correct_answer = clean_text_multiple_line(correct_answer)
     task_question_number_list = parse_task_question_number(task_question_number)
 
@@ -742,7 +732,7 @@ def parse_yes_no_notgiven(questionTask):
     #  Clean text
     task_description = clean_text_multiple_line(task_description)
     question_main_title = clean_text_single_line(question_main_title)
-    question_main_text = clean_text_paragraph(question_main_text)
+    question_main_text = clean_floating_linebreaks(question_main_text)
     correct_answer = clean_text_multiple_line(correct_answer)
     task_question_number_list = parse_task_question_number(task_question_number)
 
@@ -803,7 +793,7 @@ def parse_multiple_choice_select_one(questionTask):
     #  Clean text
     task_description = clean_text_multiple_line(task_description)
     question_main_title = clean_text_single_line(question_main_title)
-    question_main_text = clean_text_paragraph(question_main_text)
+    question_main_text = clean_floating_linebreaks(question_main_text)
     question_list_title = clean_text_single_line(question_list_title)
     task_question_number_list = parse_task_question_number(task_question_number)
 
@@ -863,7 +853,7 @@ def parse_multiple_choice_select_many(questionTask):
     #  Clean text
     task_description = clean_text_multiple_line(task_description)
     question_main_title = clean_text_single_line(question_main_title)
-    question_main_text = clean_text_paragraph(question_main_text)
+    question_main_text = clean_floating_linebreaks(question_main_text)
     task_question_number_list = parse_task_question_number(task_question_number)
 
     # matching patterns
@@ -902,6 +892,7 @@ if __name__ == '__main__':
     python3 parse.py --directory --input "../components/assets/yaml/cam-11-test-2" --output "../components/assets/json/cam-11-test-2"
     python3 parse.py --directory --input "../components/assets/yaml/cam-13-test-2" --output "../components/assets/json/cam-13-test-2"
 
+    python3 parse.py --directory --input "../components/assets/yaml/reading-practices" --output "../data/reading-practices"
     """
     args = parse_args()
     if args.directory:

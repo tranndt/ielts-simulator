@@ -1,0 +1,115 @@
+reading_info:
+  reading_title: |
+    Academic Reading Sample Task – Multiple Choice: more than one answer
+
+
+  reading_subtitle: |
+
+
+passage_content:
+  paragraph_markers: false # true false
+
+  passage_context: |
+    [Note: This is an extract from a Part 1 text about older people in the workforce.]
+    © The Economist Newspaper Limited, London, 1999
+
+  passage_title: |
+
+
+  passage_subtitle: |
+
+
+  passage_main_text: |
+    Clearly, when older people do heavy physical work, their age may affect their productivity. But 
+    other skills may increase with age, including many that are crucial for good management, such as 
+    an ability to handle people diplomatically, to run a meeting or to spot a problem before it blows 
+    up. Peter Hicks, who co-ordinates OECD work on the policy implications of ageing, says that 
+    plenty of research suggests older people are paid more because they are worth more.
+    And the virtues of the young may be exaggerated. ‘The few companies that have kept on older 
+    workers find they have good judgement and their productivity is good,’ says Peter Peterson, 
+    author of a recent book on the impact of ageing. ‘Besides, their education standards are much 
+    better than those of today’s young high-school graduates.’ Companies may say that older 
+    workers are not worth training because they are reaching the end of their working lives; in fact, 
+    young people tend to switch jobs so frequently that they offer the worst returns on training. The 
+    median age for employer-driven training is the late 40s and early 50s, and this training goes 
+    mainly to managers.
+
+question_content:
+  # Start of new task
+  - task_type: multiple-choice-select-many
+
+    task_question_number: |
+      Questions 1 and 2
+
+
+    task_description: |
+      Choose TWO letters, A-G.
+      Write the correct letters in boxes 1 and 2 on your answer sheet.
+
+    question_main_title: |
+
+
+    question_main_text: | 
+      The list below gives some of the advantages of employing older workers.
+      Which TWO advantages are mentioned by the writer of the text?
+
+    question_img_path: |    # flowcharts, diagrams
+
+
+    question_list_title: |    # matching tasks
+
+
+    question_list_of_options: |     # matching tasks, multiple choice select many
+      A They are less likely to be involved in careless accidents.
+      B They can predict areas that may cause trouble in the future.
+      C They are able to train younger workers.
+      D They can deal with unexpected problems.
+      E They are more conscientious.
+      F They are prepared to work for lower salaries.
+      G They are more skilled in personal relationships.
+
+    example_answer: |     # matching headings
+
+
+    correct_answer: |
+      B ■ They can predict areas that may cause trouble in the future.
+      G ■ They are more skilled in personal relationships.
+
+  # Start of new task
+  - task_type: multiple-choice-select-many
+
+    task_question_number: |
+      Questions 3 and 4
+
+
+    task_description: |
+      Choose TWO letters, A-F.
+      Write the correct letters in boxes 3 and 4 on your answer sheet.
+
+    question_main_title: |
+
+
+    question_main_text: | 
+      The list below gives some of the disadvantages of employing younger workers.
+      Which TWO disadvantages are mentioned by the writer of the text?
+
+    question_img_path: |    # flowcharts, diagrams
+
+
+    question_list_title: |    # matching tasks
+
+
+    question_list_of_options: |     # matching tasks, multiple choice select many
+      A They are too confident of their own skills.
+      B They may injure themselves.
+      C They do not stay with the same company for very long.
+      D Their training has been too theoretical.
+      E They are not as well educated as older workers.
+      F They demand higher salaries.
+
+    example_answer: |     # matching headings
+
+
+    correct_answer: |
+      C ■ They do not stay with the same company for very long. 
+      E ■ They are not as well educated as older workers.
