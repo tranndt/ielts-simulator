@@ -117,6 +117,7 @@
           "1982"
         ]
       ],
+      "exampleAnswer": "",
       "questionItems": [
         {
           "questionNumber": 5,
@@ -262,6 +263,14 @@
     },
     {
       "taskType": "diagram-completion",
+      "taskQuestionNumberList": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "taskQuestionNumberText": "Questions 9-13",
       "taskDescription": "Label the diagram below.\nChoose NO MORE THAN TWO WORDS from the passage for each answer.\nWrite your answers in boxes 9-13 on your answer sheet.",
       "questionMainTitle": "Raising the hull of the Mary Rose: Stages one and two",
       "questionMainText": "",

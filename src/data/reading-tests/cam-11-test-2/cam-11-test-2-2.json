@@ -94,6 +94,7 @@
           "Diminishing food resources"
         ]
       ],
+      "exampleAnswer": "",
       "questionItems": [
         {
           "questionNumber": 14,
@@ -409,7 +410,9 @@
       "taskQuestionNumberText": "Questions 21-24",
       "taskDescription": "Complete the summary below.\nChoose ONE WORD ONLY from the passage for each answer.\nWrite your answers in boxes 21-24 on your answer sheet.",
       "questionMainTitle": "Jared Diamond\u2019s View",
-      "questionMainText": "Diamond believes that the Polynesian settlers on Rapa Nui destroyed its forests, cutting down its trees for fuel and clearing land for 21\u2026\u2026\u2026\u2026\u2026. Twentieth-century discoveries of pollen prove that Rapu Nui had once been covered in palm forests, which had turned into grassland by the time the Europeans arrived on the island. When the islanders were no longer able to build the 22\u2026\u2026\u2026\u2026\u2026 they needed to go fishing, they began using the island\u2019s 23\u2026\u2026\u2026\u2026\u2026.. as a food source, according to Diamond. Diamond also claims that the moai were built to show the power of the island\u2019s chieftains, and that the methods of transporting the statues needed not only a great number of people, but also a great deal of 24\u2026\u2026\u2026\u2026\u2026\u2026.",
+      "questionMainText": [
+        "Diamond believes that the Polynesian settlers on Rapa Nui destroyed its forests, cutting down its trees for fuel and clearing land for 21\u2026\u2026\u2026\u2026\u2026. Twentieth-century discoveries of pollen prove that Rapu Nui had once been covered in palm forests, which had turned into grassland by the time the Europeans arrived on the island. When the islanders were no longer able to build the 22\u2026\u2026\u2026\u2026\u2026 they needed to go fishing, they began using the island\u2019s 23\u2026\u2026\u2026\u2026\u2026.. as a food source, according to Diamond. Diamond also claims that the moai were built to show the power of the island\u2019s chieftains, and that the methods of transporting the statues needed not only a great number of people, but also a great deal of 24\u2026\u2026\u2026\u2026\u2026\u2026."
+      ],
       "questionItems": [
         {
           "questionNumber": 21,

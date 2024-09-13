@@ -12,7 +12,7 @@ const ReadingSectionFrame = ({ passage }) => (
       passageContent = {passage.passageContent}
     />
     <QuestionFrame questionsList={passage.questionContent} />
-    {/* <TimerFrame taskTime = {passage.taskTime}/> */}
+    <TimerFrame/>
   </div>
 );
 

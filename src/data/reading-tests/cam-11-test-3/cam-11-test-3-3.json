@@ -1,0 +1,225 @@
+{
+  "readingInfo": {
+    "readingTitle": "READING PASSAGE 3",
+    "readingSubtitle": "You should spend about 20 minutes on Questions 27-40 which are based on Reading Passage 3 below."
+  },
+  "passageContent": {
+    "hasParagraphMarkers": false,
+    "passageContext": "",
+    "passageTitle": "Preface to \u2018How the other half thinks: Adventures in mathematical reasoning\u2019",
+    "passageSubtitle": "",
+    "passageMainText": "A\nOccasionally, in some difficult musical compositions, there are beautiful, but easy parts \u2013 parts so simple a beginner could play them. So it is with mathematics as well. There are some discoveries in advanced mathematics that do not depend on specialized knowledge, not even on algebra, geometry, or trigonometry. Instead they may involve, at most, a little arithmetic, such as \u2018the sum of two odd numbers is even\u2019, and common sense. Each of the eight chapters in this book illustrates this phenomenon. Anyone can understand every step in the reasoning.\nThe thinking in each chapter uses at most only elementary arithmetic, and sometimes not even that. Thus all readers will have the chance to participate in a mathematical experience, to appreciate the beauty of mathematics, and to become familiar with its logical, yet intuitive, style of thinking.\nB\nOne of my purposes in writing this book is to give readers who haven\u2019t had the opportunity to see and enjoy real mathematics the chance to appreciate the mathematical way of thinking. I want to reveal not only some of the fascinating discoveries, but, more importantly, the reasoning behind them.\nIn that respect, this book differs from most books on mathematics written for the general public. Some present the lives of colorful mathematicians. Others describe important applications of mathematics. Yet others go into mathematical procedures, but assume that the reader is adept in using algebra.\nC\nI hope this book will help bridge that notorious gap that separates the two cultures: the humanities and the sciences, or should I say the right brain (intuitive) and the left brain (analytical, numerical). As the chapters will illustrate, mathematics is not restricted to the analytical and numerical; intuition plays a significant role. The alleged gap can be narrowed or completely overcome by anyone, in part because each of us is far from using the full capacity of either side of the brain. To illustrate our human potential, I cite a structural engineer who is an artist, an electrical engineer who is an opera singer, an opera singer who published mathematical research, and a mathematician who publishes short stories.\nD\nOther scientists have written books to explain their fields to non-scientists, but have necessarily had to omit the mathematics, although it provides the foundation of their theories. The reader must remain a tantalized spectator rather than an involved participant, since the appropriate language for describing the details in much of science is mathematics, whether the subject is expanding universe, subatomic particles, or chromosomes. Though the broad outline of a scientific theory can be sketched intuitively, when a part of the physical universe is finally understood, its description often looks like a page in a mathematics text.\nE\nStill, the non-mathematical reader can go far in understanding mathematical reasoning. This book presents the details that illustrate the mathematical style of thinking, which involves sustained, step-by-step analysis, experiments, and insights. You will turn these pages much more slowly than when reading a novel or a newspaper. It may help to have a pencil and paper ready to check claims and carry out experiments.\nF\nAs I wrote, I kept in mind two types of readers: those who enjoyed mathematics until they were turned off by an unpleasant episode, usually around fifth grade, and mathematics aficionados, who will find much that is new throughout the book.\nThis book also serves readers who simply want to sharpen their analytical skills. Many careers, such as law and medicine, require extended, precise analysis. Each chapter offers practice in following a sustained and closely argued line of thought. That mathematics can develop this skill is shown by these two testimonials:\nG\nA physician wrote, \u2018The discipline of analytical thought processes [in mathematics] prepared me extremely well for medical school. In medicine one is faced with a problem which must be thoroughly analyzed before a solution can be found. The process is similar to doing mathematics.\u2019\nA lawyer made the same point, \u201cAlthough I had no background in law \u2013 not even one political science course \u2014 I did well at one of the best law schools. I attribute much of my success there to having learned, through the study of mathematics, and, in particular, theorems, how to analyze complicated principles. Lawyers who have studied mathematics can master the legal principles in a way that most others cannot.\u2019\nI hope you will share my delight in watching as simple, even naive, questions lead to remarkable solutions and purely theoretical discoveries find unanticipated applications.\n",
+    "passageParagraphs": [
+      "A",
+      "Occasionally, in some difficult musical compositions, there are beautiful, but easy parts \u2013 parts so simple a beginner could play them. So it is with mathematics as well. There are some discoveries in advanced mathematics that do not depend on specialized knowledge, not even on algebra, geometry, or trigonometry. Instead they may involve, at most, a little arithmetic, such as \u2018the sum of two odd numbers is even\u2019, and common sense. Each of the eight chapters in this book illustrates this phenomenon. Anyone can understand every step in the reasoning.",
+      "The thinking in each chapter uses at most only elementary arithmetic, and sometimes not even that. Thus all readers will have the chance to participate in a mathematical experience, to appreciate the beauty of mathematics, and to become familiar with its logical, yet intuitive, style of thinking.",
+      "B",
+      "One of my purposes in writing this book is to give readers who haven\u2019t had the opportunity to see and enjoy real mathematics the chance to appreciate the mathematical way of thinking. I want to reveal not only some of the fascinating discoveries, but, more importantly, the reasoning behind them.",
+      "In that respect, this book differs from most books on mathematics written for the general public. Some present the lives of colorful mathematicians. Others describe important applications of mathematics. Yet others go into mathematical procedures, but assume that the reader is adept in using algebra.",
+      "C",
+      "I hope this book will help bridge that notorious gap that separates the two cultures: the humanities and the sciences, or should I say the right brain (intuitive) and the left brain (analytical, numerical). As the chapters will illustrate, mathematics is not restricted to the analytical and numerical; intuition plays a significant role. The alleged gap can be narrowed or completely overcome by anyone, in part because each of us is far from using the full capacity of either side of the brain. To illustrate our human potential, I cite a structural engineer who is an artist, an electrical engineer who is an opera singer, an opera singer who published mathematical research, and a mathematician who publishes short stories.",
+      "D",
+      "Other scientists have written books to explain their fields to non-scientists, but have necessarily had to omit the mathematics, although it provides the foundation of their theories. The reader must remain a tantalized spectator rather than an involved participant, since the appropriate language for describing the details in much of science is mathematics, whether the subject is expanding universe, subatomic particles, or chromosomes. Though the broad outline of a scientific theory can be sketched intuitively, when a part of the physical universe is finally understood, its description often looks like a page in a mathematics text.",
+      "E",
+      "Still, the non-mathematical reader can go far in understanding mathematical reasoning. This book presents the details that illustrate the mathematical style of thinking, which involves sustained, step-by-step analysis, experiments, and insights. You will turn these pages much more slowly than when reading a novel or a newspaper. It may help to have a pencil and paper ready to check claims and carry out experiments.",
+      "F",
+      "As I wrote, I kept in mind two types of readers: those who enjoyed mathematics until they were turned off by an unpleasant episode, usually around fifth grade, and mathematics aficionados, who will find much that is new throughout the book.",
+      "This book also serves readers who simply want to sharpen their analytical skills. Many careers, such as law and medicine, require extended, precise analysis. Each chapter offers practice in following a sustained and closely argued line of thought. That mathematics can develop this skill is shown by these two testimonials:",
+      "G",
+      "A physician wrote, \u2018The discipline of analytical thought processes [in mathematics] prepared me extremely well for medical school. In medicine one is faced with a problem which must be thoroughly analyzed before a solution can be found. The process is similar to doing mathematics.\u2019",
+      "A lawyer made the same point, \u201cAlthough I had no background in law \u2013 not even one political science course \u2014 I did well at one of the best law schools. I attribute much of my success there to having learned, through the study of mathematics, and, in particular, theorems, how to analyze complicated principles. Lawyers who have studied mathematics can master the legal principles in a way that most others cannot.\u2019",
+      "I hope you will share my delight in watching as simple, even naive, questions lead to remarkable solutions and purely theoretical discoveries find unanticipated applications.\n"
+    ]
+  },
+  "questionContent": [
+    {
+      "taskType": "matching-paragraphs",
+      "taskQuestionNumberList": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "taskQuestionNumberText": "Questions 27-34",
+      "taskDescription": "Reading Passage has seven sections, A-G.\nWhich section contains the following information?\nWrite the correct letter, A-G, in boxes 27-34 on your answer sheet.\nNB   You may use any letter more than once.",
+      "questionMainTitle": "",
+      "questionMainText": "27   a reference to books that assume a lack of mathematical knowledge\n\n28   the way in which this is not a typical book about mathematics\n\n29   personal examples of being helped by mathematics\n\n30   examples of people who each had abilities that seemed incompatible\n\n31   mention of different focuses of books about mathematics\n\n32   a contrast between reading this book and reading other kinds of publication\n\n33   a claim that the whole of the book is accessible to everybody\n\n34   a reference to different categories of intended readers of this book",
+      "questionListTitle": "",
+      "questionListOptions": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "questionItems": [
+        {
+          "questionNumber": 27,
+          "questionText": "a reference to books that assume a lack of mathematical knowledge",
+          "questionOptions": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G"
+          ],
+          "correctAnswer": "D"
+        },
+        {
+          "questionNumber": 28,
+          "questionText": "the way in which this is not a typical book about mathematics",
+          "questionOptions": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G"
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "questionNumber": 29,
+          "questionText": "personal examples of being helped by mathematics",
+          "questionOptions": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G"
+          ],
+          "correctAnswer": "G"
+        },
+        {
+          "questionNumber": 30,
+          "questionText": "examples of people who each had abilities that seemed incompatible",
+          "questionOptions": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G"
+          ],
+          "correctAnswer": "C"
+        },
+        {
+          "questionNumber": 31,
+          "questionText": "mention of different focuses of books about mathematics",
+          "questionOptions": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G"
+          ],
+          "correctAnswer": "B"
+        },
+        {
+          "questionNumber": 32,
+          "questionText": "a contrast between reading this book and reading other kinds of publication",
+          "questionOptions": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G"
+          ],
+          "correctAnswer": "E"
+        },
+        {
+          "questionNumber": 33,
+          "questionText": "a claim that the whole of the book is accessible to everybody",
+          "questionOptions": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G"
+          ],
+          "correctAnswer": "A"
+        },
+        {
+          "questionNumber": 34,
+          "questionText": "a reference to different categories of intended readers of this book",
+          "questionOptions": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G"
+          ],
+          "correctAnswer": "F"
+        }
+      ]
+    },
+    {
+      "taskType": "sentence-completion",
+      "taskQuestionNumberList": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "taskQuestionNumberText": "Questions 35-40",
+      "taskDescription": "Complete the sentences below.\nChoose ONE WORD ONLY from the passage for each answer.\nWrite your answers in boxes 35-40 on your answer sheet.",
+      "questionMainTitle": "",
+      "questionMainText": [
+        "35    Some areas of both music and mathematics are suitable for someone who is a\u2026\u2026\u2026\u2026\u2026\u2026",
+        "36    It is sometimes possible to understand advanced mathematics using no more than a limited knowledge of\u2026\u2026\u2026\u2026\u2026\u2026",
+        "37    The writer intends to show that mathematics requires\u2026\u2026\u2026\u2026\u2026\u2026 thinking, as well as analytical skills.",
+        "38    Some books written by\u2026\u2026\u2026\u2026\u2026\u2026. have had to leave out the mathematics that is central to their theories.",
+        "39    The writer advises non-mathematical readers to perform\u2026\u2026\u2026\u2026\u2026\u2026. while reading",
+        "40    A lawyer found that studying\u2026\u2026\u2026\u2026\u2026\u2026. helped even more than other areas of mathematics in the study of law."
+      ],
+      "questionItems": [
+        {
+          "questionNumber": 35,
+          "correctAnswer": "beginner"
+        },
+        {
+          "questionNumber": 36,
+          "correctAnswer": "arithmetic"
+        },
+        {
+          "questionNumber": 37,
+          "correctAnswer": "intuitive"
+        },
+        {
+          "questionNumber": 38,
+          "correctAnswer": "scientists"
+        },
+        {
+          "questionNumber": 39,
+          "correctAnswer": "experiments"
+        },
+        {
+          "questionNumber": 40,
+          "correctAnswer": "theorems"
+        }
+      ]
+    }
+  ]
+}

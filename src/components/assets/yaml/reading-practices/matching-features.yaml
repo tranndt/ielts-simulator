@@ -1,3 +1,6 @@
+metadata:
+  contains_floating_breaks: true # true false
+
 reading_info:
   reading_title: |
     Academic Reading Sample Task – Matching Features

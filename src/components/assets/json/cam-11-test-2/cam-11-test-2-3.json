@@ -35,7 +35,7 @@
       "questionItems": [
         {
           "questionNumber": 27,
-          "questionText": "In the second paragraph, the writer refers to a shape-matching test in order to illustrate",
+          "questionText": "In the second paragraph, the writer refers to a shape-matching test in order to illustrateA   the subjective nature of art appreciation.",
           "questionOptions": [
             [
               "A",
@@ -58,7 +58,7 @@
         },
         {
           "questionNumber": 28,
-          "questionText": "Angelina Hawley-Dolan\u2019s findings indicate that people",
+          "questionText": "Angelina Hawley-Dolan\u2019s findings indicate that peopleA   mostly favour works of art which they know well.",
           "questionOptions": [
             [
               "A",
@@ -81,7 +81,7 @@
         },
         {
           "questionNumber": 29,
-          "questionText": "Results of studies involving Robert Pepperell\u2019s pieces suggest that people",
+          "questionText": "Results of studies involving Robert Pepperell\u2019s pieces suggest that peopleA   can appreciate a painting without fully understanding it.",
           "questionOptions": [
             [
               "A",
@@ -104,7 +104,7 @@
         },
         {
           "questionNumber": 30,
-          "questionText": "What do the experiments described in the fifth paragraph suggest about the paintings of Mondrian?",
+          "questionText": "What do the experiments described in the fifth paragraph suggest about the paintings of Mondrian?A   They are more carefully put together than they appear.",
           "questionOptions": [
             [
               "A",
@@ -377,23 +377,11 @@
       "questionItems": [
         {
           "questionNumber": 40,
-          "questionText": "What would be the most appropriate subtitle for the article?",
+          "questionText": "What would be the most appropriate subtitle for the article?A   Some scientific insights into how the brain responds to abstract artB   Recent studies focusing on the neural activity of abstract artistsC   A comparison of the neurological bases of abstract and representational artD   How brain research has altered public opinion about abstract art",
           "questionOptions": [
             [
               "A",
-              "Some scientific insights into how the brain responds to abstract art"
-            ],
-            [
-              "B",
-              "Recent studies focusing on the neural activity of abstract artists"
-            ],
-            [
-              "C",
-              "A comparison of the neurological bases of abstract and representational art"
-            ],
-            [
-              "D",
-              "How brain research has altered public opinion about abstract art"
+              "Some scientific insights into how the brain responds to abstract artB   Recent studies focusing on the neural activity of abstract artistsC   A comparison of the neurological bases of abstract and representational artD   How brain research has altered public opinion about abstract art"
             ]
           ],
           "correctAnswer": "A"

@@ -1,3 +1,7 @@
+metadata:
+  contains_floating_breaks: false # true false
+
+
 reading_info:
   reading_title: |
 

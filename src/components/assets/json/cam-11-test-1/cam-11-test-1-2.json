@@ -99,6 +99,16 @@
     },
     {
       "taskType": "diagram-completion",
+      "taskQuestionNumberList": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "taskQuestionNumberText": "Questions 20-26",
       "taskDescription": "Label the diagram below.\nChoose ONE WORD from the passage for each answer.\nWrite your answers in boxes 20-26 on your answer sheet.",
       "questionMainTitle": "How a boat is lifted on the Falkirk Wheel",
       "questionMainText": "",

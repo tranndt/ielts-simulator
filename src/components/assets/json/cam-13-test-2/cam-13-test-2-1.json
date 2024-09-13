@@ -35,7 +35,21 @@
       "taskQuestionNumberText": "Questions 1-9",
       "taskDescription": "Complete the notes below.\nChoose ONE WORD ONLY from the passage for each answer.\nWrite your answers in boxes 1-9 on your answer sheet.",
       "questionMainTitle": "The Early History of Cinnamon",
-      "questionMainText": "Biblical times:\nadded to 1\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..\nused to show 2\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026. Between people\nAncient Rome:\nused for its sweet smell at 3\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..\nMiddle Ages:\nadded to food, especially meat\nwas an indication of a person\u2019s 4\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..\nknown as a treatment for 5\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.. and other health problems\ngrown in 6\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\nmerchants used 7\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026 to bring it to the Mediterranean\narrived in the Mediterranean at 8\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\ntraders took it to 9\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026. and sold it to destinations around Europe.",
+      "questionMainText": [
+        "Biblical times:",
+        "added to 1\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..",
+        "used to show 2\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026. Between people",
+        "Ancient Rome:",
+        "used for its sweet smell at 3\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..",
+        "Middle Ages:",
+        "added to food, especially meat",
+        "was an indication of a person\u2019s 4\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..",
+        "known as a treatment for 5\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.. and other health problems",
+        "grown in 6\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.",
+        "merchants used 7\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026 to bring it to the Mediterranean",
+        "arrived in the Mediterranean at 8\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026",
+        "traders took it to 9\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026. and sold it to destinations around Europe."
+      ],
       "questionItems": [
         {
           "questionNumber": 1,

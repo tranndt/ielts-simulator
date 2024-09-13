@@ -35,7 +35,15 @@
       "taskQuestionNumberText": "Questions 1-7",
       "taskDescription": "Complete the sentences below.\nChoose NO MORE THAN TWO WORDS from the passage for each answer.\nWrite your answers in boxes 1-7 on your answer sheet.",
       "questionMainTitle": "Indoor farming",
-      "questionMainText": "1    Some food plants, including\u2026\u2026\u2026\u2026\u2026\u2026 are already grown indoors.\n2    Vertical farms would be located in\u2026\u2026\u2026\u2026\u2026\u2026, meaning that there would be less need to take them long distances to customers.\n3    Vertical farms could use methane from plants and animals to produce\u2026\u2026\u2026\u2026\u2026\u2026..\n4    The consumption of\u2026\u2026\u2026\u2026\u2026\u2026\u2026 would be cut because agricultural vehicles would be unnecessary.\n5    The fact that vertical farms would need\u2026\u2026\u2026\u2026\u2026\u2026.. light is a disadvantage.\n6    One form of vertical farming involves planting in\u2026\u2026\u2026\u2026\u2026\u2026.. which are not fixed.\n7    The most probable development is that food will be grown on\u2026\u2026\u2026\u2026\u2026\u2026\u2026 in towns and cities.",
+      "questionMainText": [
+        "1    Some food plants, including\u2026\u2026\u2026\u2026\u2026\u2026 are already grown indoors.",
+        "2    Vertical farms would be located in\u2026\u2026\u2026\u2026\u2026\u2026, meaning that there would be less need to take them long distances to customers.",
+        "3    Vertical farms could use methane from plants and animals to produce\u2026\u2026\u2026\u2026\u2026\u2026..",
+        "4    The consumption of\u2026\u2026\u2026\u2026\u2026\u2026\u2026 would be cut because agricultural vehicles would be unnecessary.",
+        "5    The fact that vertical farms would need\u2026\u2026\u2026\u2026\u2026\u2026.. light is a disadvantage.",
+        "6    One form of vertical farming involves planting in\u2026\u2026\u2026\u2026\u2026\u2026.. which are not fixed.",
+        "7    The most probable development is that food will be grown on\u2026\u2026\u2026\u2026\u2026\u2026\u2026 in towns and cities."
+      ],
       "questionItems": [
         {
           "questionNumber": 1,

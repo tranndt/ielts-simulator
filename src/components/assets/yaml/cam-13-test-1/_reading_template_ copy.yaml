@@ -1,0 +1,54 @@
+metadata:
+  contains_floating_breaks: false # true false
+
+reading_info:
+  reading_title: |
+
+
+  reading_subtitle: |
+
+
+passage_content:
+  paragraph_markers: false # true false
+
+  passage_context: |
+
+
+  passage_title: |
+
+
+  passage_subtitle: |
+
+
+  passage_main_text: |
+
+
+question_content:
+  # Start of new task
+  - task_type: 
+
+    task_question_number: |
+
+
+    task_description: |
+
+
+    question_main_title: |
+
+
+    question_main_text: | 
+
+
+    question_img_path: |    # flowcharts, diagrams
+
+
+    question_list_title: |    # matching tasks
+
+
+    question_list_of_options: |     # matching tasks, multiple choice select many
+
+
+    example_answer: |     # matching headings
+
+
+    correct_answer: |

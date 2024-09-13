@@ -54,7 +54,7 @@ def clean_text_multiple_line(text):
 
 def clean_floating_linebreaks(text):
     # Pattern to match any \n not preceded by a period OR not followed by an uppercase letter
-    pattern = re.compile(r'(?<![A-Z\.])\n|(?<=\n)(?![A-Z])')
+    pattern = re.compile(r'(?<![A-Z\.\?\!])\n|(?<=\n)(?![A-Z])')
     return pattern.sub('', text)
 
 
@@ -89,8 +89,17 @@ def parse_task_question_number(text):
     else:
         raise Exception(f"Invalid question number format {text}")
     
+def populate_metadata(raw_data):
+    if raw_data["metadata"]:
+        metadata = raw_data["metadata"]
+        raw_data["reading_info"]["metadata"] = metadata
+        raw_data["passage_content"]["metadata"] = metadata
+        for question in raw_data["question_content"]:
+            question["metadata"] = metadata
+
 def parse_reading_from_yaml(filename):
     raw_data = load_yaml_file(filename)
+    populate_metadata(raw_data)
     reading_info = parse_reading_info(raw_data["reading_info"])
     passage_content = parse_passage_content(raw_data["passage_content"])
     question_content = parse_question_content(raw_data["question_content"])
@@ -107,15 +116,19 @@ def parse_reading_info(reading_info_data):
     }
 
 def parse_passage_content(passage_data):
+    metadata = passage_data['metadata']
     paragraph_markers = passage_data['paragraph_markers']
     passage_context = clean_text_single_line(passage_data["passage_context"])
     passage_title = clean_text_single_line(passage_data["passage_title"])
     passage_subtitle = clean_text_single_line(passage_data["passage_subtitle"])
-    passage_main_text = clean_floating_linebreaks(passage_data["passage_main_text"])
+    if metadata['contains_floating_breaks']:
+        passage_main_text = clean_floating_linebreaks(passage_data["passage_main_text"])
+    else:
+        passage_main_text = clean_text_multiple_line(passage_data["passage_main_text"])
 
     if paragraph_markers:
-        split_pattern = re.compile(r'\n+(?=[A-Z]\n+[A-Z])')
-        match_pattern = re.compile(r'([A-Z])\n+([A-Z].*)')
+        split_pattern = re.compile(r'\n+(?=[A-Z]\n+[^A-Za-z]?[A-Z])')
+        match_pattern = re.compile(r'([A-Z])\n+([^A-Za-z]?[A-Z].*)')
         passsage_paragraphs = re.split(split_pattern, passage_main_text) # ['A\nEaster Island, or ', 'B\nWhen the Europeans', 'C\nThe moai, he think',...]
         passsage_paragraphs = [match_pattern.match(a).groups() for a in passsage_paragraphs]     # For each paragraph, match into header and content groups
     else:
@@ -237,7 +250,7 @@ def parse_sentence_completion(questionTask):
     task_question_number_list = parse_task_question_number(task_question_number)
     task_description = clean_text_multiple_line(task_description)
     question_main_title = clean_text_single_line(question_main_title)
-    question_main_text = clean_text_multiple_line(question_main_text)
+    # question_main_text = clean_text_multiple_line(question_main_text)
     correct_answer = clean_text_multiple_line(correct_answer)
 
     # matching patterns
@@ -295,7 +308,7 @@ def parse_summary_completion_word_list(questionTask):
     #  Clean text
     task_description = clean_text_multiple_line(task_description)
     question_main_title = clean_text_single_line(question_main_title)
-    question_main_text = clean_floating_linebreaks(question_main_text)
+    question_main_text = clean_text_multiple_line(question_main_text)
     question_list_title = clean_text_single_line(question_list_title)
     question_list_of_options = clean_text_multiple_line(question_list_of_options)
     task_question_number_list = parse_task_question_number(task_question_number)
@@ -486,7 +499,7 @@ def parse_matching_headings(questionTask):
     #  Clean text
     task_description = clean_text_multiple_line(task_description)
     question_main_title = clean_text_single_line(question_main_title)
-    question_main_text = clean_floating_linebreaks(question_main_text)
+    question_main_text = clean_text_multiple_line(question_main_text)
     question_list_title = clean_text_single_line(question_list_title)
     task_question_number_list = parse_task_question_number(task_question_number)
 
@@ -686,7 +699,7 @@ def parse_true_false_notgiven(questionTask):
     #  Clean text
     task_description = clean_text_multiple_line(task_description)
     question_main_title = clean_text_single_line(question_main_title)
-    question_main_text = clean_floating_linebreaks(question_main_text)
+    question_main_text = clean_text_multiple_line(question_main_text)
     correct_answer = clean_text_multiple_line(correct_answer)
     task_question_number_list = parse_task_question_number(task_question_number)
 
@@ -808,7 +821,7 @@ def parse_multiple_choice_select_one(questionTask):
     #  Clean text
     task_description = clean_text_multiple_line(task_description)
     question_main_title = clean_text_single_line(question_main_title)
-    question_main_text = clean_floating_linebreaks(question_main_text)
+    # question_main_text = clean_floating_linebreaks(question_main_text)
     question_list_title = clean_text_single_line(question_list_title)
     task_question_number_list = parse_task_question_number(task_question_number)
 
@@ -873,7 +886,7 @@ def parse_multiple_choice_select_many(questionTask):
     #  Clean text
     task_description = clean_text_multiple_line(task_description)
     question_main_title = clean_text_single_line(question_main_title)
-    question_main_text = clean_floating_linebreaks(question_main_text)
+    question_main_text = clean_text_multiple_line(question_main_text)
     task_question_number_list = parse_task_question_number(task_question_number)
 
     # matching patterns
@@ -901,6 +914,7 @@ def parse_multiple_choice_select_many(questionTask):
     "questionItems": question_items,
     "correctAnswer": correct_answer_items
     }
+
 if __name__ == '__main__':
     """
     Usage:
@@ -911,9 +925,10 @@ if __name__ == '__main__':
     Example:
     python3 parse.py --input "../components/assets/yaml/cam-11-test-1/cam-11-test-1-1.yaml" --output "../components/assets/json/cam-11-test-1/cam-11-test-1-1.json"
     
-    python3 parse.py --directory --input "../components/assets/yaml/cam-11-test-1" --output "../components/assets/json/cam-11-test-1"
-    python3 parse.py --directory --input "../components/assets/yaml/cam-11-test-2" --output "../components/assets/json/cam-11-test-2"
-    python3 parse.py --directory --input "../components/assets/yaml/cam-13-test-2" --output "../components/assets/json/cam-13-test-2"
+    python3 parse.py --directory --input "../components/assets/yaml/cam-11-test-1" --output "../data/reading-tests/cam-11-test-1"
+    python3 parse.py --directory --input "../components/assets/yaml/cam-11-test-2" --output "../data/reading-tests/cam-11-test-2"
+    python3 parse.py --directory --input "../components/assets/yaml/cam-11-test-3" --output "../data/reading-tests/cam-11-test-3"
+    python3 parse.py --directory --input "../components/assets/yaml/cam-13-test-2" --output "../data/reading-tests/cam-13-test-2"
 
     python3 parse.py --directory --input "../components/assets/yaml/reading-practices" --output "../data/reading-practices"
     """

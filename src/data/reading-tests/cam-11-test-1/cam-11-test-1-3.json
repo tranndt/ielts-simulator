@@ -35,6 +35,10 @@
         "The US National Center for Atmospheric Research has already suggested that the proposal to inject sulphur into the atmosphere might affect rainfall patterns across the tropics and the Southern Ocean. \u2018Geo-engineering plans to inject stratospheric aerosols or to seed clouds would act to cool the planet, and act to increase the extent of sea ice,\u2019 says Rasch. \u2018But all the models suggest some impact on the distribution of precipitation.\u2019"
       ],
       [
+        "G",
+        "\u2018A further risk with geo-engineering projects is that you can \u201covershoot\u201d,\u2019 says Dr Dan Hunt, from the University of Bristol\u2019s School of Geophysical Sciences, who has studied the likely impacts of the sunshade and aerosol schemes on the climate. \u2018You may bring global temperatures back to pre-industrial levels, but the risk is that the poles will still be warmer than they should be and the tropics will be cooler than before industrialisation.\u2019 To avoid such a scenario,\u201d Hunt says, \u201cAngel\u2019s project would have to operate at half strength; all of which reinforces his view that the best option is to avoid the need for geo-engineering altogether.\u201d"
+      ],
+      [
         "H",
         "The main reason why geo-engineering is supported by many in the scientific community is that most researchers have little faith in the ability of politicians to agree \u2013 and then bring in \u2014 the necessary carbon cuts. Even leading conservation organisations see the value of investigating the potential of geo-engineering. According to Dr Martin Sommerkorn, climate change advisor for the World Wildlife Fund\u2019s International Arctic Programme, \u2018Human-induced climate change has brought humanity to a position where we shouldn\u2019t exclude thinking thoroughly about this topic and its possibilities.\u2019"
       ]
@@ -51,7 +55,7 @@
       "taskQuestionNumberText": "Questions 27-29",
       "taskDescription": "Reading Passage 3 has eight paragraphs A-H\nWhich paragraph contains the following information?\nWrite the correct letter, A-H, in boxes 27-29 on your answer sheet.",
       "questionMainTitle": "",
-      "questionMainText": "27   mention of a geo-engineering project based on an earlier natural phenomenon\n28   an example of a successful use of geo-engineering\n29   a common definition of geo-engineering",
+      "questionMainText": "27   mention of a geo-engineering project based on an earlier natural phenomenon\n\n28   an example of a successful use of geo-engineering\n\n29   a common definition of geo-engineering",
       "questionListTitle": "",
       "questionListOptions": [
         "A",
@@ -66,6 +70,7 @@
       "questionItems": [
         {
           "questionNumber": 27,
+          "questionText": "mention of a geo-engineering project based on an earlier natural phenomenon",
           "questionOptions": [
             "A",
             "B",
@@ -80,6 +85,7 @@
         },
         {
           "questionNumber": 28,
+          "questionText": "an example of a successful use of geo-engineering",
           "questionOptions": [
             "A",
             "B",
@@ -94,6 +100,7 @@
         },
         {
           "questionNumber": 29,
+          "questionText": "a common definition of geo-engineering",
           "questionOptions": [
             "A",
             "B",
@@ -214,6 +221,7 @@
           "Martin Sommerkorn"
         ]
       ],
+      "exampleAnswer": "",
       "questionItems": [
         {
           "questionNumber": 37,

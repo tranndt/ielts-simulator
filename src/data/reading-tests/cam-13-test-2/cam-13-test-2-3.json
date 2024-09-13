@@ -183,6 +183,7 @@
           "iToys"
         ]
       ],
+      "exampleAnswer": "",
       "questionItems": [
         {
           "questionNumber": 32,
@@ -334,7 +335,7 @@
       "taskQuestionNumberText": "Questions 38-40",
       "taskDescription": "Complete each sentence with the correct ending, A, B, C or D below.\nWrite the correct letter, A, B, C or D, in boxes 38-40 on your answer sheet.",
       "questionMainTitle": "",
-      "questionMainText": "38   If there are any trend-related changes impacting on your category, you should\n39   If a current trend highlights a negative aspect of your category, you should\n40   If the consumers\u2019 new focus has an increasing lack of connection with your offering you should",
+      "questionMainText": "38   If there are any trend-related changes impacting on your category, you should\n\n39   If a current trend highlights a negative aspect of your category, you should\n\n40   If the consumers\u2019 new focus has an increasing lack of connection with your offering you should",
       "questionListTitle": "",
       "questionListOptions": [
         [
@@ -354,9 +355,11 @@
           "use the combine-and-transcend strategy to integrate the two worlds."
         ]
       ],
+      "exampleAnswer": "",
       "questionItems": [
         {
           "questionNumber": 38,
+          "questionText": "If there are any trend-related changes impacting on your category, you should",
           "questionOptions": [
             [
               "A",
@@ -379,6 +382,7 @@
         },
         {
           "questionNumber": 39,
+          "questionText": "If a current trend highlights a negative aspect of your category, you should",
           "questionOptions": [
             [
               "A",
@@ -401,6 +405,7 @@
         },
         {
           "questionNumber": 40,
+          "questionText": "If the consumers\u2019 new focus has an increasing lack of connection with your offering you should",
           "questionOptions": [
             [
               "A",

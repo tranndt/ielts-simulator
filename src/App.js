@@ -15,6 +15,7 @@ function App() {
   const createRoutes = () =>  jsonResources.keys().map((key) => {
       const path = key.replace('./', '').replace('.json', '');
       const passage = jsonResources(key);
+      console.log(key)
       return (
         <Route
           key={path}

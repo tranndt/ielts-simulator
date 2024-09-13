@@ -48,7 +48,7 @@
       "taskQuestionNumberText": "Questions 14-17",
       "taskDescription": "Reading Passage 2 has six section, A-F.\nWhich paragraph contains the following information?\nWrite the correct letter, A-F, in boxes 14-17 on your answer sheet.\nNB  You may use any letter more than once.",
       "questionMainTitle": "",
-      "questionMainText": "14   reference to research showing the beneficial effects of oxytocin on people\n15   reasons why the effects of oxytocin are complex\n16   mention of a period in which oxytocin attracted little scientific attention\n17   reference to people ignoring certain aspects of their research data",
+      "questionMainText": "14   reference to research showing the beneficial effects of oxytocin on people\n\n15   reasons why the effects of oxytocin are complex\n\n16   mention of a period in which oxytocin attracted little scientific attention\n\n17   reference to people ignoring certain aspects of their research data",
       "questionListTitle": "",
       "questionListOptions": [
         "A",
@@ -61,6 +61,7 @@
       "questionItems": [
         {
           "questionNumber": 14,
+          "questionText": "reference to research showing the beneficial effects of oxytocin on people",
           "questionOptions": [
             "A",
             "B",
@@ -73,6 +74,7 @@
         },
         {
           "questionNumber": 15,
+          "questionText": "reasons why the effects of oxytocin are complex",
           "questionOptions": [
             "A",
             "B",
@@ -85,6 +87,7 @@
         },
         {
           "questionNumber": 16,
+          "questionText": "mention of a period in which oxytocin attracted little scientific attention",
           "questionOptions": [
             "A",
             "B",
@@ -97,6 +100,7 @@
         },
         {
           "questionNumber": 17,
+          "questionText": "reference to people ignoring certain aspects of their research data",
           "questionOptions": [
             "A",
             "B",
@@ -147,6 +151,7 @@
           "Sue Carter"
         ]
       ],
+      "exampleAnswer": "",
       "questionItems": [
         {
           "questionNumber": 18,
@@ -256,7 +261,10 @@
       "taskQuestionNumberText": "Questions 21-26",
       "taskDescription": "Complete the summary below.\nChoose ONE WORD ONLY from the passage for each answer.\nWrite your answers in boxes 21-26 on your answer sheet.",
       "questionMainTitle": "Oxytocin research",
-      "questionMainText": "The earliest findings about oxytocin and bonding came from research involving 21\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.. It was also discovered that humans produce oxytocin during 22\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026 An experiment in 2005, in which participants were given either oxytocin or a 23\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026, reinforced the belief that the hormone had a positive effect.\nHowever, later research suggests that this is not always the case. A study at the University of Haifa where participants took part in a 24\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.. revealed the negative emotions which oxytocin can trigger. A study at the University of Antwerp showed people\u2019s lack of willingness to help 25\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026. while under the influence of oxytocin. Meanwhile, research at the University of Amsterdam revealed that people who have been given oxytocin consider 26\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.. that are familiar to them in their own country to have more positive associations than those from other cultures.",
+      "questionMainText": [
+        "The earliest findings about oxytocin and bonding came from research involving 21\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.. It was also discovered that humans produce oxytocin during 22\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026 An experiment in 2005, in which participants were given either oxytocin or a 23\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026, reinforced the belief that the hormone had a positive effect.",
+        "However, later research suggests that this is not always the case. A study at the University of Haifa where participants took part in a 24\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.. revealed the negative emotions which oxytocin can trigger. A study at the University of Antwerp showed people\u2019s lack of willingness to help 25\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026. while under the influence of oxytocin. Meanwhile, research at the University of Amsterdam revealed that people who have been given oxytocin consider 26\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.. that are familiar to them in their own country to have more positive associations than those from other cultures."
+      ],
       "questionItems": [
         {
           "questionNumber": 21,
