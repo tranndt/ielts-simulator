@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/ielts-simulator/static/css/main.d36a4c67.chunk.css",
-    "main.js": "/ielts-simulator/static/js/main.6c1f7bab.chunk.js",
-    "main.js.map": "/ielts-simulator/static/js/main.6c1f7bab.chunk.js.map",
+    "main.css": "/ielts-simulator/static/css/main.cdc14fbe.chunk.css",
+    "main.js": "/ielts-simulator/static/js/main.43bc4979.chunk.js",
+    "main.js.map": "/ielts-simulator/static/js/main.43bc4979.chunk.js.map",
     "runtime-main.js": "/ielts-simulator/static/js/runtime-main.a9e98209.js",
     "runtime-main.js.map": "/ielts-simulator/static/js/runtime-main.a9e98209.js.map",
     "static/js/2.7c86c642.chunk.js": "/ielts-simulator/static/js/2.7c86c642.chunk.js",
     "static/js/2.7c86c642.chunk.js.map": "/ielts-simulator/static/js/2.7c86c642.chunk.js.map",
     "index.html": "/ielts-simulator/index.html",
-    "static/css/main.d36a4c67.chunk.css.map": "/ielts-simulator/static/css/main.d36a4c67.chunk.css.map",
+    "static/css/main.cdc14fbe.chunk.css.map": "/ielts-simulator/static/css/main.cdc14fbe.chunk.css.map",
     "static/js/2.7c86c642.chunk.js.LICENSE.txt": "/ielts-simulator/static/js/2.7c86c642.chunk.js.LICENSE.txt",
     "static/media/logo.d8d9d6c3.jpg": "/ielts-simulator/static/media/logo.d8d9d6c3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.a9e98209.js",
     "static/js/2.7c86c642.chunk.js",
-    "static/css/main.d36a4c67.chunk.css",
-    "static/js/main.6c1f7bab.chunk.js"
+    "static/css/main.cdc14fbe.chunk.css",
+    "static/js/main.43bc4979.chunk.js"
   ]
 }
