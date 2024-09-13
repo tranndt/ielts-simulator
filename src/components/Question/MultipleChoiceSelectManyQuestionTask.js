@@ -32,17 +32,18 @@ function MultipleChoiceSelectManyQuestionTask({ id, questionTask, onTaskGrading,
 
   return (
     <div className="multiple-choice-question-task">
+      <h3>{questionTask.taskQuestionNumberText}</h3>
       <QuestionTaskDescription taskDescription={questionTask.taskDescription} />
       <table>
         <tbody>
-            {questionTask.questions.map((questionItem, index) => (
+            {questionTask.questionItems.map((questionItem, index) => (
             <MultipleChoiceSelectManyQuestionItem
               key={index}
               id={index}
               questionItem={questionItem}
               onItemGrading={handleItemGrading}
               showAnswers={showAnswers}
-              correctAnswers={questionTask.correctAnswers}
+              correctAnswers={questionTask.correctAnswer}
               selectedAnswers={selectedAnswers}
               onSelectionChange={handleSelectionChange}
             />
@@ -50,7 +51,7 @@ function MultipleChoiceSelectManyQuestionTask({ id, questionTask, onTaskGrading,
         </tbody>
       </table>
       <div className="task-score">
-        {showAnswers ? `Task Score: ${correctAnswers} / ${questionTask.correctAnswers.length}` : " "}
+        {showAnswers ? `Task Score: ${correctAnswers} / ${questionTask.correctAnswer.length}` : " "}
       </div>
       
     </div>

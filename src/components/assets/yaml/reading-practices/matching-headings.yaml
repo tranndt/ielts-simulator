@@ -112,7 +112,7 @@ question_content:
 
 
     question_list_title: |    # matching tasks
-
+      List of Headings
 
     question_list_of_options: |     # matching tasks, multiple choice select many
       i Dramatic effects can result from small changes in traffic just as in nature
@@ -125,7 +125,7 @@ question_content:
       viii A proposal to take control away from the driver
 
     example_answer: |     # matching headings
-      Section B i
+      Example: Section B i
 
 
     correct_answer: |

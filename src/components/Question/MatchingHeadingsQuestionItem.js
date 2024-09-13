@@ -17,41 +17,35 @@ function MatchingHeadingsQuestionItem({ id, questionItem, onItemGrading, showAns
   }, [showAnswers, userAnswer]);
 
   return (
-    <div className="matching-headings-question-item question-item">
-    <table>
-      <tbody >
-        <tr >
-          <td style={{width:'5em', textAlign:'center'}}>
-            {questionItem.questionNumber}
-          </td>
-          <td style={{width:'5em', textAlign:'center'}}>
-            {questionItem.questionText}
-          </td>
-          <td style={{width:'5em', textAlign:'center'}}>
-            <select
-              name={`heading-${questionItem.questionNumber}`}
-              id={`heading-${questionItem.questionNumber}`}
-              onChange={handleChange}
-              disabled={showAnswers}
-            >
-              <option value=""></option>
-              {questionItem.questionOptions.map((heading, index) => (
-                <option key={index} value={heading[0]}>
-                  {heading[0]}
-                </option>
-              ))}
-            </select>
-          </td>
-          {showAnswers && (
-            <td
-              className={(userAnswer === questionItem.correctAnswer[0]) ? "correct-answer" : "correct-answer-non-matching"}>
-              {questionItem.correctAnswer[0]}
-            </td>
-          )}
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <tr className="matching-headings-question-item question-item" style={{display:'flex', flexDirection:'row'}}>
+      <td style={{width:'5em', textAlign:'center'}}>
+        {questionItem.questionNumber}
+      </td>
+      <td style={{width:'5em', textAlign:'center'}}>
+        {questionItem.questionText}
+      </td>
+      <td style={{width:'5em', textAlign:'center'}}>
+        <select
+          name={`heading-${questionItem.questionNumber}`}
+          id={`heading-${questionItem.questionNumber}`}
+          onChange={handleChange}
+          disabled={showAnswers}
+        >
+          <option value=""></option>
+          {questionItem.questionOptions.map((heading, index) => (
+            <option key={index} value={heading[0]}>
+              {heading[0]}
+            </option>
+          ))}
+        </select>
+      </td>
+      {showAnswers && (
+        <td
+          className={(userAnswer === questionItem.correctAnswer) ? "correct-answer" : "correct-answer-non-matching"}>
+          {questionItem.correctAnswer}
+        </td>
+      )}
+    </tr>
   );
 }
 

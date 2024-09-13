@@ -68,7 +68,7 @@ question_content:
 
 
     question_main_text: | 
-      Species Size | Preferred climate | Complementary species | Start of active period | Number of generations per year
+      Species | Size | Preferred climate | Complementary species | Start of active period | Number of generations per year
       French | 2.5 cm | cool | Spanish | late spring | 1 - 2
       Spanish | 1.25 cm | [9] |  | [10] | [11]
       South African ball roller |  | [12] | [13] | |

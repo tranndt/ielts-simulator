@@ -20,8 +20,9 @@ function MultipleChoiceSelectOneQuestionTask({ id, questionTask, onTaskGrading, 
 
   return (
     <div className="multiple-choice-question-task">
+      <h3>{questionTask.taskQuestionNumberText}</h3>
       <QuestionTaskDescription taskDescription={questionTask.taskDescription} />
-      {questionTask.questions.map((questionItem, index) => (
+      {questionTask.questionItems.map((questionItem, index) => (
         <MultipleChoiceSelectOneQuestionItem
           key={index}
           id={index}
@@ -32,7 +33,7 @@ function MultipleChoiceSelectOneQuestionTask({ id, questionTask, onTaskGrading, 
       ))}
       {showAnswers && (
         <div className="task-score">
-          Task Score: {correctAnswers} / {questionTask.questions.length}
+          Task Score: {correctAnswers} / {questionTask.questionItems.length}
         </div>
       )}
     </div>

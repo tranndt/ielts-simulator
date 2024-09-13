@@ -7,15 +7,12 @@ import './ReadingStyles.css';
 
 const ReadingSectionFrame = ({ passage }) => (
   <div className="passage-page">
-    <SectionInfoFrame taskTitle={passage.taskTitle} taskSubtitle={passage.taskSubtitle} />
+    <SectionInfoFrame readingInfo={passage.readingInfo} />
     <PassageFrame 
-      passageContext={passage.passageContext}
-      passageTitle={passage.passageTitle} 
-      passageSubtitle={passage.passageSubtitle} 
-      passageText={passage.passageText} 
+      passageContent = {passage.passageContent}
     />
-    <QuestionFrame questionsList={passage.questionsList} />
-    <TimerFrame taskTime = {passage.taskTime}/>
+    <QuestionFrame questionsList={passage.questionContent} />
+    {/* <TimerFrame taskTime = {passage.taskTime}/> */}
   </div>
 );
 

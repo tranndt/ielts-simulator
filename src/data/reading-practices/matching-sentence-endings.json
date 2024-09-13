@@ -1,6 +1,6 @@
 {
   "readingInfo": {
-    "raedingTitle": "Academic Reading Sample Task \u2013 Matching Sentence Endings",
+    "readingTitle": "Academic Reading Sample Task \u2013 Matching Sentence Endings",
     "readingSubtitle": ""
   },
   "passageContent": {
@@ -29,7 +29,7 @@
       "taskQuestionNumberText": "Questions 1 \u2013 3",
       "taskDescription": "Complete each sentence with the correct ending, A-F, below. Write the correct letter, A-F, in boxes\n1-3 on your answer sheet.",
       "questionMainTitle": "",
-      "questionMainText": "1 Harkness\u2019s research method was different to that of other writers because2 Harkness\u2019s reconstruction of the 16th-century London scientific groups was new because3 Harkness shows that the 16th-century London scientists were innovative because",
+      "questionMainText": "1 Harkness\u2019s research method was different to that of other writers because\n2 Harkness\u2019s reconstruction of the 16th-century London scientific groups was new because\n3 Harkness shows that the 16th-century London scientists were innovative because",
       "questionListTitle": "",
       "questionListOptions": [
         [
@@ -57,9 +57,11 @@
           "they used old ways of analysing written information for new purposes."
         ]
       ],
+      "exampleAnswer": "",
       "questionItems": [
         {
           "questionNumber": 1,
+          "questionText": "Harkness\u2019s research method was different to that of other writers because",
           "questionOptions": [
             [
               "A",
@@ -86,10 +88,11 @@
               "they used old ways of analysing written information for new purposes."
             ]
           ],
-          "correctAnswer": "B \u25a0 she started by seeking to understand how basic terms were used in the past"
+          "correctAnswer": "B"
         },
         {
           "questionNumber": 2,
+          "questionText": "Harkness\u2019s reconstruction of the 16th-century London scientific groups was new because",
           "questionOptions": [
             [
               "A",
@@ -116,10 +119,11 @@
               "they used old ways of analysing written information for new purposes."
             ]
           ],
-          "correctAnswer": "D \u25a0 she examined how their methods evolved and changed"
+          "correctAnswer": "D"
         },
         {
           "questionNumber": 3,
+          "questionText": "Harkness shows that the 16th-century London scientists were innovative because",
           "questionOptions": [
             [
               "A",
@@ -146,7 +150,7 @@
               "they used old ways of analysing written information for new purposes."
             ]
           ],
-          "correctAnswer": "F \u25a0 they used old ways of analysing written information for new purposes"
+          "correctAnswer": "F"
         }
       ]
     }

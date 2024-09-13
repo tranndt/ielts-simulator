@@ -1,6 +1,6 @@
 {
   "readingInfo": {
-    "raedingTitle": "Academic Reading Sample Task \u2013 Multiple Choice: more than one answer",
+    "readingTitle": "Academic Reading Sample Task \u2013 Multiple Choice: more than one answer",
     "readingSubtitle": ""
   },
   "passageContent": {
@@ -55,7 +55,10 @@
           "They are more skilled in personal relationships."
         ]
       ],
-      "correctAnswer": []
+      "correctAnswer": [
+        "B",
+        "G"
+      ]
     },
     {
       "taskType": "multiple-choice-select-many",
@@ -93,7 +96,10 @@
           "They demand higher salaries."
         ]
       ],
-      "correctAnswer": []
+      "correctAnswer": [
+        "C",
+        "E"
+      ]
     }
   ]
 }

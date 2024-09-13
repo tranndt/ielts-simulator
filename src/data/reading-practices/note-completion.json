@@ -1,6 +1,6 @@
 {
   "readingInfo": {
-    "raedingTitle": "Academic Reading Sample Task \u2013 Note Completion",
+    "readingTitle": "Academic Reading Sample Task \u2013 Note Completion",
     "readingSubtitle": ""
   },
   "passageContent": {
@@ -34,7 +34,14 @@
       "taskQuestionNumberText": "Questions 1 \u2013 6",
       "taskDescription": "Complete the notes below.\nChoose ONE WORD ONLY from the passage for each answer. Write your answers in boxes 1-6 on your answer sheet",
       "questionMainTitle": "Marie Curie\u2019s research on radioactivity",
-      "questionMainText": "\u2022 When uranium was discovered to be radioactive, Marie Curie found that the element called 1 \u2026\u2026\u2026\u2026 had the same property.\n\u2022 Marie and Pierre Curie\u2019s research into the radioactivity of the mineral known as 2 \u2026\u2026\u2026\u2026 led to the discovery of two new elements.\n\u2022 In 1911, Marie Curie received recognition for her work on the element 3 \u2026\u2026\u2026\u2026 .\n\u2022 Marie and Ir\u00e8ne Curie developed X-radiography which was used as a medical technique for 4 \u2026\u2026\u2026\u2026 .\n\u2022 Marie Curie saw the importance of collecting radioactive material both for research and for cases of 5 \u2026\u2026\u2026\u2026 .\n\u2022 The radioactive material stocked in Paris contributed to the discoveries in the 1930s of the 6 \u2026\u2026\u2026\u2026 and of what was known as artificial radioactivity.",
+      "questionMainText": [
+        "\u2022 When uranium was discovered to be radioactive, Marie Curie found that the element called 1 \u2026\u2026\u2026\u2026 had the same property.",
+        "\u2022 Marie and Pierre Curie\u2019s research into the radioactivity of the mineral known as 2 \u2026\u2026\u2026\u2026 led to the discovery of two new elements.",
+        "\u2022 In 1911, Marie Curie received recognition for her work on the element 3 \u2026\u2026\u2026\u2026 .",
+        "\u2022 Marie and Ir\u00e8ne Curie developed X-radiography which was used as a medical technique for 4 \u2026\u2026\u2026\u2026 .",
+        "\u2022 Marie Curie saw the importance of collecting radioactive material both for research and for cases of 5 \u2026\u2026\u2026\u2026 .",
+        "\u2022 The radioactive material stocked in Paris contributed to the discoveries in the 1930s of the 6 \u2026\u2026\u2026\u2026 and of what was known as artificial radioactivity."
+      ],
       "questionItems": [
         {
           "questionNumber": 1,

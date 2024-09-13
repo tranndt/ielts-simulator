@@ -12,7 +12,7 @@ function MultipleChoiceSelectOneQuestionItem({ id, questionItem, onItemGrading, 
 
   useEffect(() => {
     if (showAnswers && userAnswer !== null) {
-      const isCorrect = userAnswer === questionItem.correctAnswer[0];
+      const isCorrect = userAnswer === questionItem.correctAnswer;
       onItemGrading(isCorrect);
     }
   }, [showAnswers, userAnswer]);
@@ -21,7 +21,7 @@ function MultipleChoiceSelectOneQuestionItem({ id, questionItem, onItemGrading, 
     <div className="multiple-choice-question question-item">
       <div className="question-text">{questionItem.questionNumber}. {questionItem.questionText}</div>
       {questionItem.questionOptions.map((option, index) => {
-        const isCorrectAnswer = option[0] === questionItem.correctAnswer[0];
+        const isCorrectAnswer = option[0] === questionItem.correctAnswer;
         const isSelected = option[0] === userAnswer;
         const isIncorrectAnswer = isSelected && !isCorrectAnswer;
         const isCorrectButUnselected = !isSelected && isCorrectAnswer;

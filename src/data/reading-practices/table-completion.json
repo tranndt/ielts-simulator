@@ -1,6 +1,6 @@
 {
   "readingInfo": {
-    "raedingTitle": "Academic Reading Sample Task \u2013 Table Completion",
+    "readingTitle": "Academic Reading Sample Task \u2013 Table Completion",
     "readingSubtitle": ""
   },
   "passageContent": {
@@ -28,7 +28,8 @@
       "questionMainTitle": "",
       "questionMainText": [
         [
-          "Species Size",
+          "Species",
+          "Size",
           "Preferred climate",
           "Complementary species",
           "Start of active period",

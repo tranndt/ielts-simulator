@@ -1,6 +1,6 @@
 {
   "readingInfo": {
-    "raedingTitle": "Academic Reading Sample Task \u2013 Summary Completion: selecting from a list of words or phrases",
+    "readingTitle": "Academic Reading Sample Task \u2013 Summary Completion: selecting from a list of words or phrases",
     "readingSubtitle": ""
   },
   "passageContent": {
@@ -91,7 +91,7 @@
               "fundamental"
             ]
           ],
-          "correctAnswer": "E \u25a0 material"
+          "correctAnswer": "E"
         },
         {
           "questionNumber": 2,
@@ -125,7 +125,7 @@
               "fundamental"
             ]
           ],
-          "correctAnswer": "G \u25a0 fundamental"
+          "correctAnswer": "G"
         },
         {
           "questionNumber": 3,
@@ -159,7 +159,7 @@
               "fundamental"
             ]
           ],
-          "correctAnswer": "B \u25a0 complex"
+          "correctAnswer": "B"
         },
         {
           "questionNumber": 4,
@@ -193,7 +193,7 @@
               "fundamental"
             ]
           ],
-          "correctAnswer": "F \u25a0 easy"
+          "correctAnswer": "F"
         }
       ]
     }

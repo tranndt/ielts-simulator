@@ -1,6 +1,6 @@
 {
   "readingInfo": {
-    "raedingTitle": "Academic Reading Sample Task \u2013 Matching Features",
+    "readingTitle": "Academic Reading Sample Task \u2013 Matching Features",
     "readingSubtitle": ""
   },
   "passageContent": {
@@ -50,6 +50,7 @@
           "the Americans"
         ]
       ],
+      "exampleAnswer": "",
       "questionItems": [
         {
           "questionNumber": 7,

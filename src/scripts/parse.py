@@ -102,7 +102,7 @@ def parse_reading_from_yaml(filename):
 
 def parse_reading_info(reading_info_data):
     return {
-        "raedingTitle": clean_text_single_line(reading_info_data["reading_title"]).strip(),
+        "readingTitle": clean_text_single_line(reading_info_data["reading_title"]).strip(),
         "readingSubtitle": clean_text_single_line(reading_info_data["reading_subtitle"]).strip(),
     }
 
@@ -165,6 +165,7 @@ def parse_diagram_completion(questionTask):
     # Task description
     task_type = questionTask['task_type'].strip()
     task_description = questionTask['task_description'].strip()
+    task_question_number = questionTask['task_question_number'].strip()
 
     # Main content
     question_main_title = questionTask['question_main_title'].strip()
@@ -178,6 +179,7 @@ def parse_diagram_completion(questionTask):
     example_answer = questionTask['example_answer'].strip()
 
     #  Clean text
+    task_question_number_list = parse_task_question_number(task_question_number)
     task_description = clean_text_multiple_line(task_description)
     question_main_title = clean_text_single_line(question_main_title)
     question_main_text = clean_text_multiple_line(question_main_text)
@@ -203,6 +205,8 @@ def parse_diagram_completion(questionTask):
 
     return {
         "taskType": task_type,
+        "taskQuestionNumberList": task_question_number_list,
+        "taskQuestionNumberText": task_question_number,
         "taskDescription": task_description,
         "questionMainTitle": question_main_title,
         "questionMainText": question_main_text,
@@ -239,6 +243,7 @@ def parse_sentence_completion(questionTask):
     # matching patterns
     correct_answer_pattern = re.compile(r'(\d+)[^a-zA-Z\d\(\)\-\+:]+(.*)') # Ex: 1. tomatoes 2. urban centres/ centers
     correct_answer_items = re.split(r'\n+', correct_answer)
+    question_main_text_lines = re.split(r'\n+', question_main_text)
 
     # Idea: Correct-answer-bassed question items. Each question item will be created for each correct answer   
     question_items = []
@@ -260,7 +265,7 @@ def parse_sentence_completion(questionTask):
         "taskQuestionNumberText": task_question_number,
         "taskDescription": task_description,
         "questionMainTitle": question_main_title,
-        "questionMainText": question_main_text,
+        "questionMainText": question_main_text_lines,
         "questionItems": question_items,
     }
 
@@ -301,7 +306,7 @@ def parse_summary_completion_word_list(questionTask):
     correct_answer_lines = re.split(r'\n+', correct_answer)
 
     # Matching patterns - both questions and correct answers
-    correct_answer_pattern = re.compile(r'(\d+)[^a-zA-Z\d\(\)\-\+:]+(.*)') 
+    correct_answer_pattern = re.compile(r'(\d+)[^a-zA-Z\d\(\)\-\+:]+([A-Z])') 
     question_option_item_pattern = re.compile(r'([A-Z])[^a-zA-Z\d\(\)\-\+:]+(.*)') 
     question_option_items = question_option_item_pattern.findall(question_list_of_options)
     #  Strip items
@@ -404,10 +409,11 @@ def parse_matching_features(questionTask):
     correct_answer = questionTask['correct_answer'].strip()
     question_list_title = questionTask['question_list_title'].strip()
     question_list_of_options = questionTask['question_list_of_options'].strip()
+    example_answer = questionTask['example_answer'].strip()
+
 
     # Not applicable but included for consistency
     question_img_path = questionTask['question_img_path'].strip()
-    example_answer = questionTask['example_answer'].strip()
 
     #  Clean text
     task_description = clean_text_multiple_line(task_description)
@@ -456,6 +462,7 @@ def parse_matching_features(questionTask):
         "questionMainText": question_main_text,
         "questionListTitle": question_list_title,
         "questionListOptions": question_option_items,
+        "exampleAnswer": example_answer,
         "questionItems": question_items,
     }
 
@@ -471,10 +478,10 @@ def parse_matching_headings(questionTask):
     correct_answer = questionTask['correct_answer'].strip()
     question_list_title = questionTask['question_list_title'].strip()
     question_list_of_options = questionTask['question_list_of_options'].strip()
+    example_answer = questionTask['example_answer'].strip()
 
     # Not applicable but included for consistency
     question_img_path = questionTask['question_img_path'].strip()
-    example_answer = questionTask['example_answer'].strip()
 
     #  Clean text
     task_description = clean_text_multiple_line(task_description)
@@ -521,6 +528,7 @@ def parse_matching_headings(questionTask):
         # "questionMainText": question_main_text, # Not needed
         "questionListTitle": question_list_title,
         "questionListOptions": question_option_items,
+        "exampleAnswer": example_answer,
         "questionItems": question_items,
     }
 
@@ -544,7 +552,7 @@ def parse_matching_sentence_endings(questionTask):
     #  Clean text
     task_description = clean_text_multiple_line(task_description)
     question_main_title = clean_text_single_line(question_main_title)
-    question_main_text = clean_floating_linebreaks(question_main_text)
+    # question_main_text = clean_floating_linebreaks(question_main_text) # Since it usually doesnt end with a period, this would cause issues
     question_list_title = clean_text_single_line(question_list_title)
     question_list_of_options = clean_text_multiple_line(question_list_of_options)
     task_question_number_list = parse_task_question_number(task_question_number)
@@ -554,23 +562,26 @@ def parse_matching_sentence_endings(questionTask):
     correct_answer_lines = re.split(r'\n+', correct_answer)
 
     # Matching patterns - both questions and correct answers
-    correct_answer_pattern = re.compile(r'(\d+)[^a-zA-Z\d\(\)\-\+:]+(.*)') 
+    correct_answer_pattern = re.compile(r'(\d+)[^a-zA-Z\d\(\)\-\+:]+([A-Z])') 
     question_option_item_pattern = re.compile(r'([A-Z])[^a-zA-Z\d\(\)\-\+:]+(.*)') 
     question_option_items = question_option_item_pattern.findall(question_list_of_options)
+    question_line_pattern = re.compile(r'(\d+)[^a-zA-Z\d\(\)\-\+:]+(.*)')
     #  Strip items
 
     # Idea: Each matching question item contains question, list of choices and correct answer
     
     question_items = []
-    for answer_line in correct_answer_lines:
-        answer_line = answer_line.strip()
+    for question_line, answer_line in zip(question_main_text_lines,correct_answer_lines):
+        question_line, answer_line = question_line.strip(), answer_line.strip()
 
         # Extract question number and correct answer for each question item
         answer_item_match = correct_answer_pattern.match(answer_line)
         question_number = answer_item_match.group(1).strip()
+        question_text = question_line_pattern.match(question_line).group(2).strip()
         correct_answer = answer_item_match.group(2).strip()
         question_items.append({
             "questionNumber": int(question_number),
+            "questionText": question_text,
             "questionOptions": question_option_items, 
             "correctAnswer": correct_answer
         })
@@ -584,9 +595,9 @@ def parse_matching_sentence_endings(questionTask):
         "questionMainText": question_main_text,
         "questionListTitle": question_list_title,
         "questionListOptions": question_option_items,
+        "exampleAnswer": example_answer,
         "questionItems": question_items,
     }
-
 
 def parse_matching_paragraphs(questionTask):
     # Task description
@@ -608,7 +619,7 @@ def parse_matching_paragraphs(questionTask):
     #  Clean text
     task_description = clean_text_multiple_line(task_description)
     question_main_title = clean_text_single_line(question_main_title)
-    question_main_text = clean_floating_linebreaks(question_main_text)
+    # question_main_text = clean_floating_linebreaks(question_main_text)
     question_list_title = clean_text_single_line(question_list_title)
     question_list_of_options = clean_text_multiple_line(question_list_of_options)
     task_question_number_list = parse_task_question_number(task_question_number)
@@ -618,7 +629,8 @@ def parse_matching_paragraphs(questionTask):
     correct_answer_lines = re.split(r'\n+', correct_answer)
 
     # Matching patterns - both questions and correct answers
-    correct_answer_pattern = re.compile(r'(\d+)[^a-zA-Z\d\(\)\-\+:]+(.*)') 
+    correct_answer_pattern = re.compile(r'(\d+)[^a-zA-Z\d\(\)\-\+:]+(.*)')
+    question_item_pattern = re.compile(r'(\d+)[^a-zA-Z\d\(\)\-\+:]+(.*)')
     start_char, end_char = re.split('-', question_list_of_options)
     question_option_items = list_AZ(start_char, end_char)
     #  Strip items
@@ -626,15 +638,18 @@ def parse_matching_paragraphs(questionTask):
     # Idea: Each matching question item contains question, list of choices and correct answer
     
     question_items = []
-    for answer_line in correct_answer_lines:
-        answer_line = answer_line.strip()
+    for question_line, answer_line in zip(question_main_text_lines, correct_answer_lines):
+        question_line, answer_line = question_line.strip(), answer_line.strip()
 
         # Extract question number and correct answer for each question item
         answer_item_match = correct_answer_pattern.match(answer_line)
-        question_number = answer_item_match.group(1).strip()
+        question_item_match = question_item_pattern.match(question_line)
+        question_number = question_item_match.group(1).strip()
+        question_text = question_item_match.group(2).strip()
         correct_answer = answer_item_match.group(2).strip()
         question_items.append({
             "questionNumber": int(question_number),
+            "questionText": question_text,
             "questionOptions": question_option_items, 
             "correctAnswer": correct_answer
         })
@@ -799,8 +814,9 @@ def parse_multiple_choice_select_one(questionTask):
 
     mcq_question_content_pattern = re.compile(r'(\d+)[^a-zA-Z\d\(\)\-\+:]+(.*)') # Ex: 1. tomatoes 2. urban centres/ centers
     mcq_question_option_pattern = re.compile(r'([A-Z])[^a-zA-Z\d\(\)\-\+:]+(.*)') # Ex: A    Roger Angel\n\nB    Phil Rasch
-    correct_answer_pattern = re.compile(r'(\d+)[^a-zA-Z\d\(\)\-\+:]+(.*)') # Ex: 1. tomatoes 2. urban centres/ centers
-
+    # correct_answer_pattern = re.compile(r'(\d+)[^a-zA-Z\d\(\)\-\+:]+(.*)') # Ex: 1. tomatoes 2. urban centres/ centers
+    correct_answer_pattern_1 = re.compile(r'\d+[^a-zA-Z\d\(\)\-\+:]+([A-Z])') # 25. B\n26. D\n27. E'
+    correct_answer_pattern_2 = re.compile(r'([A-Z])[^a-zA-Z\d\(\)\-\+:]+.*') # 'B ■ They can predict...\nG ■ They are more...'
     # Split items
     multiple_choice_question_item_lines = re.split(r'\n(?=\d+\s)', question_main_text) # ['27    In the secon...\nA   the subject...\nB   the subject...', '28    The author...\nA   the subject...\nB   the subject...']
     correct_answer_lines = re.split(r'\n+', correct_answer) # ['27. A', '28. B']
@@ -812,11 +828,15 @@ def parse_multiple_choice_select_one(questionTask):
         # Extract question number and correct answer for each question item
         question_item_match = mcq_question_content_pattern.match(mcq_question_item_line)
         question_option_items = mcq_question_option_pattern.findall(mcq_question_item_line)
-        answer_item_match = correct_answer_pattern.match(answer_line)
+        # answer_item_match = correct_answer_pattern.match(answer_line)
+        if correct_answer_pattern_1.match(answer_line):
+            correct_answer = correct_answer_pattern_1.match(answer_line).group(1)
+        elif correct_answer_pattern_2.match(answer_line):
+            correct_answer = correct_answer_pattern_2.match(answer_line).group(1)
 
         question_number = question_item_match.group(1).strip()
         question_text = question_item_match.group(2).strip()
-        correct_answer = answer_item_match.group(2).strip()
+        correct_answer = correct_answer
         question_items.append({
             "questionNumber": int(question_number),
             "questionText": question_text,
@@ -857,14 +877,19 @@ def parse_multiple_choice_select_many(questionTask):
     task_question_number_list = parse_task_question_number(task_question_number)
 
     # matching patterns
-    correct_answer_pattern = re.compile(r'\d+[^a-zA-Z\d\(\)\-\+:]+(.*)') # Ex: 1. tomatoes 2. urban centres/ centers
+    correct_answer_pattern_1 = re.compile(r'\d+[^a-zA-Z\d\(\)\-\+:]+([A-Z])') # 25. B\n26. D\n27. E'
+    correct_answer_pattern_2 = re.compile(r'([A-Z])[^a-zA-Z\d\(\)\-\+:]+.*') # 'B ■ They can predict...\nG ■ They are more...'
     question_item_pattern = re.compile(r'([A-Z])[^a-zA-Z\d\(\)\-\+:]+(.*)') # Ex: 1. tomatoes 2. urban centres/ centers
     correct_answer_lines = re.split(r'\n+', correct_answer)
     question_list_of_options_lines = re.split(r'\n+', question_list_of_options)
 
 
     question_items =  question_item_pattern.findall(question_list_of_options)
-    correct_answer = correct_answer_pattern.findall(correct_answer)
+    if correct_answer_pattern_1.match(correct_answer):
+        correct_answer_items = correct_answer_pattern_1.findall(correct_answer)
+    elif correct_answer_pattern_2.match(correct_answer):
+        correct_answer_items = correct_answer_pattern_2.findall(correct_answer)
+    # correct_answer = correct_answer_pattern.findall(correct_answer)
 
     return {
     "taskType": task_type,
@@ -874,10 +899,8 @@ def parse_multiple_choice_select_many(questionTask):
     "questionMainTitle": question_main_title,
     "questionMainText": question_main_text,
     "questionItems": question_items,
-    "correctAnswer": correct_answer
+    "correctAnswer": correct_answer_items
     }
-
-
 if __name__ == '__main__':
     """
     Usage:

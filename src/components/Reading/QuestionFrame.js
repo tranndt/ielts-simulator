@@ -14,6 +14,7 @@ import MatchingSentenceEndingsQuestionTask from "../Question/MatchingSentenceEnd
 import TrueFalseNotGivenQuestionTask from "../Question/TrueFalseNotGivenQuestionTask";
 import YesNoNotGivenQuestionTask from "../Question/YesNoNotGivenQuestionTask";
 import '../Question/QuestionStyles.css';
+import MatchingParagraphsQuestionTask from "../Question/MatchingParagraphsQuestionTask";
 
 function QuestionFrame({ questionsList }) {
   const [totalQuestions, setTotalQuestions] = useState(0); // Collect total number of questions at the start
@@ -24,10 +25,10 @@ function QuestionFrame({ questionsList }) {
     // Calculate the total number of questions across all tasks when the component mounts
     const total = questionsList.reduce((acc, questionTask) => {
       // Add the number of questions in each task to the accumulator
-      if (questionTask.questionType === "multiple-choice-select-many") {
-        return acc + questionTask.correctAnswers.length;
+      if (questionTask.taskType === "multiple-choice-select-many") {
+        return acc + questionTask.correctAnswer.length;
       }
-      return acc + questionTask.questions.length;
+      return acc + questionTask.questionItems.length;
     }, 0);
     setTotalQuestions(total);
     // Reset grading and answers visibility
@@ -51,7 +52,7 @@ function QuestionFrame({ questionsList }) {
   return (
     <div className="question-frame">
       {questionsList.map((questionTask, index) => {
-        switch (questionTask.questionType) {
+        switch (questionTask.taskType) {
           case "multiple-choice-select-one":
             return (
               <MultipleChoiceSelectOneQuestionTask
@@ -82,9 +83,19 @@ function QuestionFrame({ questionsList }) {
                 showAnswers={showAnswers}
               />
             );
-            case "matching-sentence-endings":
+          case "matching-sentence-endings":
             return (
               <MatchingSentenceEndingsQuestionTask
+                key={index}
+                id={index}
+                questionTask={questionTask}
+                onTaskGrading={handleTaskGrading}
+                showAnswers={showAnswers}
+              />
+            );
+          case "matching-paragraphs":
+            return (
+              <MatchingParagraphsQuestionTask
                 key={index}
                 id={index}
                 questionTask={questionTask}

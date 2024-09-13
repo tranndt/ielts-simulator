@@ -67,7 +67,7 @@ question_content:
 
 
     question_img_path: |    # flowcharts, diagrams
-      ../assets/images/reading/flow-chart-completion_1.jpg
+      ../assets/images/reading/flow_chart_completion_1.jpg
 
 
     question_list_title: |    # matching tasks

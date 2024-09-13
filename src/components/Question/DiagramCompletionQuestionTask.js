@@ -6,7 +6,7 @@ import './QuestionStyles.css';
 
 function DiagramCompletionQuestionTask({ id, questionTask, onTaskGrading, showAnswers }) {
   const [correctAnswers, setCorrectAnswers] = useState(0);
-  const [imageSrc, setImageSrc] = useState(questionTask.questionImagePath);
+  const [imageSrc, setImageSrc] = useState(questionTask.questionImgPath);
   const [loading, setLoading] = useState(true);
 
   const handleItemGrading = (isCorrect) => {
@@ -24,7 +24,7 @@ function DiagramCompletionQuestionTask({ id, questionTask, onTaskGrading, showAn
   useEffect(() => {
     const loadImage = async () => {
       try {
-        const image = await import(questionTask.questionImagePath);
+        const image = await import(questionTask.questionImgPath);
         setImageSrc(image.default);
       } catch (error) {
         console.error('Error loading image:', error);
@@ -38,8 +38,9 @@ function DiagramCompletionQuestionTask({ id, questionTask, onTaskGrading, showAn
 
   return (
     <div className="diagram-completion-question-task">
+      <h3>{questionTask.taskQuestionNumberText}</h3>
       <QuestionTaskDescription taskDescription={questionTask.taskDescription} />
-      <h3 style={{ textAlign: 'center' }}>{questionTask.questionTitle}</h3>
+      <h3 style={{ textAlign: 'center' }}>{questionTask.questionMainTitle}</h3>
 
       <div className="question-img">
         {loading ? (
@@ -49,7 +50,7 @@ function DiagramCompletionQuestionTask({ id, questionTask, onTaskGrading, showAn
         )}
       </div>
       <div className='your-answers-text'>Your Answers:</div>
-      {questionTask.questions.map((questionItem, index) => (
+      {questionTask.questionItems.map((questionItem, index) => (
         <DiagramCompletionQuestionItem
           key={index}
           id={index}

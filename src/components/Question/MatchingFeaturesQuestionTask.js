@@ -22,37 +22,28 @@ function MatchingFeaturesQuestionTask({ questionTask, onTaskGrading, showAnswers
 
   return (
     <div className="matching-features-question-task">
+      <h3>{questionTask.taskQuestionNumberText}</h3>
       <QuestionTaskDescription taskDescription={questionTask.taskDescription} />
-      <ListOfHeadingsTable tableTitle = {questionTask.tableTitle} tableData={questionTask.tableData} />
+      <ListOfHeadingsTable tableTitle = {questionTask.questionListTitle} tableData={questionTask.questionListOptions} />
       {questionTask.exampleAnswer &&
+        <p><b>{questionTask.exampleAnswer}</b></p>
+      }
       <table>
-      <thead>
-        <tr style={{padding:'.25em'}}>
-          <th style={{width:'5em'}}>
-            Example
-          </th>
-          <th style={{width:'5em'}}>
-            {questionTask.exampleAnswer[1]}
-          </th>
-          <th>
-            {questionTask.exampleAnswer[0]}
-          </th>
-        </tr>
-      </thead>
+        <tbody>
+          {questionTask.questionItems.map((questionItem, index) => (
+            <MatchingFeaturesQuestionItem
+              key={index}
+              id={index}
+              questionItem = {questionItem}
+              onItemGrading={handleItemGrading}
+              showAnswers={showAnswers}
+            />
+          ))}
+        </tbody>
       </table>
-      }      
-      {questionTask.questions.map((questionItem, index) => (
-        <MatchingFeaturesQuestionItem
-          key={index}
-          id={index}
-          questionItem = {questionItem}
-          onItemGrading={handleItemGrading}
-          showAnswers={showAnswers}
-        />
-      ))}
       {showAnswers && (
         <div className="task-score">
-          Task Score: {correctAnswers} / {questionTask.questions.length}
+          Task Score: {correctAnswers} / {questionTask.questionItems.length}
         </div>
       )}
     </div>

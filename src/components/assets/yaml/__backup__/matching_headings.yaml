@@ -83,6 +83,9 @@ questions_list:
             Choose the correct heading for each section from the list of headings below.
             Write the correct number, i-viii, in boxes 1-4 on your answer sheet.
 
+        raw_headings_title: |
+            List of Headings
+            
         raw_headings_text: |
             i Dramatic effects can result from small changes in traffic just as in nature
             ii How a maths experiment actually reduced traffic congestion

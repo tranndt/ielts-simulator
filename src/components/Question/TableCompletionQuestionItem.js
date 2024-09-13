@@ -16,33 +16,28 @@ function TableCompletionQuestionItem({ questionItem, onItemGrading, showAnswers 
   }, [showAnswers, userAnswer]);
 
   return (
-    <div className="table-completion-question-item question-item">
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <span className="fixed-width">{questionItem.questionNumber}.</span>
-            </td>
-            <td>
-              <input
-                type="text"
-                id={`option-${questionItem.questionNumber}`}
-                name={`table-${questionItem.questionNumber}`}
-                onChange={handleChange}
-                disabled={showAnswers} // Disable input when answers are shown
-                autoComplete="off" // Disable auto-fill
-              />
-            </td>
-            {showAnswers && (
-              <td
-                className={(userAnswer === questionItem.correctAnswer) ? "correct-answer" : "correct-answer-non-matching"}>
-                {questionItem.correctAnswer}
-              </td>
-            )}
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <tr className="table-completion-question-item question-item"
+    style={{display:'flex', flexDirection:'row'}}>
+      <td>
+        <span className="fixed-width">{questionItem.questionNumber}.</span>
+      </td>
+      <td>
+        <input
+          type="text"
+          id={`option-${questionItem.questionNumber}`}
+          name={`table-${questionItem.questionNumber}`}
+          onChange={handleChange}
+          disabled={showAnswers} // Disable input when answers are shown
+          autoComplete="off" // Disable auto-fill
+        />
+      </td>
+      {showAnswers && (
+        <td
+          className={(userAnswer === questionItem.correctAnswer) ? "correct-answer" : "correct-answer-non-matching"}>
+          {questionItem.correctAnswer}
+        </td>
+      )}
+    </tr>
   );
 }
 

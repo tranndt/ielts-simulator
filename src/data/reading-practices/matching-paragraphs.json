@@ -1,6 +1,6 @@
 {
   "readingInfo": {
-    "raedingTitle": "Academic Reading Sample Task \u2013 Matching Paragraphs",
+    "readingTitle": "Academic Reading Sample Task \u2013 Matching Paragraphs",
     "readingSubtitle": ""
   },
   "passageContent": {
@@ -48,7 +48,7 @@
       "taskQuestionNumberText": "Questions 14-17",
       "taskDescription": "Reading Passage 2 has six section, A-F.\nWhich paragraph contains the following information?\nWrite the correct letter, A-F, in boxes 14-17 on your answer sheet.\nNB  You may use any letter more than once.",
       "questionMainTitle": "",
-      "questionMainText": "14   reference to research showing the beneficial effects of oxytocin on people15   reasons why the effects of oxytocin are complex16   mention of a period in which oxytocin attracted little scientific attention17   reference to people ignoring certain aspects of their research data",
+      "questionMainText": "14   reference to research showing the beneficial effects of oxytocin on people\n\n15   reasons why the effects of oxytocin are complex\n\n16   mention of a period in which oxytocin attracted little scientific attention\n\n17   reference to people ignoring certain aspects of their research data",
       "questionListTitle": "",
       "questionListOptions": [
         "A",
@@ -61,6 +61,7 @@
       "questionItems": [
         {
           "questionNumber": 14,
+          "questionText": "reference to research showing the beneficial effects of oxytocin on people",
           "questionOptions": [
             "A",
             "B",
@@ -73,6 +74,7 @@
         },
         {
           "questionNumber": 15,
+          "questionText": "reasons why the effects of oxytocin are complex",
           "questionOptions": [
             "A",
             "B",
@@ -85,6 +87,7 @@
         },
         {
           "questionNumber": 16,
+          "questionText": "mention of a period in which oxytocin attracted little scientific attention",
           "questionOptions": [
             "A",
             "B",
@@ -97,6 +100,7 @@
         },
         {
           "questionNumber": 17,
+          "questionText": "reference to people ignoring certain aspects of their research data",
           "questionOptions": [
             "A",
             "B",

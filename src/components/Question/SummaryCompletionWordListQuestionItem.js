@@ -10,44 +10,39 @@ function SummaryCompletionWordListQuestionItem({ questionItem, onItemGrading, sh
 
   useEffect(() => {
     if (showAnswers && userAnswer !== null) {
-      const isCorrect = userAnswer === questionItem.correctAnswer[0];
+      const isCorrect = userAnswer === questionItem.correctAnswer;
       onItemGrading(isCorrect);
     }
   }, [showAnswers, userAnswer]);
 
   return (
-    <div className="summmary-completion-word-list-question-item question-item">
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <span className="fixed-width">{questionItem.questionNumber}.</span>
-            </td>
-            <td>
-              <select
-                name={`heading-${questionItem.questionNumber}`}
-                id={`heading-${questionItem.questionNumber}`}
-                onChange={handleChange}
-                disabled={showAnswers}
-              >
-                <option value=""></option>
-                {questionItem.questionOptions.map((heading, index) => (
-                  <option key={index} value={heading[0]}>
-                    {heading[0] + " - " + heading[1]}
-                  </option>
-                ))}
-              </select>
-            </td>
-            {showAnswers && (
-              <td
-                className={(userAnswer === questionItem.correctAnswer[0]) ? "correct-answer" : "correct-answer-non-matching"}>
-                {questionItem.correctAnswer[0] + " - " + questionItem.correctAnswer[1]}
-              </td>
-            )}
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <tr className="summmary-completion-word-list-question-item question-item"
+    style={{display:'flex', flexDirection:'row'}}>
+      <td>
+        <span className="fixed-width">{questionItem.questionNumber}.</span>
+      </td>
+      <td>
+        <select
+          name={`heading-${questionItem.questionNumber}`}
+          id={`heading-${questionItem.questionNumber}`}
+          onChange={handleChange}
+          disabled={showAnswers}
+        >
+          <option value=""></option>
+          {questionItem.questionOptions.map((heading, index) => (
+            <option key={index} value={heading[0]}>
+              {heading[0] + " - " + heading[1]}
+            </option>
+          ))}
+        </select>
+      </td>
+      {showAnswers && (
+        <td
+          className={(userAnswer === questionItem.correctAnswer) ? "correct-answer" : "correct-answer-non-matching"}>
+          {questionItem.correctAnswer}
+        </td>
+      )}
+    </tr>
   );
 }
 

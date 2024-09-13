@@ -1,6 +1,6 @@
 {
   "readingInfo": {
-    "raedingTitle": "Academic Reading Sample Task \u2013 Multiple Choice: one answer",
+    "readingTitle": "Academic Reading Sample Task \u2013 Multiple Choice: one answer",
     "readingSubtitle": ""
   },
   "passageContent": {
@@ -49,7 +49,7 @@
               "equipping older workers with new skills."
             ]
           ],
-          "correctAnswer": "A \u25a0 abolishing pay schemes that are based on age"
+          "correctAnswer": "A"
         },
         {
           "questionNumber": 2,
@@ -72,7 +72,7 @@
               "treats older and younger workers equally."
             ]
           ],
-          "correctAnswer": "C \u25a0 allows the expertise of older workers to be put to use"
+          "correctAnswer": "C"
         },
         {
           "questionNumber": 3,
@@ -95,7 +95,7 @@
               "appeal to distinct groups of older workers."
             ]
           ],
-          "correctAnswer": "D \u25a0 appeal to distinct groups of older workers"
+          "correctAnswer": "D"
         },
         {
           "questionNumber": 4,
@@ -118,7 +118,7 @@
               "few young people have their own businesses."
             ]
           ],
-          "correctAnswer": "B \u25a0 older people are good at running their own businesses"
+          "correctAnswer": "B"
         }
       ]
     }

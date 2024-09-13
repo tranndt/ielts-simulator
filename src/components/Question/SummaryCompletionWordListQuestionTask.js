@@ -22,25 +22,34 @@ function SummaryCompletionWordListQuestionTask({ id, questionTask, onTaskGrading
 
   return (
     <div className="summmary-completion-word-list-question-task">
+      <h3>{questionTask.taskQuestionNumberText}</h3>
       <QuestionTaskDescription taskDescription={questionTask.taskDescription} />
-      <h3 style={{textAlign:'center'}}>{questionTask.questionTitle}</h3>
-      {questionTask.questionContent.map((content, index) => (
+      <h3 style={{textAlign:'center'}}>{questionTask.questionMainTitle}</h3>
+      {/* {questionTask.questionMainText.map((content, index) => (
         <p>{content}</p>
-      ))}
-      <ListOfHeadingsTable tableTitle = {questionTask.tableTitle} tableData={questionTask.tableData} />
+      ))} */}
+      <p>{questionTask.questionMainText}</p>
+      <ListOfHeadingsTable tableTitle = {questionTask.questionListTitle} tableData={questionTask.questionListOptions} />
+      {questionTask.exampleAnswer &&
+        <p><b>{questionTask.exampleAnswer}</b></p>
+      }
       <div class='your-answers-text'>Your Answers:</div>
-      {questionTask.questions.map((questionItem, index) => (
-        <SummaryCompletionWordListQuestionItem
-          key={index}
-          id={index}
-          questionItem={questionItem}
-          onItemGrading={handleItemGrading}
-          showAnswers={showAnswers}
-        />
-      ))}
+      <table>
+        <tbody>
+          {questionTask.questionItems.map((questionItem, index) => (
+            <SummaryCompletionWordListQuestionItem
+              key={index}
+              id={index}
+              questionItem = {questionItem}
+              onItemGrading={handleItemGrading}
+              showAnswers={showAnswers}
+            />
+          ))}
+        </tbody>
+      </table>
       {showAnswers && (
         <div className="task-score">
-          Task Score: {correctAnswers} / {questionTask.questions.length}
+          Task Score: {correctAnswers} / {questionTask.questionItems.length}
         </div>
       )}
     </div>

@@ -11,47 +11,42 @@ function MatchingSentenceEndingsQuestionItem({ id, questionItem, onItemGrading, 
 
   useEffect(() => {
     if (showAnswers && userAnswer !== null) {
-      const isCorrect = userAnswer === questionItem.correctAnswer[0];
+      const isCorrect = userAnswer === questionItem.correctAnswer;
       onItemGrading(isCorrect);
     }
   }, [showAnswers, userAnswer]);
 
   return (
-    <div className="matching-sentence-endings-question-item question-item">
-    <table>
-      <tbody >
-        <tr >
-          <td style={{width:'5em', textAlign:'center'}}>
-            {questionItem.questionNumber}
-          </td>
-          <td style={{maxWidth:'30em'}}>
-            {questionItem.questionText}
-          </td>
-          <td style={{width:'5em', textAlign:'center'}}>
-            <select
-              name={`heading-${questionItem.questionNumber}`}
-              id={`heading-${questionItem.questionNumber}`}
-              onChange={handleChange}
-              disabled={showAnswers}
-            >
-              <option value=""></option>
-              {questionItem.questionOptions.map((heading, index) => (
-                <option key={index} value={heading[0]}>
-                  {heading[0]}
-                </option>
-              ))}
-            </select>
-          </td>
-          {showAnswers && (
-            <td
-              className={(userAnswer === questionItem.correctAnswer[0]) ? "correct-answer" : "correct-answer-non-matching"}>
-              {questionItem.correctAnswer[0]}
-            </td>
-          )}
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <tr className="matching-sentence-endings-question-item question-item"
+    style={{display:'flex', flexDirection:'row'}}>
+      <td style={{width:'5em', textAlign:'center'}}>
+        {questionItem.questionNumber}
+      </td>
+      <td style={{maxWidth:'30em'}}>
+        {questionItem.questionText}
+      </td>
+      <td style={{width:'5em', textAlign:'center'}}>
+        <select
+          name={`heading-${questionItem.questionNumber}`}
+          id={`heading-${questionItem.questionNumber}`}
+          onChange={handleChange}
+          disabled={showAnswers}
+        >
+          <option value=""></option>
+          {questionItem.questionOptions.map((heading, index) => (
+            <option key={index} value={heading[0]}>
+              {heading[0]}
+            </option>
+          ))}
+        </select>
+      </td>
+      {showAnswers && (
+        <td
+          className={(userAnswer === questionItem.correctAnswer) ? "correct-answer" : "correct-answer-non-matching"}>
+          {questionItem.correctAnswer}
+        </td>
+      )}
+    </tr>
   );
 }
 

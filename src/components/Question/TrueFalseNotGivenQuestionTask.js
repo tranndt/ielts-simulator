@@ -20,10 +20,11 @@ function TrueFalseNotGivenQuestionTask({ id, questionTask, onTaskGrading, showAn
 
   return (
     <div className="true-false-notgiven-question-task">
+      <h3>{questionTask.taskQuestionNumberText}</h3>
       <QuestionTaskDescription taskDescription={questionTask.taskDescription} />
       <table>
         <tbody>
-          {questionTask.questions.map((questionItem, index) => (
+          {questionTask.questionItems.map((questionItem, index) => (
             <TrueFalseNotGivenQuestionItem
               key={index}
               id={index}
@@ -35,7 +36,7 @@ function TrueFalseNotGivenQuestionTask({ id, questionTask, onTaskGrading, showAn
         </tbody>
       </table>
       <div className="task-score">
-        {showAnswers ? `Task Score: ${correctAnswers} / ${questionTask.questions.length}` : " "}
+        {showAnswers ? `Task Score: ${correctAnswers} / ${questionTask.questionItems.length}` : " "}
       </div>
     </div>
   );

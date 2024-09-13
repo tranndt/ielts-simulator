@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
-import SummaryCompletionQuestionItem from "./SummaryCompletionQuestionItem";
-import DataTable from "../Table/DataTable";
+import React, { useState,useEffect} from 'react';
+import MatchingParagraphsQuestionItem from "./MatchingParagraphsQuestionItem";
+import ListOfHeadingsTable from "../Table/ListOfHeadingsTable";
 import QuestionTaskDescription from "./QuestionTaskDescription";
 import './QuestionStyles.css';
 
-function SummaryCompletionQuestionTask({ id, questionTask, onTaskGrading, showAnswers }) {
+
+function MatchingParagraphsQuestionTask({ questionTask, onTaskGrading, showAnswers }) {
   const [correctAnswers, setCorrectAnswers] = useState(0);
 
   const handleItemGrading = (isCorrect) => {
@@ -20,23 +21,22 @@ function SummaryCompletionQuestionTask({ id, questionTask, onTaskGrading, showAn
   }, [showAnswers]);
 
   return (
-    <div className="summary-completion-question-task">
+    <div className="matching-features-question-task">
       <h3>{questionTask.taskQuestionNumberText}</h3>
       <QuestionTaskDescription taskDescription={questionTask.taskDescription} />
-      <h3 style={{textAlign:'center'}}>{questionTask.questionMainTitle}</h3>
-      {questionTask.questionMainText.map((content, index) => (
-        <p>{content}</p>
-      ))}
-      <div class='your-answers-text'>Your Answers:</div>
-      {questionTask.questionItems.map((questionItem, index) => (
-        <SummaryCompletionQuestionItem
-          key={index}
-          id={index}
-          questionItem={questionItem}
-          onItemGrading={handleItemGrading}
-          showAnswers={showAnswers}
-        />
-      ))}
+      <table>
+        <tbody>
+          {questionTask.questionItems.map((questionItem, index) => (
+            <MatchingParagraphsQuestionItem
+              key={index}
+              id={index}
+              questionItem = {questionItem}
+              onItemGrading={handleItemGrading}
+              showAnswers={showAnswers}
+            />
+          ))}
+        </tbody>
+      </table>
       {showAnswers && (
         <div className="task-score">
           Task Score: {correctAnswers} / {questionTask.questionItems.length}
@@ -46,4 +46,5 @@ function SummaryCompletionQuestionTask({ id, questionTask, onTaskGrading, showAn
   );
 }
 
-export default SummaryCompletionQuestionTask;
+export default MatchingParagraphsQuestionTask;
+

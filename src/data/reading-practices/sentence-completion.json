@@ -1,6 +1,6 @@
 {
   "readingInfo": {
-    "raedingTitle": "Academic Reading Sample Task \u2013 Sentence Completion",
+    "readingTitle": "Academic Reading Sample Task \u2013 Sentence Completion",
     "readingSubtitle": ""
   },
   "passageContent": {
@@ -31,7 +31,13 @@
       "taskQuestionNumberText": "Questions 1 \u2013 5",
       "taskDescription": "Complete the sentences below.\nChoose ONE WORD ONLY from the passage for each answer.\nWrite your answers in boxes 1-5 on your answer sheet.",
       "questionMainTitle": "",
-      "questionMainText": "1 Huxley formulated his theory while studying a dinosaur belonging to a group called \u2026\u2026\u2026\u2026 .\n2 Heilmann rejected Huxley\u2019s theory because of the apparent absence of.................in dinosaurs.\n3 Feduccia and Martin believe that the ancestor of today\u2019s birds was a kind of early \u2026\u2026\u2026\u2026 .\n4 In cladistics, the ............... between organisms\u2019 characteristics are of major importance.\n5 The dangerous................on a primitive bird from Madagascar adds weight to the \u2018dino-bird\u2019 argument.",
+      "questionMainText": [
+        "1 Huxley formulated his theory while studying a dinosaur belonging to a group called \u2026\u2026\u2026\u2026 .",
+        "2 Heilmann rejected Huxley\u2019s theory because of the apparent absence of.................in dinosaurs.",
+        "3 Feduccia and Martin believe that the ancestor of today\u2019s birds was a kind of early \u2026\u2026\u2026\u2026 .",
+        "4 In cladistics, the ............... between organisms\u2019 characteristics are of major importance.",
+        "5 The dangerous................on a primitive bird from Madagascar adds weight to the \u2018dino-bird\u2019 argument."
+      ],
       "questionItems": [
         {
           "questionNumber": 1,

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import './QuestionStyles.css';
 
 
-function MatchingFeaturesQuestionItem({ id, questionItem, onItemGrading, showAnswers }) {
+function MatchingParagraphsQuestionItem({ id, questionItem, onItemGrading, showAnswers }) {
   const [userAnswer, setUserAnswer] = useState(null);
 
   const handleChange = (event) => {
@@ -50,7 +50,7 @@ function MatchingFeaturesQuestionItem({ id, questionItem, onItemGrading, showAns
   );
 }
 
-export default MatchingFeaturesQuestionItem;
+export default MatchingParagraphsQuestionItem;
 
 
   

@@ -21,21 +21,29 @@ function TableCompletionQuestionTask({ id, questionTask, onTaskGrading, showAnsw
 
   return (
     <div className="table-completion-question-task">
+      <h3>{questionTask.taskQuestionNumberText}</h3>
       <QuestionTaskDescription taskDescription={questionTask.taskDescription} />
-      <DataTable data={questionTask.questionContent} />
+      <DataTable data={questionTask.questionMainText} />
+      {questionTask.exampleAnswer &&
+        <p><b>{questionTask.exampleAnswer}</b></p>
+      }
       <div class='your-answers-text'>Your Answers:</div>
-      {questionTask.questions.map((questionItem, index) => (
-        <TableCompletionQuestionItem
-          key={index}
-          id={index}
-          questionItem={questionItem}
-          onItemGrading={handleItemGrading}
-          showAnswers={showAnswers}
-        />
-      ))}
+      <table>
+        <tbody>
+          {questionTask.questionItems.map((questionItem, index) => (
+            <TableCompletionQuestionItem
+              key={index}
+              id={index}
+              questionItem = {questionItem}
+              onItemGrading={handleItemGrading}
+              showAnswers={showAnswers}
+            />
+          ))}
+        </tbody>
+      </table>
       {showAnswers && (
         <div className="task-score">
-          Task Score: {correctAnswers} / {questionTask.questions.length}
+          Task Score: {correctAnswers} / {questionTask.questionItems.length}
         </div>
       )}
     </div>

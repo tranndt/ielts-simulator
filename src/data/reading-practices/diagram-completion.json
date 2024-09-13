@@ -1,6 +1,6 @@
 {
   "readingInfo": {
-    "raedingTitle": "Academic Reading Sample Task \u2013 Diagram Label Completion",
+    "readingTitle": "Academic Reading Sample Task \u2013 Diagram Label Completion",
     "readingSubtitle": ""
   },
   "passageContent": {
@@ -20,10 +20,18 @@
   "questionContent": [
     {
       "taskType": "diagram-completion",
+      "taskQuestionNumberList": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "taskQuestionNumberText": "Questions 1 \u2013 5",
       "taskDescription": "Label the diagram below.\nChoose NO MORE THAN THREE WORDS from the passage for each answer.\nWrite your answers in boxes 1-5 on your answer sheet.",
-      "questionMainTitle": "../../assets/images/reading/diagram-completion_1.jpg",
+      "questionMainTitle": "",
       "questionMainText": "",
-      "questionImgPath": "",
+      "questionImgPath": "../assets/images/reading/diagram_completion_1.jpg",
       "questionItems": [
         {
           "questionNumber": 1,

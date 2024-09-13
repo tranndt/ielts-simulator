@@ -5,7 +5,8 @@ function convertNewlinesToDoubleSpace(text) {
   return text.replace(/\n/g, '\n\n');
 }
 
-const PassageFrame = ({ passageContext, passageTitle, passageSubtitle, passageText }) => {
+const PassageFrame = ({ passageContent}) => {
+  const { hasParagraphMarkers, passageContext, passageTitle, passageSubtitle, passageMainText, passageParagraphs } = passageContent;
   const [highlightedText, setHighlightedText] = useState([]);
   const [contextMenu, setContextMenu] = useState(null);
 
@@ -39,12 +40,22 @@ const PassageFrame = ({ passageContext, passageTitle, passageSubtitle, passageTe
     );
   };
 
+  //    <p className="passage-text">{renderTextWithHighlights(passageMainText)}</p> # Example of how to use renderTextWithHighlights
   return (
     <div className="passage-frame" onContextMenu={handleContextMenu}>
-      <p className="passage-context">{renderTextWithHighlights(convertNewlinesToDoubleSpace(passageContext))}</p>
-      <h2 className="passage-title">{passageTitle}</h2>
-      <h3 className="passage-subtitle">{passageSubtitle}</h3>
-      <p className="passage-text">{renderTextWithHighlights(convertNewlinesToDoubleSpace(passageText))}</p>
+      <p className="passage-context">{renderTextWithHighlights(passageContext)}</p>
+      {passageTitle && <h2 className="passage-title">{passageTitle}</h2>}
+      {passageSubtitle && <h3 className="passage-subtitle">{passageSubtitle}</h3>}
+      <div>
+      {passageParagraphs.map((paragraph, index) => (
+        hasParagraphMarkers ? 
+          <><p><b>{renderTextWithHighlights(paragraph[0])}</b></p>
+          <p key={index} className="passage-text">{renderTextWithHighlights(paragraph[1])}</p></>
+          :
+          <p key={index} className="passage-text">{renderTextWithHighlights(paragraph)}</p>
+      ))}
+      </div>
+
       {contextMenu && (
         <div 
           className="context-menu" 

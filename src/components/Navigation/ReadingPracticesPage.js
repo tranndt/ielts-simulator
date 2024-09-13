@@ -18,11 +18,17 @@ const ReadingPracticesPage = () => (
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td><Link to="/ielts-simulator/reading-practices/multiple-choice-select-one">Multiple Choice</Link></td>
-          <td>Select the correct answer from a list of options.</td>
+      <tr>
+          <td><Link to="/ielts-simulator/reading-practices/diagram-completion">Diagram Completion</Link></td>
+          <td>Fill in the blanks in a diagram based on the passage.</td>
           <td>10 minutes</td>
         </tr>
+        <tr>
+          <td><Link to="/ielts-simulator/reading-practices/flow-chart-completion">Flow Chart Completion</Link></td>
+          <td>Fill in the blanks in a flow chart based on the passage.</td>
+          <td>10 minutes</td>
+        </tr>
+
         <tr>
           <td><Link to="/ielts-simulator/reading-practices/table-completion">Table Completion</Link></td>
           <td>Fill in the blanks in a table based on the passage.</td>
@@ -48,16 +54,7 @@ const ReadingPracticesPage = () => (
           <td>Fill in the blanks in a summary based on a list of words.</td>
           <td>10 minutes</td>
         </tr>
-        <tr>
-          <td><Link to="/ielts-simulator/reading-practices/diagram-completion">Diagram Completion</Link></td>
-          <td>Fill in the blanks in a diagram based on the passage.</td>
-          <td>10 minutes</td>
-        </tr>
-        <tr>
-          <td><Link to="/ielts-simulator/reading-practices/flow-chart-completion">Flow Chart Completion</Link></td>
-          <td>Fill in the blanks in a flow chart based on the passage.</td>
-          <td>10 minutes</td>
-        </tr>
+
         <tr>
           <td><Link to="/ielts-simulator/reading-practices/matching-headings">Matching Headings</Link></td>
           <td>Match headings to the correct paragraphs in the passage.</td>
@@ -74,13 +71,23 @@ const ReadingPracticesPage = () => (
           <td>10 minutes</td>
         </tr>
         <tr>
-          <td><Link to="/ielts-simulator/reading-practices/true-false-not-given">True/False/Not Given</Link></td>
+          <td><Link to="/ielts-simulator/reading-practices/matching-paragraphs">Matching Paragraphs</Link></td>
+          <td>Match paragraphs to the correct information in the question.</td>
+          <td>10 minutes</td>
+        </tr>
+        <tr>
+          <td><Link to="/ielts-simulator/reading-practices/true-false-notgiven">True/False/Not Given</Link></td>
           <td>Determine if statements are true, false, or not given based on the passage.</td>
           <td>10 minutes</td>
         </tr>
         <tr>
-          <td><Link to="/ielts-simulator/reading-practices/yes-no-not-given">Yes/No/Not Given</Link></td>
+          <td><Link to="/ielts-simulator/reading-practices/yes-no-notgiven">Yes/No/Not Given</Link></td>
           <td>Determine if statements are yes, no, or not given based on the passage.</td>
+          <td>10 minutes</td>
+        </tr>
+        <tr>
+          <td><Link to="/ielts-simulator/reading-practices/multiple-choice-select-one">Multiple Choice (Select One)</Link></td>
+          <td>Select the correct answer from a list of options.</td>
           <td>10 minutes</td>
         </tr>
         <tr>

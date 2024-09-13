@@ -20,10 +20,11 @@ function YesNoNotGivenQuestionTask({ id, questionTask, onTaskGrading, showAnswer
 
   return (
     <div className="yes-no-notgiven-question-task">
+      <h3>{questionTask.taskQuestionNumberText}</h3>
       <QuestionTaskDescription taskDescription={questionTask.taskDescription} />
       <table>
         <tbody>
-          {questionTask.questions.map((questionItem, index) => (
+          {questionTask.questionItems.map((questionItem, index) => (
             <YesNoNotGivenQuestionItem
               key={index}
               id={index}
@@ -36,7 +37,7 @@ function YesNoNotGivenQuestionTask({ id, questionTask, onTaskGrading, showAnswer
       </table>
       {showAnswers && (
         <div className="task-score">
-          Task Score: {correctAnswers} / {questionTask.questions.length}
+          Task Score: {correctAnswers} / {questionTask.questionItems.length}
         </div>
       )}
     </div>

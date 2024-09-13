@@ -71,14 +71,13 @@ question_content:
 
 
     question_main_title: |
-      ../../assets/images/reading/diagram-completion_1.jpg
 
 
     question_main_text: | 
 
 
     question_img_path: |    # flowcharts, diagrams
-
+      ../assets/images/reading/diagram_completion_1.jpg
 
     question_list_title: |    # matching tasks
 

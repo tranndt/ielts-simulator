@@ -1,6 +1,6 @@
 {
   "readingInfo": {
-    "raedingTitle": "Academic Reading Sample Task \u2013 Summary Completion: selecting words from the text",
+    "readingTitle": "Academic Reading Sample Task \u2013 Summary Completion: selecting words from the text",
     "readingSubtitle": ""
   },
   "passageContent": {
@@ -28,7 +28,16 @@
       "taskQuestionNumberText": "Questions 1 \u2013 5",
       "taskDescription": "Complete the summary below.\nChoose NO MORE THAN TWO WORDS from the passage for each answer.\nWrite your answers in boxes 1-5 on your answer sheet.",
       "questionMainTitle": "",
-      "questionMainText": "Consumers often complain that they experience a feeling of 1................ when trying to put\ntogether do-it-yourself products which have not been tested by companies on a 2 \u2026\u2026\u2026\u2026 .\nIn situations where not keeping to the correct procedures could affect safety issues, it is\nespecially important that 3................information is not left out and no assumptions are made\nabout a stage being self-evident or the consumer having a certain amount of 4 \u2026\u2026\u2026\u2026 .\nLawyers, however, have raised objections to the use of plain English. They feel that it would\nresult in ambiguity in documents and cause people to lose faith in 5............... , as it would\nmean departing from language that has been used in the courts for a very long time.",
+      "questionMainText": [
+        "Consumers often complain that they experience a feeling of 1................ when trying to put",
+        "together do-it-yourself products which have not been tested by companies on a 2 \u2026\u2026\u2026\u2026 .",
+        "In situations where not keeping to the correct procedures could affect safety issues, it is",
+        "especially important that 3................information is not left out and no assumptions are made",
+        "about a stage being self-evident or the consumer having a certain amount of 4 \u2026\u2026\u2026\u2026 .",
+        "Lawyers, however, have raised objections to the use of plain English. They feel that it would",
+        "result in ambiguity in documents and cause people to lose faith in 5............... , as it would",
+        "mean departing from language that has been used in the courts for a very long time."
+      ],
       "questionItems": [
         {
           "questionNumber": 1,

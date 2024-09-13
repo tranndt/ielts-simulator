@@ -21,14 +21,15 @@ function SentenceCompletionQuestionTask({ id, questionTask, onTaskGrading, showA
 
   return (
     <div className="sentence-completion-question-task">
+      <h3>{questionTask.taskQuestionNumberText}</h3>
       <QuestionTaskDescription taskDescription={questionTask.taskDescription} />
-      {/* <DataTable data={questionTask.questionContent} /> */}
-      <h3 style={{textAlign:'center'}}>{questionTask.questionTitle}</h3>
-      {questionTask.questionContent.map((content, index) => (
+      {/* <DataTable data={questionTask.questionMainText} /> */}
+      <h3 style={{textAlign:'center'}}>{questionTask.questionMainTitle}</h3>
+      {questionTask.questionMainText.map((content, index) => (
         <p>{content}</p>
       ))}
       <div class='your-answers-text'>Your Answers:</div>
-      {questionTask.questions.map((questionItem, index) => (
+      {questionTask.questionItems.map((questionItem, index) => (
         <SentenceCompletionQuestionItem
           key={index}
           id={index}
@@ -39,7 +40,7 @@ function SentenceCompletionQuestionTask({ id, questionTask, onTaskGrading, showA
       ))}
       {showAnswers && (
         <div className="task-score">
-          Task Score: {correctAnswers} / {questionTask.questions.length}
+          Task Score: {correctAnswers} / {questionTask.questionItems.length}
         </div>
       )}
     </div>
